@@ -1,0 +1,7 @@
+/* Aquí van todos archivos css que se creen a partir de ahora como se muestra abajo */ 
+
+/* Estilos generales */
+@import url(general.css);
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');

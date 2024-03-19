@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --font_title:"Keania One", sans-serif;
+    --font_text:"Roboto Condensed", sans-serif; 
+    --color_primary:#170E1A;
+    --color_secondary:#A06BE9; 
+    --color_tertiary:#1F152A;
+    --color_cuaternary:#44395F; 
+    --text_color:#FFFFFF;
+    --text_color_secondary:#CCCCCC; 
+}
+
