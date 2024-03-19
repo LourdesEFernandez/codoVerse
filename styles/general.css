@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+/* Aquí se encuentran todas las variables necesarias para el proyecto */
 :root{
     --font_title:"Keania One", sans-serif;
     --font_text:"Roboto Condensed", sans-serif; 
