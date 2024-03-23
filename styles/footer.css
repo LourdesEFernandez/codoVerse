@@ -76,10 +76,12 @@ main{
 }
 
 .icon{
-    width: 1,2em;
+    width: 1.2em;
     height: 1em;
     fill: var(--color_cuaternary);
 }
+
+
 
 #copyright{
     font-size: .8em;
@@ -91,14 +93,32 @@ main{
 }
 
 .push{
-    width: 1.8em;
+    width: 1.2em;
     height: 1em;
     color: var(--color_secondary);
     rotate: -90deg;
     margin: .4rem;
     position: relative;
     left: calc(100% - 1.8rem);
+    animation-duration: 10s;
+    animation-name: animationButton;
+}
+@keyframes animationButton {
 
+    from {
+        opacity: 0;
+        filter:alpha(opacity=0);
+    
+    }
+    50%{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+        filter:alpha(opacity=100);
+    
+}
 }
 
 @media screen and (max-width:768px){
