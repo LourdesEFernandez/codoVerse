@@ -18,3 +18,57 @@
     --text_color_secondary:#CCCCCC; 
 }
 
+/* iconos */
+
+/* Copiar y pegar desde <i ---hasta--- /i> el icono que presicen, luego darle estilo con css, usar clases e id */
+
+/* <i class="fa-solid fa-arrow-right"></i> flecha para volver a inicio
+
+<i class="fa-solid fa-bars"></i> tres rayitas nav
+
+<i class="fa-solid fa-car-side"></i> auto-envio
+
+tarjeta de credito
+<i class="fa-brands fa-cc-visa"></i> 
+<i class="fa-brands fa-cc-mastercard"></i> 
+<i class="fa-brands fa-cc-amex"></i> 
+<i class="fa-brands fa-cc-paypal"></i> 
+<i class="fa-solid fa-credit-card"></i>
+
+<i class="fa-solid fa-chevron-right"></i> flecha a la derecha
+<i class="fa-solid fa-chevron-left"></i> flecha a la izquierda 
+
+<i class="fa-regular fa-circle-xmark"></i> salida del carrito
+
+<i class="fa-brands fa-discord"></i> 
+
+<i class="fa-brands fa-google"></i> 
+
+<i class="fa-regular fa-heart"></i> corazon borde
+<i class="fa-solid fa-heart"></i> corazon relleno
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-solid fa-lock"></i> candado-banner 
+
+<i class="fa-solid fa-magnifying-glass"></i> lupa-buscador 
+
+<i class="fa-solid fa-minus"></i> signo menos
+
+<i class="fa-solid fa-plus"></i> signo mas
+
+<i class="fa-solid fa-right-left"></i> flechas-envio
+
+<i class="fa-solid fa-route"></i> ubicacion 
+
+<i class="fa-solid fa-shield-halved"></i> escudo-banner
+
+<i class="fa-solid fa-store"></i> tienda-banner
+
+<i class="fa-solid fa-tag"></i> etiqueta
+
+<i class="fa-solid fa-trash-can"></i> basurero 
+
+<i class="fa-solid fa-user"></i> usuario
+
+*/
