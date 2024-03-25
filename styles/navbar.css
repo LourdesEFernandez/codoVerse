@@ -112,13 +112,14 @@ body {
 .hamburger-menu .line {
   width: 2rem;
   height: 0.2rem;
-  background-color: #a06be9;
+  background-color: #fff;
   margin: 0.2rem;
 }
 
 /* Ocultar la "x" en pantallas que no sean móviles */
 @media screen and (min-width: 769px) {
-  .close-btn-container {
+  .close-btn-container,
+  .menu-options {
     display: none;
   }
 }
@@ -198,6 +199,10 @@ body {
     background-color: #170e1a; /* Color principal */
     z-index: 1000; /* Asegurar que esté encima de otros elementos */
     transition: right 0.3s ease; /* Transición suave solo para la posición */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .sidebar.open {
@@ -208,5 +213,38 @@ body {
     filter: blur(
       5px
     ); /* Aplicamos un filtro de desenfoque al contenido principal */
+  }
+
+  .menu-options {
+    padding-top: 5rem;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* Otros estilos */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-options p,
+  .menu-options a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  /* .menu-options p:first-child {
+    border-top: 0.2rem solid #fff;
+  } */
+
+  .menu-options p {
+    border-bottom: 0.2rem solid #fff;
+    margin-top: 1.5rem; /* Espacio entre las opciones */
+  }
+
+  .menu-options p:last-child {
+    padding-bottom: 1rem;
+    margin-top: auto; /* Hace que la última opción esté pegada hacia abajo */
+    border-bottom: none;
   }
 }
