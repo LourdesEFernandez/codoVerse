@@ -1,7 +1,10 @@
 /* Aquí van todos archivos css que se creen a partir de ahora como se muestra abajo */ 
 
 /* Estilos generales */
-@import url(general.css);
+@import url(./general.css);
+
+/* Estilos generales */
+@import url(./navbar.css);
 
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap')
