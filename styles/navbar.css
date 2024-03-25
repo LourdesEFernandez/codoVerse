@@ -37,7 +37,7 @@ body {
 .logo {
   flex: 1;
   font-family: "Keania One", sans-serif;
-  font-size: 1.8em; /* Tamaño de fuente un poco más grande */
+  font-size: 2em; /* Tamaño de fuente un poco más grande */
 }
 
 .menu {
@@ -57,7 +57,7 @@ body {
 
 .menu ul li a {
   /*font-weight: bold;  Texto en negrita */
-  font-size: 1.1em; /* Tamaño de fuente un poco más grande */
+  font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
 
 .search-profile-cart {
@@ -106,22 +106,34 @@ body {
   flex: 1;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column; /* Alineamos las líneas del menú de hamburguesa una encima de la otra */
 }
 
 .hamburger-menu .line {
-  width: 30px;
-  height: 3px;
+  width: 2rem;
+  height: 0.2rem;
   background-color: #a06be9;
-  margin: 5px;
+  margin: 0.2rem;
+}
+
+/* Ocultar la "x" en pantallas que no sean móviles */
+@media screen and (min-width: 769px) {
+  .close-btn-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.4em; /* Tamaño de fuente un poco menos grande */
+  }
+
   .menu ul {
     display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 0;
     width: 100%;
     background-color: #333;
@@ -137,5 +149,62 @@ body {
 
   .hamburger-menu {
     display: flex;
+  }
+
+  .close-btn-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .close-btn {
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    padding-left: 9px;
+  }
+
+  .close-btn::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .close-btn-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: initial;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -60%; /* Inicialmente oculto a la derecha */
+    height: 80%;
+    width: 60%; /* Ancho de la solapa cuando esté abierta */
+    background-color: #170e1a; /* Color principal */
+    z-index: 1000; /* Asegurar que esté encima de otros elementos */
+    transition: right 0.3s ease; /* Transición suave solo para la posición */
+  }
+
+  .sidebar.open {
+    right: 0; /* Desplazamos la solapa a la posición correcta (arriba hacia la derecha) */
+  }
+
+  .main {
+    filter: blur(
+      5px
+    ); /* Aplicamos un filtro de desenfoque al contenido principal */
   }
 }
