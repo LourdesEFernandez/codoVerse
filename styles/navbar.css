@@ -163,7 +163,8 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 1;
-    padding-left: 9px;
+    padding-top: 2.25px;
+    padding-left: 11.5px;
   }
 
   .close-btn::before {
@@ -171,8 +172,9 @@ body {
     display: block;
     width: 30px;
     height: 30px;
+    border: #fff solid 0.2rem;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
     position: absolute;
     top: 0px;
     left: 0px;
