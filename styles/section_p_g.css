@@ -27,26 +27,26 @@
 }
 
 /* lista */
-.list-p-g, .ul-p-g{
+.component-p-g, .list-p-g{
     display: flex;
-    /* justify-content: space-between; */
 }
-.ul-p-g{
+.list-p-g{
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     flex-wrap: nowrap;
     flex: 1;
     justify-content: space-evenly;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 /* oculta barra de scroll */
-/* ::-webkit-scrollbar {
+.list-p-g::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .item-p-g{
-    padding: 1rem;
+    padding: 1.6rem;
     list-style: none;
 }
 

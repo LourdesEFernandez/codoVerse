@@ -18,6 +18,17 @@
     --text_color_secondary:#CCCCCC; 
 }
 
+body::-webkit-scrollbar{
+    width: .5rem;
+    background: var(--color_tertiary);
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--color_secondary);
+    border-radius: .5rem;
+}
+
+
 /* iconos */
 /* <i class="fa-solid fa-arrow-right"></i> flecha para volver a inicio
 
