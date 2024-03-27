@@ -36,6 +36,7 @@ main{
     /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
+    padding: 0 4em;
 }
 
 .card-info{
