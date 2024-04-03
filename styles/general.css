@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: var(--color_tertiary);
+}
+
 /* Aquí se encuentran todas las variables necesarias para el proyecto */
 :root{
     --font_title:"Keania One", sans-serif;
