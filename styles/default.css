@@ -11,3 +11,6 @@
 
 /* main sección plataforma y géneros */
 @import url(section_p_g.css);
+
+/* info main */
+@import url(info_main.css);
