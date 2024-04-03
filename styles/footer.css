@@ -19,7 +19,7 @@ main{
 
 .ft-text{
     color: var(--color_secondary);
-    font-family: var(--font-text);
+    font-family: var(--font_text);
     font-weight: 300;
     text-align: center;
     margin: 0;
@@ -97,12 +97,13 @@ main{
     height: 1em;
     color: var(--color_secondary);
     rotate: -90deg;
-    margin: .4rem;
+    /* margin: .4rem; */
     position: relative;
     left: calc(100% - 1.8rem);
     animation-duration: 10s;
     animation-name: animationButton;
 }
+
 @keyframes animationButton {
 
     from {
@@ -122,6 +123,10 @@ main{
 }
 
 @media screen and (max-width:768px){
+    #copyright{
+        padding-bottom: .5em;
+    }
+
     #footer{
         height: auto;
         padding: 0;
