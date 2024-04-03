@@ -1,0 +1,68 @@
+:root{
+    --shadow:0px 6px 4px var(--color_primary);
+}
+
+.section-p-g{
+    background-color: var(--color_tertiary);
+    width: 100%;
+    height: 45vh;
+    padding: 2vh 8vw;
+}
+
+.title-p-g{
+    color: var(--color_secondary);
+    font-family: var(--font_title_two);
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* iconos */
+.fa-chevron-left, .fa-chevron-right{
+    fill: var(--color_primary);
+    scale: 1.2;
+    margin: 0 1em;
+    align-content: center;
+}
+
+/* lista */
+.component-p-g, .list-p-g{
+    display: flex;
+}
+.list-p-g{
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+}
+
+/* oculta barra de scroll */
+.list-p-g::-webkit-scrollbar {
+    display: none;
+}
+
+.item-p-g{
+    padding: 1.6rem;
+    list-style: none;
+}
+
+.name-p-g{
+    color: var(--text_color_secondary);
+    font-family: var(--font_text);
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: var(--shadow);
+}
+
+.img-p-g{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-size: contain;
+    box-shadow: var(--shadow);
+}

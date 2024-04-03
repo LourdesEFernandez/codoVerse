@@ -18,10 +18,22 @@
     --text_color_secondary:#CCCCCC; 
 }
 
+body::-webkit-scrollbar{
+    width: .5rem;
+    background: var(--color_tertiary);
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--color_secondary);
+    border-radius: .5rem;
+}
+
+
 /* iconos */
 
 /* Copiar y pegar desde <i ---hasta--- /i> el icono que presicen, luego darle estilo con css, usar clases e id */
 
+/* iconos */
 /* <i class="fa-solid fa-arrow-right"></i> flecha para volver a inicio
 
 <i class="fa-solid fa-bars"></i> tres rayitas nav
@@ -70,5 +82,3 @@ tarjeta de credito
 <i class="fa-solid fa-trash-can"></i> basurero 
 
 <i class="fa-solid fa-user"></i> usuario
-
-*/
