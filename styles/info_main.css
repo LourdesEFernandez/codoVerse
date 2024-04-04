@@ -1,0 +1,176 @@
+#info-main{
+    min-width: 100%;
+    height: auto;
+}
+
+#conteiner-info-main{
+    width: 80vw;
+    min-height: 65vh;
+    margin: 5vh auto;
+    position: relative;
+    display: flex;
+    padding: 1.8rem;
+
+    font-family: var(--font_text);
+    color: var(--text_color);
+}
+
+#conteiner-info-main::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url("/assets/images/assassin\'s_creed_valhalla.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+}
+
+#c-heart-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+#buttons-i-m{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+.c-button{
+    border-radius: 5px;
+    min-width: 15vw;
+    min-height: 6vh;
+    background-color:var(--color_secondary);
+    text-align: center;
+    align-content: center;
+}
+
+#b-add-cart{
+    background-color: var(--text_color_secondary);
+    color: var(--color_secondary);
+}
+
+.heart{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: transparent;
+    cursor: pointer;
+}
+#icon-heart{
+    scale: 1.3;
+    padding: 0;
+    margin: 0;
+    color: var(--color_secondary);
+    background-color: transparent;
+    
+}
+#icon-heart:active{
+    animation-duration: 500ms;
+    animation-name: ascal;
+}
+@keyframes ascal {
+    from{
+        scale: 1.3;
+    }
+    50%{
+        scale: 1.6;
+    }
+    to{
+        scale: 1.3;
+    }
+    
+}
+
+#conteiner-img-game{
+    width: 18vw;
+    min-height: 55vh;
+    background-image: url("/assets/images/assassin\'s_creed_valhalla.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    margin: auto 0;
+    align-content: end;
+    
+}
+#tag-price{
+    margin: 1vh 1.5vw;
+    background-color: var(--color_primary);
+    cursor: default;
+}
+
+.info-i-m{
+    flex: 1;
+    padding: 0 1vw;
+    cursor: default;
+}
+
+#title-game-i-m{
+    font-family: var(--font_title_two);
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#info-game-i-m{
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+#subtitle-i-m{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#data-sheet-i-m{
+    list-style: none;
+    font-weight: 300;
+    font-size: .9em;
+}
+
+#b-buy:hover{
+    background-color: var(--color_primary);
+    color: var(--color_secondary);
+    animation-duration: 650ms;
+    animation-name: palp;
+    cursor: pointer;
+}
+@keyframes palp {
+    from{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+#b-add-cart:hover{
+    background-color: var(--color_cuaternary);
+    color: var(--text_color_secondary);
+    animation-duration: 650ms;
+    animation-name: palp;
+    cursor: pointer;
+}
+@keyframes palp {
+    from{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+@media screen and(max-width:768px) {
+    
+}
