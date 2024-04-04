@@ -60,9 +60,9 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-
+    cursor: pointer;
 }
-.fa-heart{
+#icon-heart{
     scale: 1.3;
     padding: 0;
     margin: 0;
@@ -111,6 +111,7 @@
     color: var(--color_secondary);
     animation-duration: 450ms;
     animation-name: palp;
+    cursor: pointer;
 }
 @keyframes palp {
     from{
@@ -129,6 +130,7 @@
     color: var(--text_color_secondary);
     animation-duration: 450ms;
     animation-name: palp;
+    cursor: pointer;
 }
 @keyframes palp {
     from{
