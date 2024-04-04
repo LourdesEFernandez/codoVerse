@@ -128,7 +128,7 @@
 #b-buy:hover{
     background-color: var(--color_primary);
     color: var(--color_secondary);
-    animation-duration: 450ms;
+    animation-duration: 650ms;
     animation-name: palp;
     cursor: pointer;
 }
@@ -147,7 +147,7 @@
 #b-add-cart:hover{
     background-color: var(--color_cuaternary);
     color: var(--text_color_secondary);
-    animation-duration: 450ms;
+    animation-duration: 650ms;
     animation-name: palp;
     cursor: pointer;
 }
