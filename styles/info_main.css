@@ -96,11 +96,19 @@
     background-size: cover;
     border-radius: 3px;
     margin: auto 0;
+    align-content: end;
+    
+}
+#tag-price{
+    margin: 1vh 1.5vw;
+    background-color: var(--color_primary);
+    cursor: default;
 }
 
 .info-i-m{
     flex: 1;
     padding: 0 1vw;
+    cursor: default;
 }
 
 #title-game-i-m{
@@ -161,4 +169,9 @@
     to{
         scale: 1;
     }
+}
+
+@media screen and(max-width:768px) {
+
+    
 }
