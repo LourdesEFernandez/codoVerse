@@ -1,37 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--color_tertiary);
+body {
+  background-color: var(--color_tertiary);
 }
 
 /* Aquí se encuentran todas las variables necesarias para el proyecto */
-:root{
-    --font_title:"Keania One", sans-serif;
-    --font_title_two:"Smooch Sans", sans-serif;
-    --font_text:"Roboto Condensed", sans-serif; 
-    --color_primary:#170E1A;
-    --color_secondary:#A06BE9; 
-    --color_tertiary:#1F152A;
-    --color_cuaternary:#44395F; 
-    --text_color:#FFFFFF;
-    --text_color_secondary:#CCCCCC; 
+:root {
+  --font_title: "Keania One", sans-serif;
+  --font_title_two: "Smooch Sans", sans-serif;
+  --font_text: "Roboto Condensed", sans-serif;
+  --color_primary: #170e1a;
+  --color_secondary: #a06be9;
+  --color_tertiary: #1f152a;
+  --color_cuaternary: #44395f;
+  --text_color: #ffffff;
+  --text_color_secondary: #cccccc;
 }
 
-body::-webkit-scrollbar{
-    width: .5rem;
-    background: var(--color_tertiary);
-    
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--color_tertiary);
 }
-body::-webkit-scrollbar-thumb{
-    background: var(--color_secondary);
-    border-radius: .5rem;
+body::-webkit-scrollbar-thumb {
+  background: var(--color_secondary);
+  border-radius: 0.5rem;
 }
-
 
 /* iconos */
 

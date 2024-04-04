@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: var(--font_text);
 }
 
 .container {
@@ -19,24 +19,24 @@ body {
 }
 
 .navbar {
-  background-color: #170e1a;
-  color: #a06be9;
+  background-color: var(--color_primary);
+  color: var(--color_secondary);
   /* Aumentamos el padding para incrementar la altura */
   padding: 1.5rem 0;
   /* Agregamos una línea horizontal en la parte inferior */
-  border-bottom: 0.25rem solid #a06be9;
+  border-bottom: 0.25rem solid var(--color_secondary);
   /* Agregamos un margen inferior para alinear hacia abajo 
   margin-bottom: 20px;*/
 }
 
 .navbar a {
-  color: #a06be9;
+  color: var(--color_secondary);
   text-decoration: none;
 }
 
 .logo {
   flex: 1;
-  font-family: "Keania One", sans-serif;
+  font-family: var(--font_title);
   font-size: 2em; /* Tamaño de fuente un poco más grande */
 }
 
@@ -91,12 +91,12 @@ body {
 
 .search button i,
 .icons a i {
-  color: #cccccc;
+  color: var(--text_color_secondary);
   font-size: 1.5em; /* Ajustamos el tamaño de fuente a 1.5 veces el tamaño original */
 }
 
 .icons a {
-  color: #cccccc;
+  color: var(--text_color_secondary);
   margin-left: 15px;
   text-decoration: none;
 }
@@ -112,7 +112,7 @@ body {
 .hamburger-menu .line {
   width: 2rem;
   height: 0.2rem;
-  background-color: #fff;
+  background-color: var(--text_color);
   margin: 0.2rem;
 }
 
@@ -137,7 +137,7 @@ body {
     top: 80%;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--color_primary);
   }
 
   .menu ul li {
@@ -160,7 +160,7 @@ body {
 
   .close-btn {
     font-size: 1.5em;
-    color: #fff;
+    color: var(--text_color);
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -173,7 +173,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    border: #fff solid 0.2rem;
+    border: var(--text_color) solid 0.2rem;
     border-radius: 50%;
     /* background-color: rgba(255, 255, 255, 0.3); */
     position: absolute;
@@ -196,7 +196,7 @@ body {
     right: -60%; /* Inicialmente oculto a la derecha */
     height: 80%;
     width: 60%; /* Ancho de la solapa cuando esté abierta */
-    background-color: #170e1a; /* Color principal */
+    background-color: var(--color_primary); /* Color principal */
     z-index: 1000; /* Asegurar que esté encima de otros elementos */
     transition: right 0.3s ease; /* Transición suave solo para la posición */
     display: flex;
@@ -210,9 +210,12 @@ body {
   }
 
   .main {
-    filter: blur(
-      5px
-    ); /* Aplicamos un filtro de desenfoque al contenido principal */
+    /* Otros estilos */
+    transition: filter 0.3s ease; /* Agregamos una transición suave */
+  }
+
+  .blur {
+    filter: blur(5px); /* Aplicamos un filtro de desenfoque */
   }
 
   .menu-options {
@@ -228,17 +231,17 @@ body {
 
   .menu-options p,
   .menu-options a {
-    color: #fff;
+    color: var(--text_color);
     text-decoration: none;
     font-size: 1.5rem;
   }
 
   /* .menu-options p:first-child {
-    border-top: 0.2rem solid #fff;
+    border-top: 0.2rem solid var(--text_color);
   } */
 
   .menu-options p {
-    border-bottom: 0.2rem solid #fff;
+    border-bottom: 0.2rem solid var(--text_color);
     margin-top: 1.5rem; /* Espacio entre las opciones */
   }
 
