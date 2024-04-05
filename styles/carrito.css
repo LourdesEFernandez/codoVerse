@@ -1,7 +1,7 @@
 .shopping-cart-sidebar {
   position: fixed;
   top: 0;
-  right: -25%; /* Inicialmente oculto a la derecha */
+  right: -280px; /* Inicialmente oculto a la derecha */
   height: 100%;
   width: 280px; /* Ancho de la solapa cuando esté abierta */
   background-color: var(--color_cuaternary); /* Color principal */
