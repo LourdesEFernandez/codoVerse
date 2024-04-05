@@ -146,6 +146,7 @@ main{
         padding: 0 4vw;
         margin: 2vh 0;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     #ft-title{
@@ -154,6 +155,7 @@ main{
 
     .card-info{
         padding: 1vh 0;
+
     }
 
     .foto, .push{
@@ -161,13 +163,13 @@ main{
     }
 
     .list-info{
-        width: 20vw;
         height: 12vh;
         padding: 1vh 2vw;
         background-color: var(--bg_color_ft);
         border-radius: 1em;
         border: 1px solid var(--border_ft);
         box-shadow: 5px 5px 15px var(--color_shadow_ft);
+        align-content: center;
     }
 
     .ft-a{
