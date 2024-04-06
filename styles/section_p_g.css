@@ -29,8 +29,15 @@
 
     align-content: center;
     margin: 0 auto;
-}
 
+    grid-row: 1;
+}
+.fa-chevron-left{
+    grid-column: 1;
+}
+.fa-chevron-right{
+    grid-column: 3;
+}
 /* lista */
 .component-p-g{
     display: grid;
