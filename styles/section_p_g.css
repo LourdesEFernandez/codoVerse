@@ -4,7 +4,6 @@
 }
 
 .section-p-g{
-    background-color: var(--color_tertiary);
     width: 100%;
     height: auto;
     padding: 2vh 5vw;
@@ -121,4 +120,30 @@
 .m-info-game{
     font-size: 1em;
     font-weight: 300;
+}
+
+@media screen and (max-width:768px){
+    i .fa-chevron-left, i .fa-chevron-right{
+        display: none;
+        content: none;
+    }
+
+    .section-p-g{
+        padding: 0;
+    }
+
+    .list-p-g{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .img-p-g{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .item-p-g{
+        width: 45vw;
+    }
 }
