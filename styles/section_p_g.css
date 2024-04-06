@@ -123,13 +123,16 @@
 }
 
 @media screen and (max-width:768px){
-    i .fa-chevron-left, i .fa-chevron-right{
-        display: none;
-        content: none;
+    
+    .fa-chevron-left, .fa-chevron-right{
+        display: none !important;
+    }
+    .component-p-g{
+        flex-direction: column;
     }
 
     .section-p-g{
-        padding: 0;
+        padding: 0 1vw;
     }
 
     .list-p-g{
