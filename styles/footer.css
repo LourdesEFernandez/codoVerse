@@ -167,7 +167,7 @@ main{
         box-shadow: none;
     }
 
-    .foto, .push{
+    .foto, a .push{
         display: none;
     }
 
