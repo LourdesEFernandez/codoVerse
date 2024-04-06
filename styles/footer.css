@@ -172,7 +172,10 @@ main{
         box-shadow: none;
     }
 
-    .foto, .push{
+    .foto{
+        display: none;
+    }
+    .push{
         display: none;
     }
 
