@@ -4,11 +4,9 @@
 }
 
 .section-p-g{
-    background-color: var(--color_tertiary);
     width: 100%;
     height: auto;
     padding: 2vh 5vw;
-    margin: 2vh 0;
 }
 
 .title-p-g{
@@ -26,9 +24,8 @@
 .fa-chevron-left, .fa-chevron-right{
     fill: var(--color_primary);
     scale: 1.2;
-    cursor: pointer;
     margin: auto 3vw;
-    
+    cursor: pointer;
 }
 
 /* lista */
@@ -123,4 +120,34 @@
 .m-info-game{
     font-size: 1em;
     font-weight: 300;
+}
+
+@media screen and (max-width:768px){
+    
+    .fa-chevron-left, .fa-chevron-right{
+        display: none !important;
+    }
+    .component-p-g{
+        flex-direction: column;
+    }
+    
+
+    .section-p-g{
+        padding: 0 1vw;
+    }
+
+    .list-p-g{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .img-p-g{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .item-p-g{
+        width: 45vw;
+    }
 }

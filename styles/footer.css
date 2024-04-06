@@ -133,9 +133,9 @@ main{
 
 :root{
     --bg_color_ft:rgba(68, 57, 95, 0.2);
-    --color_info:#645a7a;
-    --border_ft:#5d517c33;
-    --color_shadow_ft:rgba(52, 37, 58, 0.5);
+    --color_info:#553361;
+    --border_ft:#6a5d8a33;
+    --color_shadow_ft:rgba(52, 35, 58, 0.5);
 }
 
 @media screen and (max-width:768px){
@@ -149,7 +149,7 @@ main{
     }
     
     .ft-text{
-        color: var(--color_info);
+        color: var(--color_cuaternary);
     }
 
     #copyright{
@@ -157,7 +157,7 @@ main{
     }
 
     #about{
-        padding: 0 4vw;
+        padding: 0 2vw;
         margin: 2vh 0;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -173,17 +173,22 @@ main{
         box-shadow: none;
     }
 
-    .foto, a .push{
+    .foto{
         display: none;
     }
 
+    .push{
+        display: none !important;
+    }
+
     .list-info{
-        height: 12vh;
-        padding: 1vh 2vw;
+        color: var(--color_secondary);
+        height: auto;
+        padding: 3vh 2vw;
         background-color: var(--bg_color_ft);
-        border-radius: 1em;
+        border-radius: 10px;
         border: 1px solid var(--border_ft);
-        box-shadow: 5px 5px 10px var(--color_shadow_ft);
+        box-shadow: 5px 5px 8px var(--color_shadow_ft);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -194,7 +199,7 @@ main{
     }
 
     .name{
-        color: var(--color_info);
+        color: var(--color_secondary);
     }
 
     .ft-list{
@@ -202,8 +207,12 @@ main{
         justify-content: center;
         gap: 6vw;
     }
+    .social-net{
+        padding: 1.5vh 0;
+    }
     .icon{
         scale: 1.3;
-        color: var(--color_info);
+        color: var(--color_secondary);
+        margin: 2vh o;
     }
 }

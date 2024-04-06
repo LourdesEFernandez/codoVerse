@@ -24,7 +24,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: url("/assets/images/assassin\'s_creed_valhalla.jpeg");
+    background: url("../assets/images/assassin\'s_creed_valhalla.jpeg");
     background-size: cover;
     background-position: center;
     border-radius: 5px;
@@ -93,7 +93,7 @@
 #conteiner-img-game{
     width: 18vw;
     min-height: 55vh;
-    background-image: url("/assets/images/assassin\'s_creed_valhalla.jpeg");
+    background-image: url("../assets/images/assassin\'s_creed_valhalla.jpeg");
     background-position: center;
     background-size: cover;
     border-radius: 3px;
