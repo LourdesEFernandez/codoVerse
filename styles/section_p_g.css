@@ -6,7 +6,7 @@
     background-color: var(--color_tertiary);
     width: 100%;
     height: 45vh;
-    padding: 2vh 8vw;
+    padding: 2vh 5vw;
 }
 
 .title-p-g{
@@ -20,17 +20,29 @@
 }
 
 /* iconos */
+
 .fa-chevron-left, .fa-chevron-right{
     fill: var(--color_primary);
     scale: 1.2;
-    margin: 0 1em;
-    align-content: center;
+    margin: 0 1vw;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* lista */
-.component-p-g, .list-p-g{
+.component-p-g{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.list-p-g{
+    grid-column: 2;
     display: flex;
+    align-items: center;
 }
 .list-p-g{
     flex-direction: row;
@@ -38,8 +50,7 @@
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     flex: 1;
-    justify-content: space-evenly;
-    gap: 2.5rem;
+    gap: 2vw;
 }
 
 /* oculta barra de scroll */
