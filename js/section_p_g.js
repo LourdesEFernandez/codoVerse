@@ -9,6 +9,10 @@ const previousBtnG = document.querySelector("#previous-g");
 
 const contentListg = document.querySelector("#list-g");
 
+// 
+
+let itemSection = document.querySelector("#show-list");
+let listGame = document.querySelector("#list-game");
 
 // propiedad scrollLeft, mueve a la derecha usando += cantidad de px y a la izquierda -= y la cantidad de px
 
@@ -28,3 +32,9 @@ previousBtnG.addEventListener("click", () => {
     contentListg.scrollLeft -= 350;
 }); 
 
+// mostrar lista
+
+itemSection.addEventListener("click", () =>{
+    itemSection.style.scale = "1.2";
+    listGame.style.display = "grid";
+});

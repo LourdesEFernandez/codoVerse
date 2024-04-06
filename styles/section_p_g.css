@@ -52,6 +52,8 @@
 .item-p-g{
     padding: 1.6rem;
     list-style: none;
+    cursor: pointer;
+    height: auto;
 }
 
 .name-p-g{
@@ -80,6 +82,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+
+    display: none;
 }
 
 .m-list-game::-webkit-scrollbar{
@@ -99,6 +103,7 @@
 .m-data-game{
     font-family: var(--font_text);
     color: var(--text_color_secondary);
+    cursor: default;
 }
 
 .m-img-game{
