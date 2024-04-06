@@ -134,7 +134,7 @@ main{
     --bg_color_ft:rgba(68, 57, 95, 0.2);
     --color_info:#645a7a;
     --border_ft:#5d517c33;
-    --color_shadow_ft:rgba(39, 25, 44, 0.5);
+    --color_shadow_ft:rgba(52, 37, 58, 0.5);
 }
 
 @media screen and (max-width:768px){
@@ -182,8 +182,11 @@ main{
         background-color: var(--bg_color_ft);
         border-radius: 1em;
         border: 1px solid var(--border_ft);
-        box-shadow: 5px 5px 15px var(--color_shadow_ft);
-        align-content: center;
+        box-shadow: 5px 5px 10px var(--color_shadow_ft);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .ft-a{
