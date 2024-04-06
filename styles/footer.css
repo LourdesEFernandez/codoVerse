@@ -135,7 +135,7 @@ main{
     --bg_color_ft:rgba(68, 57, 95, 0.2);
     --color_info:rgba(160, 107, 233, 0.5);
     --border_ft:#6a5d8a33;
-    --color_shadow_ft:rgba(106, 93, 138, 0.3);
+    --color_shadow_ft:rgba(106, 93, 138, 0.5);
 }
 
 @media screen and (max-width:768px){
