@@ -1,5 +1,6 @@
 :root{
     --shadow:0px 6px 4px var(--color_primary);
+    --bg-card-game:rgba(204, 204, 204, 0.1);
 }
 
 .section-p-g{
@@ -53,6 +54,8 @@
 .item-p-g{
     padding: 1.6rem;
     list-style: none;
+    cursor: pointer;
+    height: auto;
 }
 
 .name-p-g{
@@ -71,4 +74,53 @@
     border-radius: 100%;
     background-size: contain;
     box-shadow: var(--shadow);
+}
+
+.m-list-game{
+    width: 80vw;
+    height: 68vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+    display: none;
+}
+
+.m-list-game::-webkit-scrollbar{
+    display: none;
+}
+
+.m-card-game{
+    padding: 1.5vh .3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+    background-color: var(--bg-card-game);
+}
+
+.m-data-game{
+    font-family: var(--font_text);
+    color: var(--text_color_secondary);
+    cursor: default;
+}
+
+.m-img-game{
+    width: 90%;
+    border-radius: 8px;
+}
+
+.m-title-game{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1vh;
+} 
+
+.m-info-game{
+    font-size: 1em;
+    font-weight: 300;
 }
