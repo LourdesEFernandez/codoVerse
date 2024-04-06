@@ -47,8 +47,10 @@
     min-width: 15vw;
     min-height: 6vh;
     background-color:var(--color_secondary);
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
 }
 
 #b-add-cart{
@@ -96,7 +98,10 @@
     background-size: cover;
     border-radius: 3px;
     margin: auto 0;
-    align-content: end;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     
 }
 #tag-price{

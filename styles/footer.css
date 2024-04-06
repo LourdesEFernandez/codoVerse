@@ -178,7 +178,9 @@ main{
         border-radius: 1em;
         border: 1px solid var(--border_ft);
         box-shadow: 5px 5px 15px var(--color_shadow_ft);
-        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .ft-a{
@@ -192,7 +194,7 @@ main{
     .ft-list{
         display: flex;
         justify-content: center;
-        gap: .5rem;
+        gap: 6vw;
     }
     .icon{
         scale: 1.3;
