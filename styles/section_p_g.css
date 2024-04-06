@@ -6,7 +6,8 @@
     background-color: var(--color_tertiary);
     width: 100%;
     height: auto;
-    padding: 2vh 3vw;
+    padding: 2vh 5vw;
+    margin: 2vh 0;
 }
 
 .title-p-g{
@@ -24,28 +25,14 @@
 .fa-chevron-left, .fa-chevron-right{
     fill: var(--color_primary);
     scale: 1.2;
-
     cursor: pointer;
+    margin: auto 3vw;
+    
+}
 
-    align-content: center;
-    margin: 0 auto;
-
-    grid-row: 1;
-}
-.fa-chevron-left{
-    grid-column: 1;
-}
-.fa-chevron-right{
-    grid-column: 3;
-}
 /* lista */
-.component-p-g{
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-}
 
-.list-p-g{
-    grid-column: 2;
+.list-p-g, .component-p-g{
     display: flex;
     align-items: center;
 }
