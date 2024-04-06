@@ -188,7 +188,7 @@ main{
         background-color: var(--bg_color_ft);
         border-radius: 10px;
         border: 1px solid var(--border_ft);
-        box-shadow: 8px 8px 10px var(--color_shadow_ft);
+        box-shadow: 10px 10px 10px var(--color_shadow_ft);
         display: flex;
         flex-direction: column;
         justify-content: center;
