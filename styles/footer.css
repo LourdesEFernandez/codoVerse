@@ -172,10 +172,7 @@ main{
         box-shadow: none;
     }
 
-    .foto{
-        display: none;
-    }
-    a .push{
+    .foto, a .push{
         display: none;
     }
 
@@ -186,7 +183,6 @@ main{
         border-radius: 1em;
         border: 1px solid var(--border_ft);
         box-shadow: 5px 5px 10px var(--color_shadow_ft);
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
