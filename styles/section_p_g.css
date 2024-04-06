@@ -5,32 +5,44 @@
 .section-p-g{
     background-color: var(--color_tertiary);
     width: 100%;
-    height: 45vh;
-    padding: 2vh 8vw;
+    height: auto;
+    padding: 2vh 3vw;
 }
 
 .title-p-g{
     color: var(--color_secondary);
     font-family: var(--font_title_two);
     font-weight: 500;
-    font-size: 1.5em;
-    padding-top: 1rem;
+    font-size: 1.7em;
+    padding: 2vh 0;
     text-align: center;
     cursor: default;
 }
 
 /* iconos */
+
 .fa-chevron-left, .fa-chevron-right{
     fill: var(--color_primary);
     scale: 1.2;
-    margin: 0 1em;
-    align-content: center;
+    margin: 0 1vw;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* lista */
-.component-p-g, .list-p-g{
+.component-p-g{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+
+.list-p-g{
+    grid-column: 2;
     display: flex;
+    align-items: center;
 }
 .list-p-g{
     flex-direction: row;
@@ -38,8 +50,7 @@
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     flex: 1;
-    justify-content: space-evenly;
-    gap: 2.5rem;
+    gap: 2vw;
 }
 
 /* oculta barra de scroll */
