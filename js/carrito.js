@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //   const headerNavBar = document.querySelector("#header");
   const mainContent = document.querySelector(".main");
   const footer = document.querySelector("#footer");
+  const increaseButtons = document.querySelectorAll(".increase-btn");
+  const decreaseButtons = document.querySelectorAll(".decrease-btn");
 
   // Abrir la solapa del carrito al hacer clic en el icono del carrito
   shoppingCartIcon.addEventListener("click", function () {
@@ -14,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.classList.toggle("blur");
     footer.classList.toggle("blur");
   });
+
   // Cerrar la solapa del carrito al hacer clic en el botón de cierre
   closeBtnShopping.addEventListener("click", function () {
     shoppingCartSidebar.classList.remove("open");
@@ -21,5 +24,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // headerNavBar.classList.toggle("blur");
     mainContent.classList.toggle("blur");
     footer.classList.toggle("blur");
+  });
+
+  //Incrementa el numero de la cantidad
+  increaseButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const quantityElement =
+        button.parentElement.querySelector(".quantity-number");
+      let quantity = parseInt(quantityElement.textContent);
+      quantity++;
+      quantityElement.textContent = quantity;
+    });
+  });
+  //Decrementa el numero de la cantidad
+  decreaseButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const quantityElement =
+        button.parentElement.querySelector(".quantity-number");
+      let quantity = parseInt(quantityElement.textContent);
+      if (quantity > 1) {
+        quantity--;
+        quantityElement.textContent = quantity;
+      }
+    });
   });
 });
