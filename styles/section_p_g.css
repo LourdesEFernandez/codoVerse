@@ -149,4 +149,12 @@
     .item-p-g{
         width: 45vw;
     }
+
+    .m-list-game{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .m-card-game{
+        border-radius: 1px;
+    }
 }
