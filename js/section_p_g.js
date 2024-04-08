@@ -33,7 +33,7 @@ previousBtnG.addEventListener("click", () => {
 const itemSection = document.querySelector("#show-list");
 const listGame = document.querySelector("#list-game");
 
-const show = () => listGame.style.display = "grid";
+const show = () => listGame.style.display = "flex";
 
 itemSection.addEventListener("click", show);
 

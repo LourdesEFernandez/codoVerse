@@ -76,6 +76,7 @@
 #list-game, .m-list-game{
     width: 80vw;
     height: 68vh;
+    display: flex;
     overflow-y: auto;
     flex-wrap: wrap;
     gap: 10px;
