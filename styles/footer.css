@@ -162,6 +162,7 @@ main{
     --color_shadow_ft:rgba(106, 93, 138, 0.5);
 }
 
+/* estilos para tablet */
 @media screen and (max-width:768px){
     #copyright{
         padding-bottom: .5em;
@@ -181,10 +182,10 @@ main{
     }
 
     #about{
-        padding: 0 2vw;
         margin: 2vh 0;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        gap: 1vw;
     }
 
     #ft-title{
@@ -221,7 +222,7 @@ main{
         box-shadow: 10px 10px 10px var(--color_shadow_ft);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .ft-a{
@@ -235,7 +236,7 @@ main{
     .ft-list{
         display: flex;
         justify-content: center;
-        gap: 6vw;
+        gap: 5vw;
     }
     .social-net{
         padding: 1.5vh 0;
@@ -246,6 +247,7 @@ main{
     }
 }
 
+/* estilos para celulares */
 @media screen and (max-width:425px) {
     .list-info{
         width: 40vw;

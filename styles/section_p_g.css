@@ -78,11 +78,12 @@
     height: 68vh;
     overflow-y: auto;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
-    display: none;
+    /* display: none; */
+
 }
 
 .m-list-game::-webkit-scrollbar{
@@ -97,6 +98,8 @@
     border-radius: 10px;
 
     background-color: var(--bg-card-game);
+
+    width: 15vw;
 }
 
 .m-data-game{
@@ -122,6 +125,7 @@
     font-weight: 300;
 }
 
+/* pantalla de tablet */
 @media screen and (max-width:768px){
     
     .fa-chevron-left, .fa-chevron-right{
@@ -149,5 +153,33 @@
     }
     .item-p-g{
         width: 45vw;
+    }
+
+    .m-list-game{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 2vh 0;
+    }
+
+    .m-card-game{
+        border-radius: 1px;
+        height: auto;
+        min-width: 25vw;
+        border-radius: 10px;
+    }
+} 
+
+/* celulares */
+@media screen and (max-width:425px) {
+    .m-card-game{
+        min-width: 35vw;
+    }
+
+    .m-data-game{
+        font-size: small;
+        padding: 0 1.5vw;
     }
 }
