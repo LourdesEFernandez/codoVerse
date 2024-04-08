@@ -9,7 +9,6 @@ main{
 
 #footer{
     width: 100%;
-    height: 42vh;
     background-color: var(--color_primary);
     padding: 1vh;
     display: flex;
@@ -28,23 +27,48 @@ main{
 
 #ft-title{
     font-family: var(--font_title_two);
-    font-size: 1.25em;
+    font-size: 1.4em;
     font-weight: 500;
-    margin-top: 0.2em;
+    margin: 2vh 0 3vh 0;
 }
 
 #about{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4em;
+    padding: 0 3vw;
+}
+
+:root{
+    --color_shadow_card:rgba(68, 57, 95, 0.5);
 }
 
 .card-info{
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: .2rem;
+    padding: 1vh 1vw;
     margin: 0 auto;
+    border: 1px solid var(--color_cuaternary);
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+.card-info:hover{
+    scale: 1.1;
+    box-shadow: 0px 6px 15px var(--color_secondary);
+
+}
+
+.social-net:hover{
+    cursor: pointer;
+
+    .icon{
+        color: var(--color_secondary);
+    }
+    .ft-a{
+        color: var(--color_secondary);
+    }
+
 }
 
 .foto{
@@ -58,7 +82,7 @@ main{
 .list-info {
     margin: 0 auto;
     list-style: none;
-    padding-top: .3em;
+    padding-top: 1vh;
 }
 
 .name{
@@ -67,23 +91,28 @@ main{
     list-style: none;
 }
 
+.ft-list{
+    display: flex;
+    margin: 1.1vh;
+    gap: 1.1vw;
+}
+
 .social-net{
     font-size: 0.75em;
     display: flex;
-    justify-content:  start;
-    padding-bottom: 2.5%;
-    gap: .3em;
+    gap: .3vw;
+    cursor: pointer;
 }
 
 .icon{
-    width: 1.2em;
-    height: 1em;
+    scale: 1.1;
     color: var(--color_cuaternary);
 }
 
+
 #copyright{
     font-size: .8em;
-    padding-top: .2em;
+    padding: 1vh 0;
 }
 
 .ft-a{
@@ -91,14 +120,15 @@ main{
     color: var(--color_cuaternary);
 }
 
+
 .push{
-    width: 1.2em;
-    height: 1em;
+    width: 2vw;
+    height: 2vh;
     color: var(--color_secondary);
     rotate: -90deg;
-    /* margin: .4rem; */
+    /* margin: 1vw 0; */
     position: relative;
-    left: calc(100% - 1.8rem);
+    left: calc(100% - 2vw);
     cursor: pointer;
     animation-duration: 10s;
     animation-name: animationButton;
@@ -122,6 +152,14 @@ main{
 }
 }
 
+:root{
+    --bg_color_ft:rgba(68, 57, 95, 0.2);
+    --color_info:rgba(160, 107, 233, 0.5);
+    --border_ft:#6a5d8a33;
+    --color_shadow_ft:rgba(106, 93, 138, 0.5);
+}
+
+/* estilos para tablet */
 @media screen and (max-width:768px){
     #copyright{
         padding-bottom: .5em;
@@ -131,36 +169,51 @@ main{
         height: auto;
         padding: 0;
     }
-
-    #about{
-        flex-wrap: wrap;
-        /* justify-content: left; */
-        padding: .5rem;
-    }
-
-    #ft-title{
+    
+    .ft-text{
         color: var(--color_cuaternary);
     }
 
+    #copyright{
+        padding-bottom: 2vh;
+    }
+
+    #about{
+        margin: 2vh 0;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+
+    #ft-title{
+        padding: 1vh 0;
+    }
+
     .card-info{
-        flex-direction: row;
-        padding: .5rem;
+        padding: 1vh 0;
+        border: none;
+        box-shadow: none;
     }
 
     .foto{
-        width: 65px;
-        height: 65px;
-        position: relative;
-        left: 13%;
-        margin: auto;
+        display: none;
+    }
+
+    .push{
+        display: none !important;
     }
 
     .list-info{
-        width: 200px;
-        height: 70px;
-        padding: .5em 2.5em;
-        background-color: var(--color_cuaternary);
-        border-radius: 1em;
+        color: var(--color_secondary);
+        height: 15vh;
+        width: 23vw;
+        background-color: var(--bg_color_ft);
+        border-radius: 10px;
+        border: 1px solid var(--border_ft);
+        box-shadow: 10px 10px 10px var(--color_shadow_ft);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .ft-a{
@@ -168,16 +221,28 @@ main{
     }
 
     .name{
-        color: var(--color_primary);
+        color: var(--color_info);
     }
 
     .ft-list{
         display: flex;
         justify-content: center;
-        gap: .5rem;
+        gap: 5vw;
+    }
+    .social-net{
+        padding: 1.5vh 0;
     }
     .icon{
         scale: 1.3;
-        color: var(--color_primary);
+        color: var(--color_secondary);
     }
+}
+
+/* estilos para celulares */
+@media screen and (max-width:425px) {
+    .list-info{
+        width: 40vw;
+        height: 16vh;
+    }
+    
 }

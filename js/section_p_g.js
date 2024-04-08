@@ -28,3 +28,13 @@ previousBtnG.addEventListener("click", () => {
     contentListg.scrollLeft -= 350;
 }); 
 
+// mostrar lista
+
+const itemSection = document.querySelector("#show-list");
+const listGame = document.querySelector("#list-game");
+
+const show = () => listGame.style.display = "grid";
+
+itemSection.addEventListener("click", show);
+
+// itemSection.removeEventListener("click", show);
