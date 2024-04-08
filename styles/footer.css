@@ -50,9 +50,6 @@ main{
     margin: 0 auto;
     border: 1px solid var(--color_cuaternary);
     border-radius: 10px;
-<<<<<<< HEAD
-    box-shadow: 10px 10px 10px var(--color_shadow_card);
-=======
     transition: all 300ms;
 }
 
@@ -71,7 +68,7 @@ main{
     .ft-a{
         color: var(--color_secondary);
     }
->>>>>>> Lourdes
+
 }
 
 .foto{
