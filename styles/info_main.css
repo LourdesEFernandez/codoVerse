@@ -8,7 +8,7 @@
     height: auto;
     margin: 5vh auto;
     position: relative;
-    padding: 1.8rem;
+    padding: 3.5vh 2vw;
 
     font-family: var(--font_text);
     color: var(--text_color);
@@ -82,8 +82,8 @@
 }
 
 #conteiner-img-game{
-    width: 18vw;
-    min-height: 55vh;
+    min-width: 22vw;
+    min-height: 100%;
     background-image: url("../assets/images/assassin\'s_creed_valhalla.jpeg");
     background-position: center;
     background-size: cover;
@@ -177,7 +177,7 @@
     }
 
     .conteiner-info-main{
-        padding: 4vh 2vw;
+        padding: 4vh 1vw;
         margin: 0 auto;
         background-color: transparent;
 
@@ -188,6 +188,7 @@
     }
 
     #conteiner-img-game{
+        min-height: 45vh;
         width: 100% ; 
 
         grid-column: 1 / 5;
