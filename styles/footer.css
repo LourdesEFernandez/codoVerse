@@ -207,15 +207,9 @@ main{
     }
 
     .list-info{
-<<<<<<< HEAD
-        color: var(--color_info);
-        height: auto;
-        padding: 3vh 2vw;
-=======
         color: var(--color_secondary);
         height: 15vh;
         width: 23vw;
->>>>>>> Lourdes
         background-color: var(--bg_color_ft);
         border-radius: 10px;
         border: 1px solid var(--border_ft);
