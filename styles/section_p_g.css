@@ -125,6 +125,7 @@
     font-weight: 300;
 }
 
+/* pantalla de tablet */
 @media screen and (max-width:768px){
     
     .fa-chevron-left, .fa-chevron-right{
@@ -170,6 +171,7 @@
     }
 } 
 
+/* celulares */
 @media screen and (max-width:425px) {
     .m-card-game{
         min-width: 35vw;
