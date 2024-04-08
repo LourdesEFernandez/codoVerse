@@ -9,6 +9,9 @@
 /* Estilos navbar */
 @import url(./navbar.css);
 
+/* Estilos carrito */
+@import url(./carrito.css);
+
 /* footer */
 @import url(footer.css);
 

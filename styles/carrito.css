@@ -1,0 +1,154 @@
+.shopping-cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px; /* Inicialmente oculto a la derecha */
+  height: 100%;
+  width: 280px; /* Ancho de la solapa cuando esté abierta */
+  background-color: var(--color_cuaternary); /* Color principal */
+  z-index: 1000; /* Asegurar que esté encima de otros elementos */
+  transition: right 0.3s ease; /* Transición suave solo para la posición */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 65px;
+}
+
+.shopping-cart-sidebar.open {
+  right: 0; /* Desplazamos la solapa a la posición correcta (arriba hacia la derecha) */
+}
+
+.close-btn-shopping-cart {
+  font-size: 1.5em;
+  color: var(--color_secondary);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  padding-top: 2.25px;
+  padding-left: 11.5px;
+}
+
+.close-btn-shopping-cart::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: var(--color_secondary) solid 0.3rem;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  position: absolute;
+  left: 1.5px;
+  top: 6px;
+  z-index: -1;
+}
+
+.close-btn-container-shopping-cart {
+  font-size: 25px;
+  position: absolute;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  /* Otros estilos */
+  transition: filter 0.3s ease; /* Agregamos una transición suave */
+}
+
+.blur {
+  filter: blur(5px); /* Aplicamos un filtro de desenfoque */
+}
+
+/*CSS de los productos del carrito*/
+.shopping-cart-items {
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  flex-direction: column;
+  border-top: 3px solid var(--color_secondary); /* Línea separadora en la parte superior */
+  padding-top: 15px; /* Espacio entre la línea separadora y el primer producto */
+}
+
+.product {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--color_secondary); /* Línea separadora */
+  padding-bottom: 15px; /* Espacio entre productos */
+}
+
+.product-container-upper {
+  display: flex;
+  flex-grow: 1; /* Ocupa todo el espacio disponible en la dirección principal (vertical) */
+  /* margin-bottom: 0.2rem; */
+}
+
+.product-container-lower {
+  display: flex;
+}
+
+.product-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price p {
+  color: var(--text_color_secondary);
+  font-size: large;
+  display: flex;
+  align-items: flex-end;
+}
+
+.product-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Para que la imagen sea circular */
+  margin-right: 10px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h3 {
+  margin: 0;
+  color: var(--text_color_secondary);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.quantity button {
+  background-color: transparent;
+  color: var(--color_secondary);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.quantity .quantity-number {
+  margin: 0 10px;
+}
+
+.deleteOfCart {
+  background-color: transparent;
+  color: var(--color_secondary);
+  border: none;
+  border-radius: 50%; /* Para que el botón sea circular */
+  padding: 5px;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.shopping-cart-items .product:not(:last-child) {
+  border-bottom: 3px solid var(--color_secondary); /* Línea separadora debajo de los productos, excepto el último */
+}
