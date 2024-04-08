@@ -26,14 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     sidebar.classList.remove("open");
     // Agregamos o quitamos la clase 'blur'
     // headerNavBar.classList.toggle("blur");
-    mainContent.classList.toggle("blur");
-    footer.classList.toggle("blur");
+    // mainContent.classList.toggle("blur");
+    // footer.classList.toggle("blur");
   });
 
   // Cerrar la solapa del carrito al hacer clic en el botón de cierre
   closeBtnShopping.addEventListener("click", function () {
     shoppingCartSidebar.classList.remove("open");
-
     // Agregamos o quitamos la clase 'blur'
     // headerNavBar.classList.toggle("blur");
     mainContent.classList.toggle("blur");
