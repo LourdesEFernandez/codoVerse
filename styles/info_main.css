@@ -43,7 +43,7 @@
 }
 .c-button{
     border-radius: 5px;
-    min-width: 20vw;
+    min-width: 15vw;
     min-height: 6vh;
     background-color:var(--color_secondary);
     display: flex;
