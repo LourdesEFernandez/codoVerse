@@ -73,15 +73,13 @@
     box-shadow: var(--shadow);
 }
 
-.m-list-game{
+#list-game, .m-list-game{
     width: 80vw;
     height: 68vh;
     overflow-y: auto;
-    margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
+    margin: auto;
     display: none;
 
 }
