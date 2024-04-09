@@ -13,6 +13,16 @@
   align-items: center;
   border-top-left-radius: 65px;
   font-size: small;
+  overflow-y: auto; /* Agregamos scroll vertical */
+}
+
+.shopping-cart-sidebar::-webkit-scrollbar {
+  width: 0.2rem;
+  background: var(--color_tertiary);
+}
+.shopping-cart-sidebar::-webkit-scrollbar-thumb {
+  background: var(--color_secondary);
+  border-radius: 1rem;
 }
 
 .shopping-cart-sidebar.open {
