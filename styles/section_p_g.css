@@ -22,7 +22,7 @@
 /* iconos */
 
 .fa-chevron-left, .fa-chevron-right{
-    fill: var(--color_primary);
+    color: var(--color_secondary);
     scale: 1.2;
     margin: auto 3vw;
     cursor: pointer;
