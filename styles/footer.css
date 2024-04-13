@@ -226,10 +226,11 @@ main{
     .ft-list{
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 5vw;
     }
     .social-net{
-        padding: 1.5vh 0;
+        /* padding: 1.5vh 0; */
     }
     .icon{
         scale: 1.3;
