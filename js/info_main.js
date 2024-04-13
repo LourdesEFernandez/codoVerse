@@ -1,15 +1,11 @@
-const likeBtn = document.querySelector(".heart");
-let heart = document.querySelector("#icon-heart");
+let isLike = false; 
 
-let clicked = false;
-
-likeBtn.addEventListener("click", () => {
-    if (!clicked){
-        heart.innerHTML = `<i class="fa-solid fa-heart"></i>`;
-        clicked = true;
-    } else{
-        heart.innerHTML = `<i class="fa-regular fa-heart"></i>`;
-        clicked = false;
+function like() {
+    if (isLike == false) {
+        document.getElementById("btn-add-fav").style.display = "block";
+        isLike = true;
+    } else {
+        document.getElementById("btn-add-fav").style.display = "none";
+        isLike = false;
     }
-});
-
+}
