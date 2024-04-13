@@ -176,7 +176,7 @@
 
 @media screen and (max-width: 425px) {
     #form-log{
-        width: 50vw;
+        width: 60vw;
     }
     #title-log{
         font-size: 1.5em;
@@ -198,4 +198,15 @@
         font-size: small;
     }
 
+}
+
+@media screen and (max-width:320px) {
+    #form-log{
+        width: 80vw;
+        padding: 1vh 4vw;
+    }
+
+    .icon-log-r{
+        scale: 1.3;
+    }
 }
