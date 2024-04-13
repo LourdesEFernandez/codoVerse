@@ -3,41 +3,12 @@
     --color_boton:#010101;
 }
 #body-log{
-    position: relative;
     background: 
     linear-gradient(
         var(--color_primary),
         var(--color_secondary)
     );
     overflow: hidden;
-}
-.bg-img{
-    position: absolute;
-    z-index: -1;
-    opacity: .9;
-    width: 20vw;
-    height: 90vh;
-    background-size: cover;
-}
-
-#img-1{
-    rotate: 25deg;
-    width: 25vw;
-    top: -20%;
-}
-
-#img-3{
-    width: 40vw;
-    height: 100vh;
-    top: 20%;
-    right: -20%;
-    rotate: 20deg;
-}
-
-#img-4{
-    left: -5%;
-    bottom: -20%;
-    rotate: -30deg;
 }
 
 #header-log{
@@ -82,13 +53,13 @@
 }
 
 #form-log{
-    width: 23vw;
+    /* width: 23vw; */
     height: 60vh;
     display: flex;
     flex-direction: column;
     background-color: var(--color_form);
     border-radius: 12px;
-    padding: 1vh 2vw 2vh;
+    padding: 2vh 2vw;
     gap: 1vh;
 }
 
@@ -116,7 +87,7 @@
 
 #icons-log{
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
     justify-content: space-between;
 }
 
@@ -156,27 +127,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    #icons-log{
+        width: auto;
+        gap: 2vw;
+    }
     #form-log{
-        width: 35vw;
-    }
-    #img-1{
-        width: 35vw;
-    }
-    #img-4{
-        width: 30vw;
-    }
-    
-    #img-3{
-        width: 35vw;
-    }
-    .bg-img{
-        display: none;
+        width: 40vw;
     }
 }
 
 @media screen and (max-width: 425px) {
     #form-log{
-        width: 60vw;
+        width: 70vw;
     }
     #title-log{
         font-size: 1.5em;
@@ -184,12 +146,8 @@
     .text-log{
         font-size: small;
     }
-    .fa-brands{
-        scale:1;
-        padding: 8px;
-    }
     #questions-log{
-        flex-direction: column;
+        gap: 10vw;
     }
     .qst{
         font-size: small;
