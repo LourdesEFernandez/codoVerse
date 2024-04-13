@@ -9,7 +9,6 @@
         var(--color_secondary)
     );
     overflow: hidden;
-    position: relative;
 }
 
 #header-log{
@@ -127,7 +126,7 @@
 }
 
 #header-log, #main-log{
-    position: absolute;
+    position: relative;
 }
 #main-log{
     top: 10%;
@@ -135,6 +134,7 @@
 
 .circles-log{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
