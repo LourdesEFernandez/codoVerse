@@ -4,22 +4,41 @@
 }
 #body-log{
     position: relative;
-    background-image: 
+    background: 
     linear-gradient(
         var(--color_primary),
         var(--color_secondary)
     );
+    overflow: hidden;
+}
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+    width: 20vw;
+    height: 90vh;
+    background-size: cover;
 }
 
-/* #body-log::before{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-image:
-    url("../../assets/images/elden_ring.jpg"),
-    src("../assets/images/final_fantasy_VII_remake.jpg"),
-    url("../assets/images/helldivers_2.jpg");
-} */
+#img-1{
+    rotate: 25deg;
+    width: 25vw;
+    top: -20%;
+}
+
+#img-3{
+    width: 40vw;
+    height: 100vh;
+    top: 20%;
+    right: -20%;
+    rotate: 20deg;
+}
+
+#img-4{
+    left: -5%;
+    bottom: -20%;
+    rotate: -30deg;
+}
 
 #header-log{
     width: 100%;
@@ -41,6 +60,8 @@
 }
 
 #title-log{
+    color: var(--color_secondary);
+    font-size: 1.8em;
     font-family: var(--font_title);
     padding-bottom: 2vh;
     cursor: default;
@@ -51,13 +72,7 @@
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    /* justify-content: space-evenly; */
     align-items: center;
-}
-
-#title-log{
-    color: var(--color_secondary);
-    font-size: 1.8em;
 }
 
 .text-log{
@@ -138,4 +153,49 @@
     font-size: medium;
     color: var(--text_color);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #form-log{
+        width: 35vw;
+    }
+    #img-1{
+        width: 35vw;
+    }
+    #img-4{
+        width: 30vw;
+    }
+    
+    #img-3{
+        width: 35vw;
+    }
+    .bg-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #form-log{
+        width: 50vw;
+    }
+    #title-log{
+        font-size: 1.5em;
+    }
+    .text-log{
+        font-size: small;
+    }
+    .fa-brands{
+        scale:1;
+        padding: 8px;
+    }
+    #questions-log{
+        flex-direction: column;
+    }
+    .qst{
+        font-size: small;
+    }
+    #btn-send-log{
+        font-size: small;
+    }
+
 }
