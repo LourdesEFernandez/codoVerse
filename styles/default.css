@@ -17,3 +17,6 @@
 
 /* pagina de inicio de sesion */
 @import url(login_page.css);
+
+/* pagina que muestra los juegos por cateforía */
+@import url(list_game.css);
