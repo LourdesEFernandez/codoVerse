@@ -197,6 +197,7 @@
     #conteiner-img-game{
         width: 100% ; 
         min-height: 40vh;
+        background-position: top;
         grid-column: 1 / 5;
         grid-row: 1;
     }
