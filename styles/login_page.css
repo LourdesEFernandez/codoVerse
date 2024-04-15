@@ -31,11 +31,17 @@
 }
 
 #title-log{
-    color: var(--color_secondary);
     font-size: 1.8em;
     font-family: var(--font_title);
     padding-bottom: 2vh;
     cursor: default;
+}
+#title-log a{
+    text-decoration: none;
+    color: var(--color_secondary);
+}
+#title-log a:active{
+    color: var(--color_secondary);
 }
 
 #main-log{
