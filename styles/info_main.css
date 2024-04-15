@@ -132,6 +132,7 @@
 #subtitle-i-m{
     font-weight: 400;
     font-size: 1em;
+    margin-top: 1vh;
 }
 
 #data-sheet-i-m{
@@ -146,17 +147,6 @@
     animation-duration: 650ms;
     animation-name: palp;
     cursor: pointer;
-}
-@keyframes palp {
-    from{
-        scale: 1;
-    }
-    50%{
-        scale: 1.1;
-    }
-    to{
-        scale: 1;
-    }
 }
 
 #b-add-cart:hover{
@@ -176,6 +166,16 @@
     to{
         scale: 1;
     }
+}
+
+.btn-info{
+    background-color: transparent;
+    border: none;
+    color: var(--text_color);
+    font-family: var(--font_text);
+    text-decoration: underline;
+    display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width:768px) {

@@ -26,6 +26,7 @@
     scale: 1.2;
     margin: auto 3vw;
     cursor: pointer;
+    background-color: transparent;
 }
 
 /* lista */
