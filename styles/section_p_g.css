@@ -59,6 +59,10 @@
     scale: 1.2;
 }
 
+.item-p-g a{
+    text-decoration: none;
+}
+
 .name-p-g{
     color: var(--text_color_secondary);
     font-family: var(--font_text);
