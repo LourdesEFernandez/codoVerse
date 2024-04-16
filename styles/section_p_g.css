@@ -1,6 +1,5 @@
 :root{
     --shadow:0px 6px 4px var(--color_primary);
-    --bg-card-game:rgba(204, 204, 204, 0.1);
 }
 
 .section-p-g{

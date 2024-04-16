@@ -1,82 +1,91 @@
-
-.m-list-game{
-    width: 80vw;
-    height: 68vh;
-    overflow-y: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    display: none;
-
+:root{
+    --bg_color:#dddddd;
+    --color_var:#a06be9;
+    --shadow-card-2:rgba(160, 107, 233,.8);
 }
 
-.m-list-game::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar{
+    background: var(--bg_color);
+    width: .5vw;
 }
 
-.m-card-game{
-    padding: 1.5vh .3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body::-webkit-scrollbar-thumb{
+    background: var(--color_var);
     border-radius: 10px;
-
-    background-color: var(--bg-card-game);
-
-    width: 15vw;
 }
 
-.m-data-game{
+#body{
+    background-color:var(--bg_color); 
+    padding: 0 4vw;
+}
+
+#header-list-game{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+    gap: .5vw; 
+}
+
+.breadcrumb-item, .card-title, .card-text{
     font-family: var(--font_text);
-    color: var(--text_color_secondary);
+}
+
+.breadcrumb-item a{
+    color: var(--color_var);
+    text-decoration: none;
+}
+
+.active{
     cursor: default;
 }
 
-.m-img-game{
-    width: 90%;
-    border-radius: 8px;
+.card{
+    width: 15vw;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.card:hover{
+    border: 1px solid var(--color_var);
+    box-shadow: 0 8px 8px var(--shadow-card-2);
 }
 
-.m-title-game{
-    font-size: 1.2em;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 1vh;
-} 
-
-.m-info-game{
-    font-size: 1em;
-    font-weight: 300;
+.card-img-top{
+    height: 20vh;
 }
 
-@media screen and (max-width: 768px) {
-    .m-list-game{
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding: 2vh 0;
-    }
-
-    .m-card-game{
-        border-radius: 1px;
-        height: auto;
-        min-width: 25vw;
-        border-radius: 10px;
-    }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* celulares */
-@media screen and (max-width:425px) {
-    .m-card-game{
-        min-width: 35vw;
-    }
+.card-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    .m-data-game{
-        font-size: small;
-        padding: 0 1.5vw;
-    }
+.card-title{
+    font-weight: 500;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-like{
+    border: none;
+}
+
+.fa-heart{
+    color: var(--color_var);
+    scale: 1.2;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.card-text strong{
+    font-weight: 600;
 }
