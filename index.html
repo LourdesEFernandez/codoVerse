@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/default.css" />
     <link
       rel="shortcut icon"
-      href="assets/images/CodoVerse_logo.svg"
+      href="assets/images/logo.png"
       type="image/x-icon"
     />
     <script
@@ -430,9 +430,9 @@
                 y siguiendo con los toques RPG de las últimas entregas,
                 viajaremos al siglo IX después de Cristo, llegando a una Gran
                 Bretaña invadida por vikingos. Está disponible para Xbox One,
-                Xbox Series S/S, PlayStation 4, PlayStation 5 y PC.
+                Xbox Series S/S, PlayStation 4, PlayStation 5 y PC. 
               </p>
-
+                        <button id="show-info-main" class="btn-info">... Ver más</button>
               <div id="info-2">
                 <p id="subtitle-i-m">Ficha técnica de la versión PC</p>
                 <ul id="data-sheet-i-m">
@@ -447,6 +447,7 @@
                   <li>Online: -</li>
                   <li>Requisitos PC</li>
                 </ul>
+                            <button id="hidden-info-main" class="btn-info" type="button">Ver menos</button>
               </div>
             </div>
           </div>
@@ -469,209 +470,75 @@
 
       <section id="platform" class="section-p-g">
         <header>
-          <h2 class="title-p-g">Plataforma</h2>
+          <h2 id="platforms" class="title-p-g">Plataforma</h2>
         </header>
         <div class="component-p-g">
           <i id="previous-p" class="fa-solid fa-chevron-left"></i>
 
-          <ul id="list-p" class="list-p-g">
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/iphone_plataforma.jpeg"
-                alt="IPhone imagen"
-              />
-              <p class="name-p-g">IPhone</p>
-            </li>
+                <ul id="list-p" class="list-p-g">
 
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/pc_plataforma.jpg"
-                alt="PC imagen"
-              />
-              <p class="name-p-g">PC</p>
-            </li>
-
-            <li id="show-list" class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/ps4_plataforma.jpg"
-                alt="Ps4 imagen"
-              />
-              <p class="name-p-g">Ps4</p>
-            </li>
-
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/wii_plataforma.jpeg"
-                alt="Wii imagen"
-              />
-              <p class="name-p-g">Wii</p>
-            </li>
-
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/android_plataforma.jpeg"
-                alt="Android imagen"
-              />
-              <p class="name-p-g">Android</p>
-            </li>
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/ps4_plataforma.jpg"
-                alt="Ps4 imagen"
-              />
-              <p class="name-p-g">Ps4</p>
-            </li>
-
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/wii_plataforma.jpeg"
-                alt="Wii imagen"
-              />
-              <p class="name-p-g">Wii</p>
-            </li>
-
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/android_plataforma.jpeg"
-                alt="Android imagen"
-              />
-              <p class="name-p-g">Android</p>
-            </li>
-          </ul>
-
-          <i id="next-p" class="fa-solid fa-chevron-right"></i>
-        </div>
-
-        <div id="list-game" class="m-list-game">
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/iphone_plataforma.jpeg" alt="IPhone imagen">
+                            <p class="name-p-g">IPhone</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/pc_plataforma.jpg" alt="PC imagen">
+                            <p class="name-p-g">PC</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/ps4_plataforma.jpg" alt="Ps4 imagen">
+                            <p class="name-p-g">Ps4</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/wii_plataforma.jpeg" alt="Wii imagen">
+                            <p class="name-p-g">Wii</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/android_plataforma.jpeg" alt="Android imagen">
+                            <p class="name-p-g">Android</p>
+                        </a>
+                    </li>
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/ps4_plataforma.jpg" alt="Ps4 imagen">
+                            <p class="name-p-g">Ps4</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/wii_plataforma.jpeg" alt="Wii imagen">
+                            <p class="name-p-g">Wii</p>
+                        </a>
+                    </li>
+                    
+                    <li class="item-p-g">
+                        <a href="pages/list_games.html">
+                            <img class="img-p-g" src="assets/images/android_plataforma.jpeg" alt="Android imagen">
+                            <p class="name-p-g">Android</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+                <i id="next-p" class="fa-solid fa-chevron-right"></i>
+            
             </div>
-          </div>
 
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-
-          <div class="m-card-game">
-            <img class="m-img-game" src="assets/images/elden_ring.jpg" alt="" />
-            <div class="m-data-game">
-              <h3 class="m-title-game">Elden ring</h3>
-              <p class="m-info-game">Lanzamiento: 25/2/2022</p>
-              <p class="m-info-game">Desarrollo: FromSoftware</p>
-              <p class="m-info-game">Distribución: Bandai Namco</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
       <section id="genre" class="section-p-g">
         <header>

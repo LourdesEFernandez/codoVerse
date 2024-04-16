@@ -1,0 +1,109 @@
+:root{
+    --bg_color:#dddddd;
+    --color_var:#a06be9;
+    --shadow-card-2:rgba(160, 107, 233,.8);
+}
+
+#body-games::-webkit-scrollbar{
+    background: var(--bg_color);
+    width: .6vw;
+}
+
+#body-games::-webkit-scrollbar-thumb{
+    background: var(--color_var);
+    border-radius: 10px;
+}
+
+#body-games{
+    background-color:var(--bg_color); 
+}
+
+#header-list-game{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+    gap: .5vw; 
+}
+
+.breadcrumb-item, .card-title, .card-text{
+    font-family: var(--font_text);
+}
+
+.breadcrumb-item a{
+    color: var(--color_var);
+    text-decoration: none;
+}
+
+.active{
+    cursor: default;
+}
+
+.card{
+    width: 15vw;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.card:hover{
+    border: 1px solid var(--color_var);
+    box-shadow: 0 8px 8px var(--shadow-card-2);
+}
+
+.card-img-top{
+    height: 20vh;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-like{
+    border: none;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.card-text strong{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card{
+        width: 35vw;
+    }
+
+    .card-title{
+        font-size: smaller;
+    }
+
+    .card-text{
+        font-size: .6em;
+    }
+
+    .card-img-top{
+        height: 15vh;
+    }
+}

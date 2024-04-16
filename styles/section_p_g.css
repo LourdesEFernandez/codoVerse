@@ -1,6 +1,5 @@
 :root{
     --shadow:0px 6px 4px var(--color_primary);
-    --bg-card-game:rgba(204, 204, 204, 0.1);
 }
 
 .section-p-g{
@@ -26,6 +25,7 @@
     scale: 1.2;
     margin: auto 3vw;
     cursor: pointer;
+    background-color: transparent;
 }
 
 /* lista */
@@ -53,6 +53,10 @@
     list-style: none;
     cursor: pointer;
     height: auto;
+    transition: 300ms;
+}
+.item-p-g:hover{
+    scale: 1.2;
 }
 
 .name-p-g{
@@ -71,57 +75,6 @@
     border-radius: 100%;
     background-size: contain;
     box-shadow: var(--shadow);
-}
-
-#list-game, .m-list-game{
-    width: 80vw;
-    height: 68vh;
-    display: flex;
-    overflow-y: auto;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: auto;
-    display: none;
-
-}
-
-.m-list-game::-webkit-scrollbar{
-    display: none;
-}
-
-.m-card-game{
-    padding: 1.5vh .3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-
-    background-color: var(--bg-card-game);
-
-    width: 15vw;
-}
-
-.m-data-game{
-    font-family: var(--font_text);
-    color: var(--text_color_secondary);
-    cursor: default;
-}
-
-.m-img-game{
-    width: 90%;
-    border-radius: 8px;
-}
-
-.m-title-game{
-    font-size: 1.2em;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 1vh;
-} 
-
-.m-info-game{
-    font-size: 1em;
-    font-weight: 300;
 }
 
 /* pantalla de tablet */
@@ -154,31 +107,4 @@
         width: 45vw;
     }
 
-    .m-list-game{
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding: 2vh 0;
-    }
-
-    .m-card-game{
-        border-radius: 1px;
-        height: auto;
-        min-width: 25vw;
-        border-radius: 10px;
-    }
 } 
-
-/* celulares */
-@media screen and (max-width:425px) {
-    .m-card-game{
-        min-width: 35vw;
-    }
-
-    .m-data-game{
-        font-size: small;
-        padding: 0 1.5vw;
-    }
-}

@@ -33,6 +33,7 @@
 #title-log{
     font-size: 1.8em;
     font-family: var(--font_title);
+    font-weight: 300;
     padding-bottom: 2vh;
     cursor: default;
 }

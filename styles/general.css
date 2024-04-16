@@ -22,13 +22,14 @@ body {
   --text_color_secondary: #cccccc;
 }
 
-body::-webkit-scrollbar {
-  width: 0.5rem;
-  background: var(--color_tertiary);
+body::-webkit-scrollbar{
+    width: .6vw;
+    background: var(--color_tertiary);
+    
 }
-body::-webkit-scrollbar-thumb {
-  background: var(--color_secondary);
-  border-radius: 0.5rem;
+body::-webkit-scrollbar-thumb{
+    background: var(--color_secondary);
+    border-radius: 10px;
 }
 
 /* iconos */
