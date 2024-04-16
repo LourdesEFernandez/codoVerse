@@ -53,6 +53,10 @@
     list-style: none;
     cursor: pointer;
     height: auto;
+    transition: 300ms;
+}
+.item-p-g:hover{
+    scale: 1.2;
 }
 
 .name-p-g{

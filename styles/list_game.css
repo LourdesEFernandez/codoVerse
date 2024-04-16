@@ -4,19 +4,18 @@
     --shadow-card-2:rgba(160, 107, 233,.8);
 }
 
-body::-webkit-scrollbar{
+#body-games::-webkit-scrollbar{
     background: var(--bg_color);
-    width: .5vw;
+    width: .6vw;
 }
 
-body::-webkit-scrollbar-thumb{
+#body-games::-webkit-scrollbar-thumb{
     background: var(--color_var);
     border-radius: 10px;
 }
 
-#body{
+#body-games{
     background-color:var(--bg_color); 
-    padding: 0 4vw;
 }
 
 #header-list-game{
@@ -77,15 +76,34 @@ body::-webkit-scrollbar-thumb{
     border: none;
 }
 
-.fa-heart{
-    color: var(--color_var);
-    scale: 1.2;
-}
-
 .card-text{
     font-size: small;
 }
 
 .card-text strong{
     font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card{
+        width: 35vw;
+    }
+
+    .card-title{
+        font-size: smaller;
+    }
+
+    .card-text{
+        font-size: .6em;
+    }
+
+    .card-img-top{
+        height: 15vh;
+    }
 }
