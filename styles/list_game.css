@@ -1,5 +1,6 @@
 :root{
-    --bg_color:#dddddd;
+    --bg_color:#eeeeee;
+    --bg_color_2:#e6e2f1;
     --color_var:#a06be9;
     --shadow-card-2:rgba(160, 107, 233,.8);
 }
@@ -15,7 +16,7 @@
 }
 
 #body-games{
-    background-color:var(--bg_color); 
+    background-color:var(--bg_color_2); 
 }
 
 #header-list-game{
