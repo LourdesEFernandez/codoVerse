@@ -241,7 +241,8 @@ main{
     .list-info{
         width: 40vw;
         height: 16vh;
-        background-color: var(--color_shadow_ft);
+        border: 1px solid var(--color_secondary);
+        background-color: transparent;
         box-shadow: none;
     }
 }
