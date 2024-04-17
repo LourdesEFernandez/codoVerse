@@ -178,7 +178,11 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width: 769px) {
+    
+}
+
+@media screen and (max-width: 768px) {
     #info-main{
         background-color: var(--color_primary);
     }
@@ -250,15 +254,21 @@
 @media screen and (max-width:425px) {
     #info-1{
         flex-direction: column;
-        gap: 2vh;
     }
     #info-game-i-m{
         width: 100%;
     }
     #info-2{
-        margin: 0;
+        margin: 1vw 0;
     }
     #conteiner-img-game{
         min-height: 30vh;
+    }
+    .btn-info{
+        margin: 1vw 0 3vw 0;
+        padding: 1vw;
+    }
+    .c-button{
+        height: 8vh;
     }
 }
