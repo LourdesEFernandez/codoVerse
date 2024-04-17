@@ -87,13 +87,13 @@
 
 @media screen and (max-width: 768px) {
     .card{
-        width: 24vw;
+        width: 28vw;
     }
 }
 
 @media screen and (max-width: 425px) {
     .card{
-        width: 35vw;
+        width: 44vw;
     }
 
     .card-title{
