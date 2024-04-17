@@ -55,9 +55,6 @@
     height: auto;
     transition: 300ms;
 }
-.item-p-g:hover{
-    scale: 1.2;
-}
 
 .item-p-g a{
     text-decoration: none;
@@ -79,6 +76,12 @@
     border-radius: 100%;
     background-size: contain;
     box-shadow: var(--shadow);
+}
+
+@media screen and (min-width: 769px) {
+    .item-p-g:hover{
+        scale: 1.2;
+    }
 }
 
 /* pantalla de tablet */

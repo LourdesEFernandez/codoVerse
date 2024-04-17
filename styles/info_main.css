@@ -141,33 +141,6 @@
     font-size: .9em;
 }
 
-#b-buy:hover{
-    background-color: var(--color_primary);
-    color: var(--color_secondary);
-    animation-duration: 650ms;
-    animation-name: palp;
-    cursor: pointer;
-}
-
-#b-add-cart:hover{
-    background-color: var(--color_cuaternary);
-    color: var(--text_color_secondary);
-    animation-duration: 650ms;
-    animation-name: palp;
-    cursor: pointer;
-}
-@keyframes palp {
-    from{
-        scale: 1;
-    }
-    50%{
-        scale: 1.1;
-    }
-    to{
-        scale: 1;
-    }
-}
-
 .btn-info{
     background-color: transparent;
     border: none;
@@ -179,7 +152,32 @@
 }
 
 @media screen and (min-width: 769px) {
+    #b-buy:hover{
+        background-color: var(--color_primary);
+        color: var(--color_secondary);
+        animation-duration: 650ms;
+        animation-name: palp;
+        cursor: pointer;
+    }
     
+    #b-add-cart:hover{
+        background-color: var(--color_cuaternary);
+        color: var(--text_color_secondary);
+        animation-duration: 650ms;
+        animation-name: palp;
+        cursor: pointer;
+    }
+    @keyframes palp {
+        from{
+            scale: 1;
+        }
+        50%{
+            scale: 1.1;
+        }
+        to{
+            scale: 1;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
