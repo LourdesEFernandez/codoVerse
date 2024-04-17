@@ -1,25 +1,31 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color_tertiary);
+    background-color: var(--color_tertiary);
+    z-index: -3;
+    background-image: 
+    linear-gradient(
+        var(--color_primary),
+        var(--color_tertiary) 23%
+    );
 }
 
 /* Aquí se encuentran todas las variables necesarias para el proyecto */
 :root {
-  --font_title: "Keania One", sans-serif;
-  --font_title_two: "Smooch Sans", sans-serif;
-  --font_text: "Roboto Condensed", sans-serif;
-  --color_primary: #170e1a;
-  --color_secondary: #a06be9;
-  --color_tertiary: #1f152a;
-  --color_cuaternary: #44395f;
-  --text_color: #ffffff;
-  --text_color_secondary: #cccccc;
+    --font_title: "Keania One", sans-serif;
+    --font_title_two: "Smooch Sans", sans-serif;
+    --font_text: "Roboto Condensed", sans-serif;
+    --color_primary: #170e1a;
+    --color_secondary: #a06be9;
+    --color_tertiary: #1f152a;
+    --color_cuaternary: #44395f;
+    --text_color: #ffffff;
+    --text_color_secondary: #cccccc;
 }
 
 body::-webkit-scrollbar{
