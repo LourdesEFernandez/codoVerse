@@ -241,6 +241,7 @@ main{
     .list-info{
         width: 40vw;
         height: 16vh;
+        background-color: var(--color_shadow_ft);
+        box-shadow: none;
     }
-    
 }
