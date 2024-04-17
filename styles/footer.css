@@ -220,7 +220,7 @@ main{
     }
 
     .name{
-        color: var(--color_info);
+        color: var(--color_secondary);
     }
 
     .ft-list{
