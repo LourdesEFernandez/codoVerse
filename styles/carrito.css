@@ -164,3 +164,21 @@
 .shopping-cart-items .product:not(:last-child) {
   border-bottom: 3px solid var(--color_secondary); /* Línea separadora debajo de los productos, excepto el último */
 }
+
+.checkout-button {
+  margin-top: auto; /* Hace que el botón se mueva hacia la parte inferior */
+}
+
+.checkout-button button {
+  margin-top: 50vh;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--text_color_secondary);
+  color: var(--color_primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: var(--font_text);
+}
