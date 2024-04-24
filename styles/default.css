@@ -20,3 +20,9 @@
 
 /* info main */
 @import url(info_main.css);
+
+/*main list principal */
+@import url(main_list.css);
+
+/*Banner, medios de pago, etc */
+@import url(banner.css);

@@ -1,0 +1,133 @@
+:root {
+  --font_title: "Keania One", sans-serif;
+  --font_title_two: "Smooch Sans", sans-serif;
+  --font_text: "Roboto Condensed", sans-serif;
+  --color_primary: #170E1A; 
+  --color_secondary: #A06BE9; 
+  --color_tertiary: #1F152A; 
+  --color_cuaternary: #44395F; 
+  --text_color: #FFFFFF; 
+  --text_color_secondary: #CCCCCC; 
+}
+
+/* Banner */
+.banner {
+  background-color: var(--color_primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: var(--font_text);
+  font-weight: normal;
+  font-size: 24px;
+  height: 120px; 
+}
+
+.icono-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--color_secondary);
+  margin: 5px;
+}
+
+.icono-banner i {
+  font-size: 30px; 
+  margin-bottom: 5px;
+}
+
+/* Medios de pago */
+.banner-medios {
+  background-color: var(--color_tertiary);
+  color: var(--text_color);
+  padding: 20px;
+  text-align: center;
+}
+
+h3{
+  font-family: var(--font_title_two); 
+  font-size: 32px; 
+  margin-bottom: 20px;
+}
+
+.informacion {
+  text-align: center;
+}
+
+.informacion p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icono-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icono-tarjetas i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.tarjetas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.tarjetas ul {
+  padding: 0;
+  margin: 0;
+}
+
+.tarjetas li {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Envios */
+.banner-envios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color_tertiary);
+  padding: 20px;
+}
+
+h3{
+  color: var(--color_secondary);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icono-envios {
+  text-align: center;
+  color: var(--text_color);
+}
+
+.icono-envios i {
+  font-size: 40px; 
+  margin-bottom: 10px;
+}
+
+.icono-envios p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: var(--font_text); 
+  font-size: 20px;
+}
+
+.icono-envios span {
+  font-size: 16px; 
+}
+
+
+
+
+
