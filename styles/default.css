@@ -21,8 +21,16 @@
 /* info main */
 @import url(info_main.css);
 
+<<<<<<< HEAD
 /* pagina de inicio de sesion */
 @import url(login_page.css);
 
 /* pagina que muestra los juegos por cateforía */
 @import url(list_game.css);
+=======
+/*main list principal */
+@import url(main_list.css);
+
+/*Banner, medios de pago, etc */
+@import url(banner.css);
+>>>>>>> francis
