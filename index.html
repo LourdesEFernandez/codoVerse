@@ -18,145 +18,398 @@
     <!-- Importar el archivo JavaScript -->
 </head>
 <body>
+
     <!-- header -->
     <header id="header">
         <!-- nav -->
         <nav class="navbar">
-        <div class="container">
-            <div class="logo">
+            <div class="container">
+                <div class="logo">
                 <a href="/">CODOVERSE</a>
-            </div>
-            <div class="menu">
+                </div>
+                <div class="menu">
                 <ul>
-                <li><a href="#platform">Plataforma</a></li>
-                <li><a href="#genre">Géneros</a></li>
-                <li><a href="#medios-pago">Medios de Pago</a></li>
-                <li><a href="#medios-envio">Envíos</a></li>
+                    <li><a href="#platforms">Plataforma</a></li>
+                    <li><a href="#genre">Géneros</a></li>
+                    <li><a href="#">Medios de Pago</a></li>
+                    <li><a href="#">Envíos</a></li>
                 </ul>
-            </div>
-            <div class="search-profile-cart">
+                </div>
+                <div class="search-profile-cart">
                 <div class="search">
-                <input type="text" />
-                <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" />
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="icons">
-                <a href="pages/login.html"><i class="fas fa-user"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="pages/login.html"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
-            </div>
-            <div class="hamburger-menu">
+                </div>
+                <div class="hamburger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-            </div>
-            <div class="sidebar">
+                </div>
+                <div class="sidebar">
                 <div class="close-btn-container">
-                <span class="close-btn">&times;</span>
+                    <span class="close-btn">&times;</span>
                 </div>
                 <!-- Contenido de la solapa -->
                 <div class="menu-options">
-                <p><a href="#platform">Plataforma</a></p>
-                <p><a href="#genre">Género</a></p>
-                <p><a href="#">Medios de Pago</a></p>
-                <p><a href="#">Envíos</a></p>
-                <p><a href="#" class="menu-options-shopping-cart">Carrito</a></p>
-                <p><a href="pages/login.html">Iniciar Sesión</a></p>
+                    <p><a href="#platforms">Plataforma</a></p>
+                    <p><a href="#genre">Género</a></p>
+                    <p><a href="#">Medios de Pago</a></p>
+                    <p><a href="#">Envíos</a></p>
+                    <p><a href="#" class="menu-options-shopping-cart">Carrito</a></p>
+                    <p><a href="pages/login.html">Iniciar Sesión</a></p>
                 </div>
-            </div>
-            <div class="shopping-cart-sidebar">
+                </div>
+                <div class="shopping-cart-sidebar">
                 <div class="close-btn-container-shopping-cart">
-                <span class="close-btn-shopping-cart">&times;</span>
+                    <span class="close-btn-shopping-cart">&times;</span>
                 </div>
                 <!-- Contenido de la solapa del carrito -->
                 <div class="shopping-cart-items">
-                <!-- Aquí se mostrarán los elementos agregados al carrito -->
-                <div class="product">
+                    <!-- Aquí se mostrarán los elementos agregados al carrito -->
+                    <div class="product">
                     <div class="product-container-upper">
-                    <div class="product-img">
+                        <div class="product-img">
                         <img
-                        src="./assets/images/assassin's_creed_valhalla.jpeg"
-                        alt="Assassin's Creed Valhalla"
+                            src="./assets/images/assassin's_creed_valhalla.jpeg"
+                            alt="Assassin's Creed Valhalla"
                         />
-                    </div>
-
-                    <div class="product-details">
+                        </div>
+    
+                        <div class="product-details">
                         <h3>Assassin's Creed Valhalla</h3>
                         <div class="quantity">
-                        <button class="decrease-btn">-</button>
-                        <span class="quantity-number">1</span>
-                        <button class="increase-btn">+</button>
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
                         </div>
                     </div>
-                    </div>
-
+    
                     <div class="product-container-lower">
-                    <div class="product-price">
+                        <div class="product-price">
                         <p>$20,500</p>
                         <button class="deleteOfCart">
-                        <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </button>
+                        </div>
                     </div>
                     </div>
-                </div>
-                <div class="product">
+                    <div class="product">
                     <div class="product-container-upper">
-                    <div class="product-img">
+                        <div class="product-img">
                         <img
-                        src="./assets/images/grand_theft_auto_v.jpeg"
-                        alt="GTA V"
+                            src="./assets/images/grand_theft_auto_v.jpeg"
+                            alt="GTA V"
                         />
-                    </div>
-
-                    <div class="product-details">
+                        </div>
+    
+                        <div class="product-details">
                         <h3>GTA V</h3>
                         <div class="quantity">
-                        <button class="decrease-btn">-</button>
-                        <span class="quantity-number">1</span>
-                        <button class="increase-btn">+</button>
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
                         </div>
                     </div>
-                    </div>
-
+    
                     <div class="product-container-lower">
-                    <div class="product-price">
+                        <div class="product-price">
                         <p>$15,500</p>
                         <button class="deleteOfCart">
-                        <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </button>
-                    </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-container-upper">
-                    <div class="product-img">
-                        <img
-                        src="./assets/images/elden_ring.jpg"
-                        alt="Elden Ring"
-                        />
-                    </div>
-
-                    <div class="product-details">
-                        <h3>Elden Ring</h3>
-                        <div class="quantity">
-                        <button class="decrease-btn">-</button>
-                        <span class="quantity-number">1</span>
-                        <button class="increase-btn">+</button>
                         </div>
                     </div>
                     </div>
-
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/elden_ring.jpg"
+                            alt="Elden Ring"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Elden Ring</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
                     <div class="product-container-lower">
-                    <div class="product-price">
+                        <div class="product-price">
                         <p>$50,500</p>
                         <button class="deleteOfCart">
-                        <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/assassin's_creed_valhalla.jpeg"
+                            alt="Assassin's Creed Valhalla"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$20,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/grand_theft_auto_v.jpeg"
+                            alt="GTA V"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>GTA V</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$15,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/elden_ring.jpg"
+                            alt="Elden Ring"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Elden Ring</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$50,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/assassin's_creed_valhalla.jpeg"
+                            alt="Assassin's Creed Valhalla"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$20,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/grand_theft_auto_v.jpeg"
+                            alt="GTA V"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>GTA V</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$15,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/elden_ring.jpg"
+                            alt="Elden Ring"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Elden Ring</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$50,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/assassin's_creed_valhalla.jpeg"
+                            alt="Assassin's Creed Valhalla"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$20,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/grand_theft_auto_v.jpeg"
+                            alt="GTA V"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>GTA V</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$15,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-container-upper">
+                        <div class="product-img">
+                        <img
+                            src="./assets/images/elden_ring.jpg"
+                            alt="Elden Ring"
+                        />
+                        </div>
+    
+                        <div class="product-details">
+                        <h3>Elden Ring</h3>
+                        <div class="quantity">
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity-number">1</span>
+                            <button class="increase-btn">+</button>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-container-lower">
+                        <div class="product-price">
+                        <p>$50,500</p>
+                        <button class="deleteOfCart">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        </div>
                     </div>
                     </div>
                 </div>
                 </div>
             </div>
-        </div>
         </nav>
     </header>
 
@@ -180,10 +433,9 @@
                     y siguiendo con los toques RPG de las últimas entregas,
                     viajaremos al siglo IX después de Cristo, llegando a una Gran
                     Bretaña invadida por vikingos. Está disponible para Xbox One,
-                    Xbox Series S/S, PlayStation 4, PlayStation 5 y PC.
+                    Xbox Series S/S, PlayStation 4, PlayStation 5 y PC. 
                 </p>
                 <button id="show-info-main" class="btn-info">... Ver más</button>
-                
                 <div id="info-2">
                     <p id="subtitle-i-m">Ficha técnica de la versión PC</p>
                     <ul id="data-sheet-i-m">
@@ -204,11 +456,10 @@
             </div>
 
             <!-- boton like -->
-            <button id="heart" onclick="like()"> 
-                <i  id="btn-fav" class="fa-regular fa-heart"></i>
-                <i id="btn-add-fav" class="fa-solid fa-heart"></i>
-            </button>
-
+                <button id="heart" onclick="like()"> 
+                    <i  id="btn-fav" class="fa-regular fa-heart"></i>
+                    <i id="btn-add-fav" class="fa-solid fa-heart"></i>
+    </button>
             <!-- botones para comprar y agregar carrito -->
             <div id="buttons-i-m">
                 <div id="b-buy" class="c-button">Comprar ahora</div>
@@ -218,163 +469,131 @@
                 </div>
             </div>
             </div>
-
         </section>
 
-      <section>
-        <nav>
-          <div class="opciones-menu">
-            <div class="item-menu"><a href="#">Más vendidos</a></div>
-            <div class="item-menu"><a href="#">Recomendados</a></div>
-            <div class="item-menu"><a href="#">Descuentos</a></div>
-            <div class="item-menu"><a href="#">Nuevos</a></div>
-            <div class="item-menu"><a href="#">Favoritos</a></div>
-          </div>
-        </nav>
-        <div class="tarjetas-juegos">
-            <i id="previous-p" class="fa-solid fa-chevron-left"></i>
-      
-          <nav class="juego-img">
-            <img src="/assets/images/final_fantasy_VII_remake.jpg" alt="Juego">
-            <h2>Final Fantasy VII Remake</h2>
-            <p>$15,499</p>
-            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-          </nav>
-      
-          <nav class="juego-img">
-            <img src="/assets/images/assassin's_creed_valhalla.jpeg" alt="Juego">
-            <h2>Assassin's Creed Valhalla</h2>
-            <p>$15,499</p>
-            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-          </nav>
-      
-          <nav class="juego-img">
-            <img src="/assets/images/elden_ring.jpg" alt="Juego">
-            <h2>Elder Ring</h2>
-            <p>$15,499</p>
-            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-          </nav>
-      
-          <nav class="juego-img">
-            <img src="/assets/images/grand_theft_auto_v.jpeg" alt="Juego">
-            <h2>Grand Theft Auto V</h2>
-            <p>$15,499</p>
-            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-          </nav>
-      
-          <nav class="juego-img">
-            <img src="/assets/images/red_dead_redemption_2.jpeg" alt="Juego">
-            <h2>Red Dead Redemption 2</h2>
-            <p>$15,499</p>
-            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-          </nav>
-      
-          <i id="next-p" class="fa-solid fa-chevron-right"></i>
-        </div>
-      </section>
-
-        <section id="platforms" class="section-p-g">
-            <header>
-            <h2 class="title-p-g">Plataforma</h2>
-            </header>
-
-            <div class="component-p-g">
-            <i id="previous-p" class="fa-solid fa-chevron-left"></i>
-
-            <ul id="list-p" class="list-p-g">
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/iphone_plataforma.jpeg"
-                        alt="IPhone imagen"
-                    />
-                    <p class="name-p-g">IPhone</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/pc_plataforma.jpg"
-                        alt="PC imagen"
-                        />
-                        <p class="name-p-g">PC</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/ps4_plataforma.jpg"
-                        alt="Ps4 imagen"
-                        />
-                        <p class="name-p-g">Ps4</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/wii_plataforma.jpeg"
-                        alt="Wii imagen"
-                        />
-                        <p class="name-p-g">Wii</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/android_plataforma.jpeg"
-                        alt="Android imagen"
-                        />
-                        <p class="name-p-g">Android</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/ps4_plataforma.jpg"
-                        alt="Ps4 imagen"
-                        />
-                        <p class="name-p-g">Ps4</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/wii_plataforma.jpeg"
-                        alt="Wii imagen"
-                        />
-                        <p class="name-p-g">Wii</p>
-                    </a>
-                </li>
-
-                <li class="item-p-g">
-                    <a href="pages/list_games.html">
-                        <img
-                        class="img-p-g"
-                        src="assets/images/android_plataforma.jpeg"
-                        alt="Android imagen"
-                        />
-                        <p class="name-p-g">Android</p>
-                    </a>
-                </li>
-            </ul>
-
+        <section>
+            <nav>
+            <div class="opciones-menu">
+                <div class="item-menu"><a href="#">Más vendidos</a></div>
+                <div class="item-menu"><a href="#">Recomendados</a></div>
+                <div class="item-menu"><a href="#">Descuentos</a></div>
+                <div class="item-menu"><a href="#">Nuevos</a></div>
+                <div class="item-menu"><a href="#">Favoritos</a></div>
+            </div>
+            </nav>
+            <div class="tarjetas-juegos">
+                <i id="previous-p" class="fa-solid fa-chevron-left"></i>
+        
+            <nav class="juego-img">
+                <img src="/assets/images/final_fantasy_VII_remake.jpg" alt="Juego">
+                <h2>Final Fantasy VII Remake</h2>
+                <p>$15,499</p>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </nav>
+        
+            <nav class="juego-img">
+                <img src="/assets/images/assassin's_creed_valhalla.jpeg" alt="Juego">
+                <h2>Assassin's Creed Valhalla</h2>
+                <p>$15,499</p>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </nav>
+        
+            <nav class="juego-img">
+                <img src="/assets/images/elden_ring.jpg" alt="Juego">
+                <h2>Elder Ring</h2>
+                <p>$15,499</p>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </nav>
+        
+            <nav class="juego-img">
+                <img src="/assets/images/grand_theft_auto_v.jpeg" alt="Juego">
+                <h2>Grand Theft Auto V</h2>
+                <p>$15,499</p>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </nav>
+        
+            <nav class="juego-img">
+                <img src="/assets/images/red_dead_redemption_2.jpeg" alt="Juego">
+                <h2>Red Dead Redemption 2</h2>
+                <p>$15,499</p>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </nav>
+        
             <i id="next-p" class="fa-solid fa-chevron-right"></i>
             </div>
         </section>
+
+        <section id="platforms" class="section-p-g">
+            <header>
+            <h2 class="title-p-g">Plataformas</h2>
+            </header>
+            <div class="component-p-g">
+            <i id="previous-p" class="fa-solid fa-chevron-left"></i>
+
+                    <ul id="list-p" class="list-p-g">
+
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/iphone_plataforma.jpeg" alt="IPhone imagen">
+                                <p class="name-p-g">IPhone</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/pc_plataforma.jpg" alt="PC imagen">
+                                <p class="name-p-g">PC</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/ps4_plataforma.jpg" alt="Ps4 imagen">
+                                <p class="name-p-g">Ps4</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/wii_plataforma.jpeg" alt="Wii imagen">
+                                <p class="name-p-g">Wii</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/android_plataforma.jpeg" alt="Android imagen">
+                                <p class="name-p-g">Android</p>
+                            </a>
+                        </li>
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/ps4_plataforma.jpg" alt="Ps4 imagen">
+                                <p class="name-p-g">Ps4</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/wii_plataforma.jpeg" alt="Wii imagen">
+                                <p class="name-p-g">Wii</p>
+                            </a>
+                        </li>
+                        
+                        <li class="item-p-g">
+                            <a href="pages/list_games.html">
+                                <img class="img-p-g" src="assets/images/android_plataforma.jpeg" alt="Android imagen">
+                                <p class="name-p-g">Android</p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <i id="next-p" class="fa-solid fa-chevron-right"></i>
+                
+                </div>
+
+            </section>
 
         <section id="genre" class="section-p-g">
             <header>
@@ -452,71 +671,70 @@
             </div>
         </section>
 
-    </main>
+        <!-- banner -->
 
-<!-- banner -->
-
-  <div class="banner">
-    <div class="icono-banner">
-      <i class="fas fa-lock"></i>
-      <span>Sitio seguro</span>
-    </div>
-    <div class="icono-banner">
-      <i class="fas fa-shield"></i>
-      <span>Compras seguras</span>
-    </div>
-    <div class="icono-banner">
-        <i class="fab fa-github"></i>
-       <span><a href="#">Mira el repositorio</a></span>
-    </div>
-    <div class="icono-banner">
-      <i class="fas fa-map-marker-alt"></i>
-      <span>Ubicación</span>
-    </div>
-  </div>
-  
-  <div id="medios-pago" class="banner-medios">
-    <h5>Medios de pago</h5>
-    <div class="informacion">
-      <p>Pagos con tarjetas de crédito y débito</p>
-    </div>
-    <div class="icono-tarjetas">
-      <i class="fa-brands fa-cc-visa"></i>
-      <i class="fa-brands fa-cc-mastercard"></i>
-      <i class="fa-brands fa-cc-amex"></i>
-      <i class="fa-brands fa-cc-paypal"></i>
-      <i class="fa-solid fa-credit-card"></i> </div>
-    </div>
-  
-  <div id="medios-envio" class="banner-envios">
-    <h5>Envios</h5>
-    <div class="contenedor-envios">
-      <div class="icono-envios">
-        <div>
-          <i class="fas fa-truck"></i>
-          <p>Envío gratis</p>
-          <span>a partir de $50,000</span>
+        <div class="banner">
+            <div class="icono-banner">
+            <i class="fas fa-lock"></i>
+            <span>Sitio seguro</span>
+            </div>
+            <div class="icono-banner">
+            <i class="fas fa-shield"></i>
+            <span>Compras seguras</span>
+            </div>
+            <div class="icono-banner">
+                <i class="fab fa-github"></i>
+            <span><a href="#">Mira el repositorio</a></span>
+            </div>
+            <div class="icono-banner">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ubicación</span>
+            </div>
         </div>
-        
-      </div>
-      <div class="icono-envios">
-        <i class="fas fa-store"></i>
-        <p>Retiro gratis</p>
-        <span>en tienda</span>
-      </div>
-      <div class="icono-envios">
-        <i class="fas fa-redo"></i>
-        <p>Cambios y devoluciones</p>
-        <span>sin costo</span>
-      </div>
-    </div>
-  </div>
 
+        <div id="medios-pago" class="banner-medios">
+            <h5>Medios de pago</h5>
+            <div class="informacion">
+            <p>Pagos con tarjetas de crédito y débito</p>
+            </div>
+            <div class="icono-tarjetas">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-solid fa-credit-card"></i> </div>
+        </div>
+
+        <div id="medios-envio" class="banner-envios">
+            <h5>Envios</h5>
+            <div class="contenedor-envios">
+            <div class="icono-envios">
+                <div>
+                <i class="fas fa-truck"></i>
+                <p>Envío gratis</p>
+                <span>a partir de $50,000</span>
+                </div>
+                
+            </div>
+            <div class="icono-envios">
+                <i class="fas fa-store"></i>
+                <p>Retiro gratis</p>
+                <span>en tienda</span>
+            </div>
+            <div class="icono-envios">
+                <i class="fas fa-redo"></i>
+                <p>Cambios y devoluciones</p>
+                <span>sin costo</span>
+            </div>
+            </div>
+        </div>
+
+    </main>
 
     <!-- footer -->
     <footer id="footer">
-      <h4 class="ft-text" id="ft-title">Sobre el equipo de desarrollo</h4>
-      <div id="about">
+        <h4 class="ft-text" id="ft-title">Sobre el equipo de desarrollo</h4>
+        <div id="about">
 
             <div class="card-info">
                 <div class="foto">
@@ -624,3 +842,4 @@
     <script src="./js/info_main.js"></script>
 </body>
 </html>
+
