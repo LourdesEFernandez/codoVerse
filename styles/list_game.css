@@ -17,7 +17,6 @@
 
 #body-games{
     background-color:var(--bg_color_2); 
-    padding: 3vh 0;
 }
 
 #header-list-game{
@@ -26,7 +25,6 @@
     display: flex;
     align-items: end;
     gap: .5vw; 
-    
 }
 
 .breadcrumb-item, .card-title, .card-text{
@@ -36,10 +34,6 @@
 .breadcrumb-item a{
     color: var(--color_var);
     text-decoration: none;
-}
-
-.breadcrumb-item{
-    font-size: 1.2em;
 }
 
 .active{
@@ -102,10 +96,6 @@
 
 @media screen and (max-width: 425px) {
     
-    #header-list-game{
-        padding: 0 3vw;
-    }
-
     #main-game{
         padding: 2vw 0 4vw 0;
     }

@@ -26,9 +26,3 @@
 
 /* pagina que muestra los juegos por cateforía */
 @import url(list_game.css);
-
-/*main list principal */
-@import url(main_list.css);
-
-/*Banner, medios de pago, etc */
-@import url(banner.css);
