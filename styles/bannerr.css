@@ -1,0 +1,116 @@
+.banner {
+    background-color: var(--color_primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: var(--font_text);
+    font-weight: normal;
+    font-size: 24px;
+    height: 120px; 
+  }
+  
+  .icono-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color_secondary);
+    margin: 5px;
+  }
+  
+  .icono-banner i {
+    font-size: 30px; 
+    margin-bottom: 5px;
+  }
+  
+  /* Medios de pago */
+  .banner-medios {
+    background-color: var(--color_tertiary);
+    color: var(--text_color);
+    text-align: center;
+  }
+  
+  h5 {
+    font: var(--font_title_two);
+    color: var(--color_secondary);
+    font-size: 2em;
+    font-style: normal;
+    margin-top: 20px;
+  }
+  
+  .informacion {
+    text-align: center;
+  }
+  
+  .informacion p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .icono-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icono-tarjetas i {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Envios */
+  .banner-envios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color_tertiary);
+    padding: 20px;
+  }
+  
+  h5 {
+    font-family: var(--font_title_two); 
+    color: var(--color_secondary);
+    font-size: 2em; 
+    font-style: normal;
+  }
+  
+  .contenedor-envios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 250px; 
+  }
+  
+  .icono-envios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text_color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .icono-envios i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+  }
+  
+  .icono-envios p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: var(--font_text);
+    font-size: 20px;
+    margin-left: 70px;
+  }
+  
+  .icono-envios span {
+    font-size: 16px;
+    margin-left: 70px;
+  }
+  
+  
