@@ -24,10 +24,15 @@
   margin-bottom: 5px;
 }
 
+.icono-banner span a{
+  text-decoration: none;
+  color: var(--color_secondary);
+}
+
 /* Medios de pago */
 .banner-medios {
   background-color: var(--color_tertiary);
-  color: var(--text_color);
+  color: var(--text_color_secondary);
   text-align: center;
 }
 
@@ -59,6 +64,7 @@ h5 {
 .icono-tarjetas i {
   font-size: 40px;
   margin-right: 10px;
+  color: var(--text_color_secondary);
 }
 
 /* Envios */
@@ -79,9 +85,8 @@ h5 {
 
 .contenedor-envios {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 250px; 
+  justify-content: space-between; 
+  width: 100%;
 }
 
 .icono-envios {
@@ -98,6 +103,7 @@ h5 {
   font-size: 40px;
   margin-bottom: 10px;
   margin-left: 70px;
+  color: var(--text_color_secondary);
 }
 
 .icono-envios p {
@@ -106,6 +112,7 @@ h5 {
   font-family: var(--font_text);
   font-size: 20px;
   margin-left: 70px;
+  color: var(--text_color_secondary);
 }
 
 .icono-envios span {
@@ -113,3 +120,37 @@ h5 {
   margin-left: 70px;
 }
 
+@media screen and (max-width:768px){
+  .icono-banner span{
+    font-size: smaller;
+    width: 50vw;
+  }
+
+  .banner{
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+  }
+  .icono-envios{
+    border: 1px solid var(--color_secondary);
+    padding: 3vw;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+  }
+  .icono-envios i,.icono-envios p,.icono-envios span{
+    margin: 0;
+    padding: 0;
+    color: var(--color_secondary);
+  }
+
+  .icono-envios div{
+    margin: auto;
+    align-content: center;
+  }
+
+  .contenedor-envios{
+    display: flex;
+    flex-direction: column;
+  }
+}
