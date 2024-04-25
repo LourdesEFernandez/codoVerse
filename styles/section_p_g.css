@@ -35,8 +35,8 @@
     align-items: center;
 }
 .list-p-g{
-    flex-direction: row;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     flex: 1;
