@@ -1,21 +1,7 @@
-/* Variables */
-:root {
-  --font_title: "Keania One", sans-serif;
-  --font_title_two: "Smooch Sans", sans-serif;
-  --font_text: "Roboto Condensed", sans-serif;
-  --color_primary: #170E1A;
-  --color_secondary: #A06BE9;
-  --color_tertiary: #1F152A;
-  --color_cuaternary: #44395F;
-  --text_color: #FFFFFF;
-  --text_color_secondary: #CCCCCC;
-}
-
 .tarjetas-juegos {
   display: flex;
   justify-content: center;
 }
-
 
 /* Estilos para las tarjetas */
 .juego-img {

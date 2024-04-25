@@ -1,16 +1,3 @@
-:root {
-  --font_title: "Keania One", sans-serif;
-  --font_title_two: "Smooch Sans", sans-serif;
-  --font_text: "Roboto Condensed", sans-serif;
-  --color_primary: #170E1A; 
-  --color_secondary: #A06BE9; 
-  --color_tertiary: #1F152A; 
-  --color_cuaternary: #44395F; 
-  --text_color: #FFFFFF; 
-  --text_color_secondary: #CCCCCC; 
-}
-
-/* Banner */
 .banner {
   background-color: var(--color_primary);
   display: flex;
@@ -41,15 +28,15 @@
 .banner-medios {
   background-color: var(--color_tertiary);
   color: var(--text_color);
-  padding: 20px;
   text-align: center;
 }
 
-h5{
-  font-family: var(--font_title_two); 
+h5 {
+  font: var(--font_title_two);
   color: var(--color_secondary);
-  font-size: 32px; 
+  font-size: 2em;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .informacion {
@@ -74,24 +61,6 @@ h5{
   margin-right: 10px;
 }
 
-.tarjetas {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.tarjetas ul {
-  padding: 0;
-  margin: 0;
-}
-
-.tarjetas li {
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
 /* Envios */
 .banner-envios {
   display: flex;
@@ -104,9 +73,8 @@ h5{
 h5 {
   font-family: var(--font_title_two); 
   color: var(--color_secondary);
-  font-size: 32px; 
+  font-size: 2em; 
   font-style: normal;
-  margin-top: 20px;
 }
 
 .contenedor-envios {
@@ -123,7 +91,7 @@ h5 {
   text-align: center;
   color: var(--text_color);
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .icono-envios i {
