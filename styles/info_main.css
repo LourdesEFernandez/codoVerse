@@ -64,10 +64,11 @@
     cursor: pointer;
     border: none;
     position: relative;
-
+    
     grid-row: 1;
     grid-column: 4;
 }
+
 #btn-add-fav, #btn-fav{
     position: absolute;
     right: 0;

@@ -29,8 +29,8 @@
             <ul>
               <li><a href="#platform">Plataforma</a></li>
               <li><a href="#genre">Géneros</a></li>
-              <li><a href="#">Medios de Pago</a></li>
-              <li><a href="#">Envíos</a></li>
+              <li><a href="#medios-pago">Medios de Pago</a></li>
+              <li><a href="#medios-envio">Envíos</a></li>
             </ul>
           </div>
           <div class="search-profile-cart">
@@ -39,7 +39,7 @@
               <button type="submit"><i class="fas fa-search"></i></button>
             </div>
             <div class="icons">
-              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="pages/login.html"><i class="fas fa-user"></i></a>
               <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </div>
           </div>
@@ -59,7 +59,7 @@
               <p><a href="#">Medios de Pago</a></p>
               <p><a href="#">Envíos</a></p>
               <p><a href="#" class="menu-options-shopping-cart">Carrito</a></p>
-              <p><a href="#">Iniciar Sesión</a></p>
+              <p><a href="pages/login.html">Iniciar Sesión</a></p>
             </div>
           </div>
           <div class="shopping-cart-sidebar">
@@ -161,59 +161,63 @@
 
     <!-- main -->
     <main class="main">
-      <section id="info-main">
-        <div class="conteiner-info-main">
-          <!-- foto del juego y precio -->
-          <div id="conteiner-img-game">
-            <div id="tag-price" class="c-button">$19.900</div>
-          </div>
-          <!-- info del juego -->
-          <div class="info-i-m">
-            <header id="title-game-i-m">Assassin's Creed Valhalla</header>
-            <div id="info-1">
-              <p id="info-game-i-m">
-                Assassin’s Creed Valhalla es la nueva entrega de Assassin’s
-                Creed de Ubisoft, la saga de acción y aventuras en mundo abierto
-                más famosa de la desarrolladora de videojuegos. En esta ocasión,
-                y siguiendo con los toques RPG de las últimas entregas,
-                viajaremos al siglo IX después de Cristo, llegando a una Gran
-                Bretaña invadida por vikingos. Está disponible para Xbox One,
-                Xbox Series S/S, PlayStation 4, PlayStation 5 y PC.
-              </p>
-
-              <div id="info-2">
-                <p id="subtitle-i-m">Ficha técnica de la versión PC</p>
-                <ul id="data-sheet-i-m">
-                  <li>Fecha de lanzamiento: 6/12/2022</li>
-                  <li>Desarrollo: Ubisoft Montreal</li>
-                  <li>Producción: Ubisoft</li>
-                  <li>Distribución: Steam</li>
-                  <li>Jugadores: 1</li>
-                  <li>Formato: Descarga</li>
-                  <li>Textos: Español</li>
-                  <li>Voces: Español</li>
-                  <li>Online: -</li>
-                  <li>Requisitos PC</li>
-                </ul>
-              </div>
+        <section id="info-main">
+            <div class="conteiner-info-main">
+            <!-- foto del juego y precio -->
+            <div id="conteiner-img-game">
+                <div id="tag-price" class="c-button">$19.900</div>
             </div>
-          </div>
-
-          <!-- boton like -->
-          <div class="heart">
-            <i class="fa-regular fa-heart"></i>
-          </div>
-
-          <!-- botones para comprar y agregar carrito -->
-          <div id="buttons-i-m">
-            <div id="b-buy" class="c-button">Comprar ahora</div>
-            <div id="b-add-cart" class="c-button">
-              <i class="fa-solid fa-plus"></i>
-              Agregar al carrito
+            <!-- info del juego -->
+            <div class="info-i-m">
+                <header id="title-game-i-m">Assassin's Creed Valhalla</header>
+                <div id="info-1">
+                <p id="info-game-i-m">
+                    Assassin’s Creed Valhalla es la nueva entrega de Assassin’s
+                    Creed de Ubisoft, la saga de acción y aventuras en mundo abierto
+                    más famosa de la desarrolladora de videojuegos. En esta ocasión,
+                    y siguiendo con los toques RPG de las últimas entregas,
+                    viajaremos al siglo IX después de Cristo, llegando a una Gran
+                    Bretaña invadida por vikingos. Está disponible para Xbox One,
+                    Xbox Series S/S, PlayStation 4, PlayStation 5 y PC.
+                </p>
+                <button id="show-info-main" class="btn-info">... Ver más</button>
+                
+                <div id="info-2">
+                    <p id="subtitle-i-m">Ficha técnica de la versión PC</p>
+                    <ul id="data-sheet-i-m">
+                    <li>Fecha de lanzamiento: 6/12/2022</li>
+                    <li>Desarrollo: Ubisoft Montreal</li>
+                    <li>Producción: Ubisoft</li>
+                    <li>Distribución: Steam</li>
+                    <li>Jugadores: 1</li>
+                    <li>Formato: Descarga</li>
+                    <li>Textos: Español</li>
+                    <li>Voces: Español</li>
+                    <li>Online: -</li>
+                    <li>Requisitos PC</li>
+                    </ul>
+                    <button id="hidden-info-main" class="btn-info" type="button">Ver menos</button>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+
+            <!-- boton like -->
+            <button id="heart" onclick="like()"> 
+                <i  id="btn-fav" class="fa-regular fa-heart"></i>
+                <i id="btn-add-fav" class="fa-solid fa-heart"></i>
+            </button>
+
+            <!-- botones para comprar y agregar carrito -->
+            <div id="buttons-i-m">
+                <div id="b-buy" class="c-button">Comprar ahora</div>
+                <div id="b-add-cart" class="c-button">
+                <i class="fa-solid fa-plus"></i>
+                Agregar al carrito
+                </div>
+            </div>
+            </div>
+
+        </section>
 
       <section>
         <nav>
@@ -274,78 +278,96 @@
         <div class="component-p-g">
           <i id="previous-p" class="fa-solid fa-chevron-left"></i>
 
-          <ul id="list-p" class="list-p-g">
+        <ul id="list-p" class="list-p-g">
+
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/iphone_plataforma.jpeg"
-                alt="IPhone imagen"
-              />
-              <p class="name-p-g">IPhone</p>
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/iphone_plataforma.jpeg"
+                    alt="IPhone imagen"
+                />
+                <p class="name-p-g">IPhone</p>
+                </a>
             </li>
 
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/pc_plataforma.jpg"
-                alt="PC imagen"
-              />
-              <p class="name-p-g">PC</p>
-            </li>
-
-            <li id="show-list" class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/ps4_plataforma.jpg"
-                alt="Ps4 imagen"
-              />
-              <p class="name-p-g">Ps4</p>
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/pc_plataforma.jpg"
+                    alt="PC imagen"
+                    />
+                    <p class="name-p-g">PC</p>
+                </a>
             </li>
 
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/wii_plataforma.jpeg"
-                alt="Wii imagen"
-              />
-              <p class="name-p-g">Wii</p>
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/ps4_plataforma.jpg"
+                    alt="Ps4 imagen"
+                    />
+                    <p class="name-p-g">Ps4</p>
+                </a>
             </li>
 
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/android_plataforma.jpeg"
-                alt="Android imagen"
-              />
-              <p class="name-p-g">Android</p>
-            </li>
-            <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/ps4_plataforma.jpg"
-                alt="Ps4 imagen"
-              />
-              <p class="name-p-g">Ps4</p>
+                <a href="pages/">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/wii_plataforma.jpeg"
+                    alt="Wii imagen"
+                    />
+                    <p class="name-p-g">Wii</p>
+                </a>
             </li>
 
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/wii_plataforma.jpeg"
-                alt="Wii imagen"
-              />
-              <p class="name-p-g">Wii</p>
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/android_plataforma.jpeg"
+                    alt="Android imagen"
+                    />
+                    <p class="name-p-g">Android</p>
+                </a>
             </li>
 
             <li class="item-p-g">
-              <img
-                class="img-p-g"
-                src="assets/images/android_plataforma.jpeg"
-                alt="Android imagen"
-              />
-              <p class="name-p-g">Android</p>
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/ps4_plataforma.jpg"
+                    alt="Ps4 imagen"
+                    />
+                    <p class="name-p-g">Ps4</p>
+                </a>
             </li>
-          </ul>
+
+            <li class="item-p-g">
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/wii_plataforma.jpeg"
+                    alt="Wii imagen"
+                    />
+                    <p class="name-p-g">Wii</p>
+                </a>
+            </li>
+
+            <li class="item-p-g">
+                <a href="pages/list_games.html">
+                    <img
+                    class="img-p-g"
+                    src="assets/images/android_plataforma.jpeg"
+                    alt="Android imagen"
+                    />
+                    <p class="name-p-g">Android</p>
+                </a>
+            </li>
+        </ul>
 
           <i id="next-p" class="fa-solid fa-chevron-right"></i>
         </div>
@@ -428,8 +450,8 @@
       </section>
     </main>
 
- <!-- banner -->
- <nav>
+<!-- banner -->
+
   <div class="banner">
     <div class="icono-banner">
       <i class="fas fa-lock"></i>
@@ -449,7 +471,7 @@
     </div>
   </div>
   
-  <div class="banner-medios">
+  <div id="medios-pago" class="banner-medios">
     <h5>Medios de pago</h5>
     <div class="informacion">
       <p>Pagos con tarjetas de crédito y débito</p>
@@ -462,7 +484,7 @@
       <i class="fa-solid fa-credit-card"></i> </div>
     </div>
   
-  <div class="banner-envios">
+  <div id="medios-envio" class="banner-envios">
     <h5>Envios</h5>
     <div class="contenedor-envios">
       <div class="icono-envios">
@@ -485,7 +507,7 @@
       </div>
     </div>
   </div>
-</nav>
+
 
     <!-- footer -->
     <footer id="footer">
@@ -596,5 +618,5 @@
     <script src="./js/carrito.js"></script>
     <script src="./js/section_p_g.js"></script>
     <script src="./js/info_main.js"></script>
-  </body>
+</body>
 </html>
