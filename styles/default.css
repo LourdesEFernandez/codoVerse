@@ -24,5 +24,11 @@
 /* pagina de inicio de sesion */
 @import url(login_page.css);
 
-/* pagina que muestra los juegos por cateforía */
+/* pagina que muestra los juegos por categoría */
 @import url(list_game.css);
+
+/* Estilos lista de tarjetas de juegos */
+@import url(main_list.css);
+
+/* Estilos de banner, medios de pago y envíos */ 
+@import url(banner.css);
