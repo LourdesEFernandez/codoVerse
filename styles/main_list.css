@@ -73,35 +73,61 @@
 }
 
 .opciones-menu {
-  font: var(--font_text);
+  font-family: var(--font_text);
   font-weight: normal;
   font-size: 20px;
 }
 
-.opciones-menu div a {
-  color: var(--color_cuaternary);
-  text-decoration: none;
-}
-
-.item-menu a:hover {
+.item-menu:hover {
   color: var(--color_secondary);
   text-decoration: underline;
 }
 
 .item-menu {
   background-color: transparent;
+  color: var(--color_cuaternary);
+  cursor: pointer;
 }
 
 @media screen and (max-width:768px) {
-  .opciones-menu{
-    overflow-x: auto;
-    font-size: 1em;
-  }
   .item-menu{
     margin: 0 1vw;
   }
   .tarjetas-juegos{
     display: flex;
     flex-wrap: wrap;
+
   }
+}
+
+@media screen and (max-width:425px) {
+  
+  #seccion-juegos-principal{
+    padding: 0 2vw;
+    width: 100%;
+  }
+  .opciones-menu{
+    display: flex;
+    overflow-x: auto;
+    font-size: 1.2em;
+    justify-content: flex-start;
+  }
+  .item-menu {
+    padding: 0 1vw;
+    display: inline-block;
+  }
+
+  .juego-img{
+
+    h2{
+      font-size: .9em;
+      padding: 0 1.8vw;
+    }
+
+    .heart{
+      padding: 0 2.5vw;
+    }
+
+  }
+
 }
