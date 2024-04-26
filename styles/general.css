@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width:768px){
-.push{
+#container-btn-push{
     display: none !important;
 }
 }

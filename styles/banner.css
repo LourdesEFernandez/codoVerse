@@ -119,27 +119,45 @@
     display: flex;
     height: auto;
     overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .banner-medios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
+  }
+  .icono-tarjetas{
+    gap: 10vw;
+    margin-bottom: 4vh;
+  }
+
+
+  .banner-envios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
+  }
+  .contenedor-envios{
+    display: flex;
+    flex-wrap: wrap;
   }
   .icono-envios{
-    border: 1px solid var(--color_secondary);
-    padding: 3vw;
-    width: 100%;  
+    width: 40vw;
     display: flex;
     justify-content: center;
+    margin: 4vh auto;
   }
   .icono-envios i,.icono-envios p,.icono-envios span{
     margin: 0;
     padding: 0;
-    color: var(--color_secondary);
   }
-
+  .icono-envios i{
+    scale: .9;
+  }
   .icono-envios div{
     margin: auto;
     align-content: center;
   }
 
-  .contenedor-envios{
-    display: flex;
-    flex-direction: column;
-  }
 }
