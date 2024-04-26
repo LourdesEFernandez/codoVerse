@@ -67,8 +67,9 @@
 
 .opciones-menu {
   display: flex;
-  justify-content: space-between;
-  padding: 0 10vw;
+  justify-content: center;
+  gap: 5vw;
+  margin: 2vh 0;
 }
 
 .opciones-menu {
@@ -84,12 +85,10 @@
 
 .item-menu a:hover {
   color: var(--color_secondary);
+  text-decoration: underline;
 }
 
 .item-menu {
-  margin-bottom: 3vh;
-  padding: 10px;
-  border-radius: 5px;
   background-color: transparent;
 }
 
