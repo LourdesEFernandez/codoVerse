@@ -103,37 +103,6 @@ main{
     color: var(--color_cuaternary);
 }
 
-
-.push{
-    width: 2vw;
-    height: 2vh;
-    color: var(--color_secondary);
-    rotate: -90deg;
-    position: relative;
-    left: calc(100% - 2vw);
-    cursor: pointer;
-    animation-duration: 10s;
-    animation-name: animationButton;
-}
-
-@keyframes animationButton {
-
-    from {
-        opacity: 0;
-        filter:alpha(opacity=0);
-    
-    }
-    50%{
-        opacity: 0;
-    }
-    
-    to {
-        opacity: 1;
-        filter:alpha(opacity=100);
-    
-}
-}
-
 :root{
     --bg_color_ft:rgba(68, 57, 95, 0.2);
     --color_info:rgba(160, 107, 233, 0.5);
@@ -197,10 +166,6 @@ main{
     }
     .foto{
         display: none;
-    }
-
-    .push{
-        display: none !important;
     }
 
     .list-info{
