@@ -2,12 +2,10 @@
   background-color: var(--color_primary);
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   padding: 20px;
   font-family: var(--font_text);
   font-weight: normal;
-  font-size: 24px;
-  height: 120px; 
+  font-size: 1.3em;
 }
 
 .icono-banner {
@@ -31,25 +29,26 @@
 
 /* Medios de pago */
 .banner-medios {
-  background-color: var(--color_tertiary);
   color: var(--text_color_secondary);
   text-align: center;
+  margin: 10vh 0;
 }
 
-h5 {
-  font: var(--font_title_two);
+.titulo-medios-p-e {
+  font-family: var(--font_title_two);
   color: var(--color_secondary);
-  font-size: 2em;
-  font-style: normal;
-  margin-top: 20px;
+  font-size: 1.9em;
+  font-weight: 500;
+  text-align: center;
 }
 
 .informacion {
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .informacion p {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -57,36 +56,25 @@ h5 {
 .icono-tarjetas {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  gap: 5vw;
 }
 
 .icono-tarjetas i {
-  font-size: 40px;
-  margin-right: 10px;
+  scale: 2.5;
   color: var(--text_color_secondary);
 }
 
 /* Envios */
 .banner-envios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--color_tertiary);
-  padding: 20px;
-}
-
-h5 {
-  font-family: var(--font_title_two); 
-  color: var(--color_secondary);
-  font-size: 2em; 
-  font-style: normal;
+  margin: 15vh auto;
 }
 
 .contenedor-envios {
   display: flex;
   justify-content: space-between; 
   width: 100%;
+  padding-right: 1vw;
 }
 
 .icono-envios {
@@ -107,7 +95,7 @@ h5 {
 }
 
 .icono-envios p {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 5px;
   font-family: var(--font_text);
   font-size: 20px;
@@ -118,6 +106,7 @@ h5 {
 .icono-envios span {
   font-size: 16px;
   margin-left: 70px;
+  color: var(--text_color_secondary);
 }
 
 @media screen and (max-width:768px){
