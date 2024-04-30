@@ -18,9 +18,9 @@
 .conteiner-info-main{
     width: 80vw;
     height: auto;
-    margin: 4vh auto;
+    margin: 2vh auto;
     position: relative;
-    padding: 3.5vh 2vw;
+    padding: 3vh 2vw;
 
     font-family: var(--font_text);
     color: var(--text_color);
