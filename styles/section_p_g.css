@@ -13,7 +13,7 @@
     color: var(--color_secondary);
     font-family: var(--font_title_two);
     font-weight: 500;
-    font-size: 1.9em;
+    font-size: var(--font_size_title_two);
     padding: 2vh 0;
     text-align: center;
     cursor: default;

@@ -26,6 +26,7 @@ body {
     --color_cuaternary: #44395f;
     --text_color: #ffffff;
     --text_color_secondary: #cccccc;
+    --font_size_title_two: 1.9em;
 }
 
 body::-webkit-scrollbar{
