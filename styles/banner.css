@@ -1,7 +1,7 @@
 .banner {
   background-color: var(--color_primary);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px;
   font-family: var(--font_text);
   font-weight: normal;
@@ -22,7 +22,7 @@
   margin-bottom: 5px;
 }
 
-.icono-banner span a{
+.icono-banner p a{
   text-decoration: none;
   color: var(--color_secondary);
 }
@@ -115,12 +115,6 @@
     width: 50vw;
   }
 
-  .banner{
-    display: flex;
-    height: auto;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
 
   .banner-medios{
     border: 1px solid var(--color_secondary);
@@ -158,6 +152,26 @@
   .icono-envios div{
     margin: auto;
     align-content: center;
+  }
+
+}
+
+@media screen and (max-width:425px) {
+  
+  .banner{
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .icono-banner i{
+    scale: .7;
+  }
+  .icono-banner p{
+    font-size: small;
+  }
+  .icono-banner{
+    min-width: 50vw;
   }
 
 }
