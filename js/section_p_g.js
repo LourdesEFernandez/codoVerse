@@ -28,13 +28,21 @@ previousBtnG.addEventListener("click", () => {
     contentListg.scrollLeft -= 350;
 }); 
 
-// mostrar lista
+// lista de plataformas
+const platforms = [
+    {title: "Xbox One", img:""},
+    {title: "PC", img:""},
+    {title: "Ps4", img:""},
+    {title: "Ps5", img:""},
+    {title: "Linux", img:""},
+    {title: "Mac", img:""},
+    {title: "Switch", img:""},
+    {title: "GeForce Now", img:""}
+]
 
-const itemSection = document.querySelector("#show-list");
-const listGame = document.querySelector("#list-game");
+// lista de generos
+const genders = [
+    "Acción","Arcade","Carreras","Simulación","Terror","Aventura","VR","Lucha","Wargame"
+]
 
-const show = () => listGame.style.display = "flex";
-
-itemSection.addEventListener("click", show);
-
-// itemSection.removeEventListener("click", show);
+// creacion de items de forma dinamica
