@@ -55,13 +55,14 @@
 }
 .c-button{
     border-radius: 5px;
-    min-width: 15vw;
+    min-width: 14vw;
     min-height: 6vh;
     background-color:var(--color_secondary);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5vw;
+    font-size: .95em;
 }
 
 #b-add-cart{
