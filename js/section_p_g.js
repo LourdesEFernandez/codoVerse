@@ -1,4 +1,3 @@
-// archivo para mover items
 // propiedad scrollLeft, mueve a la derecha usando += cantidad de px y a la izquierda -= y la cantidad de px
 
 const nextBtn = (id,idList)=>{
@@ -17,14 +16,6 @@ const previousBtn = (id,idList)=>{
     }); 
 }
 
-nextBtn("#next-p","#list-p");
-previousBtn("#previous-p","#list-p");
-
-nextBtn("#next-g","#list-g");
-previousBtn("#previous-g","#list-g");
-
-
-
 // lista de plataformas
 const platforms = [
     {title: "Xbox One", img:"../assets/images/platform_xbox_one.jpeg"},
@@ -39,14 +30,15 @@ const platforms = [
 
 // lista de generos
 const genders = [
-    {title: "Acción", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Arcade", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Carreras", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Simulación", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Aventura", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "VR", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Lucha", img:"../assets/images/platform_xbox_one.jpeg"},
-    {title: "Wargame", img:"../assets/images/platform_xbox_one.jpeg"},
+    {title: "Acción", img:"../assets/images/genre_accion.jpg"},
+    {title: "Arcade", img:"../assets/images/genre_arcade.jpg"},
+    {title: "Carreras", img:"../assets/images/genre_carreras.jpg"},
+    {title: "Simulación", img:"../assets/images/genre_simulacion.jpg"},
+    {title: "Aventura", img:"../assets/images/genre_aventura.jpg"},
+    {title: "Lucha", img:"../assets/images/genre_lucha.jpg"},
+    {title: "Wargame", img:"../assets/images/genre_wargame.jpg"},
+    {title: "Estrategia", img:"../assets/images/genre_estrategia.jpg"},
+    {title: "Terror", img:"../assets/images/genre_terror.jpg"},
 ]
 
 // creacion de items de forma dinamica
@@ -64,6 +56,13 @@ function createLi(id,listItems) {
     </li> `;
     }
 }
+
+// llamadas
+nextBtn("#next-p","#list-p");
+previousBtn("#previous-p","#list-p");
+
+nextBtn("#next-g","#list-g");
+previousBtn("#previous-g","#list-g");
 
 createLi("#list-p",platforms);
 createLi("#list-g",genders);
