@@ -1,32 +1,29 @@
 // archivo para mover items
-const nextBtnP = document.querySelector("#next-p");
-const previousBtnP = document.querySelector("#previous-p");
-
-const contentList = document.querySelector("#list-p");
-
-const nextBtnG = document.querySelector("#next-g");
-const previousBtnG = document.querySelector("#previous-g");
-
-const contentListg = document.querySelector("#list-g");
-
-
 // propiedad scrollLeft, mueve a la derecha usando += cantidad de px y a la izquierda -= y la cantidad de px
 
-nextBtnP.addEventListener("click", () => {
-    contentList.scrollLeft += 350;
-}); 
+const nextBtn = (id,idList)=>{
+    let next = document.querySelector(id);
+    let list = document.querySelector(idList);
+    next.addEventListener("click", () => {
+        list.scrollLeft += 350;
+    }); 
+}
 
-previousBtnP.addEventListener("click", () => {
-    contentList.scrollLeft -= 350;
-}); 
+const previousBtn = (id,idList)=>{
+    let prev = document.querySelector(id);
+    let list = document.querySelector(idList);
+    prev.addEventListener("click", () => {
+        list.scrollLeft -= 350;
+    }); 
+}
 
-nextBtnG.addEventListener("click", () => {
-    contentListg.scrollLeft += 350;
-}); 
+nextBtn("#next-p","#list-p");
+previousBtn("#previous-p","#list-p");
 
-previousBtnG.addEventListener("click", () => {
-    contentListg.scrollLeft -= 350;
-}); 
+nextBtn("#next-g","#list-g");
+previousBtn("#previous-g","#list-g");
+
+
 
 // lista de plataformas
 const platforms = [
