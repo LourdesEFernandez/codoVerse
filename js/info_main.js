@@ -1,37 +1,42 @@
-let isLike = false; 
-let showInfoMain = document.querySelector("#show-info-main");
-let hiddenInfoMain = document.querySelector("#hidden-info-main");
-let infoTwo = document.querySelector("#info-2");
+const isLike = false; 
+const btnHeart = document.querySelector("#heart");
+const showInfoMain = document.querySelector("#show-info-main");
+const hiddenInfoMain = document.querySelector("#hidden-info-main");
+const infoTwo = document.querySelector("#info-2");
 
 // boton like
-function like() {
-    if (isLike == false) {
-        document.getElementById("btn-add-fav").style.display = "block";
-        isLike = true;
-    } else {
-        document.getElementById("btn-add-fav").style.display = "none";
-        isLike = false;
-    }
+const favorite = () =>{
+    btnHeart.addEventListener("click", ()=>{
+        if (isLike == false) {
+            document.getElementById("btn-add-fav").style.display = "block";
+            isLike = true;
+        } else {
+            document.getElementById("btn-add-fav").style.display = "none";
+            isLike = false;
+        }
+    })
 }
-
 // boton ver mas para dispositicos mobile
-if (window.matchMedia("(max-width: 425px)").matches) {
-    infoTwo.style.display = "none";
-    showInfoMain.style.display = "flex";
-} else {
-    infoTwo.style.display = "block";
+const showInfoExtra = () =>{
+    if (window.matchMedia("(max-width: 425px)").matches) {
+        infoTwo.style.display = "none";
+        showInfoMain.style.display = "flex";
+    } else {
+        infoTwo.style.display = "block";
+    }
+
+    showInfoMain.addEventListener("click", () => {
+        infoTwo.style.display = "block";
+        hiddenInfoMain.style.display = "flex";
+        showInfoMain.style.display = "none";
+    });
+    
+    hiddenInfoMain.addEventListener("click", () => {
+        infoTwo.style.display = "none";
+        showInfoMain.style.display = "flex";
+    })
 }
 
-showInfoMain.addEventListener("click", () => {
-    infoTwo.style.display = "block";
-    hiddenInfoMain.style.display = "flex";
-    showInfoMain.style.display = "none";
-});
-
-hiddenInfoMain.addEventListener("click", () => {
-    infoTwo.style.display = "none";
-    showInfoMain.style.display = "flex";
-})
 
 // lista de juegos 
 // atributos de un juego nombre, info principal, info complementaria, id, imagen,precio,descuento,stock,genero,tipo de plataforma
@@ -85,3 +90,6 @@ const listGames = [
     ]},
 ]
 
+// llamadas
+favorite();
+showInfoExtra();
