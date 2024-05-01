@@ -15,10 +15,20 @@
         color: var(--color_cuaternary);
     }
 }
+
+#cont-list-game-main{
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+}
+#cont-list-game-main::-webkit-scrollbar{
+    display: none;
+}
+
 .conteiner-info-main{
-    width: 80vw;
+    min-width: 80vw;
     height: auto;
-    margin: 2vh auto;
+    margin: 2vh;
     position: relative;
     padding: 3vh 2vw;
 
