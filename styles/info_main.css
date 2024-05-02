@@ -28,7 +28,7 @@
 .container-info-main{
     --bg-pseudo : url("../assets/images/game_assassin's_creed_valhalla.jpeg");
     min-width: 80vw;
-    height: 60vh;
+    height: 56vh;
     margin: 2vh 3vw;
     position: relative;
     padding: 3vh 2vw;
@@ -44,7 +44,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.2;
     top: 0;
     bottom: 0;
     right: 0;
@@ -116,7 +116,7 @@
     width: 20vw;
     min-height: 100%;
     margin: auto 0;
-    
+
     display: flex;
     flex-direction: column;
     
@@ -151,7 +151,7 @@
 
 #info-game-i-m{
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #subtitle-i-m{

@@ -11,7 +11,7 @@ body {
     background-image: 
     linear-gradient(
         var(--color_primary),
-        var(--color_tertiary) 23%
+        var(--color_tertiary) 15%
     );
 }
 
