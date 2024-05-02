@@ -1,5 +1,4 @@
 // propiedad scrollLeft, mueve a la derecha usando += cantidad de px y a la izquierda -= y la cantidad de px
-
 const nextBtn = (id,idList)=>{
     let next = document.querySelector(id);
     let list = document.querySelector(idList);
