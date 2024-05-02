@@ -6,7 +6,7 @@ const infoTwo = document.querySelector("#info-2");
 const previousCardInfo = document.querySelector("#previous-info-main");
 const nextCardInfo = document.querySelector("#next-info-main");
 const contCards = document.querySelector("#cont-list-game-main");
-let valuePx = 1170;
+let valuePx = 1175;
 
 
 // boton like
