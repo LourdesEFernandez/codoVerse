@@ -28,8 +28,8 @@
 .container-info-main{
     --bg-pseudo : url("../assets/images/game_assassin's_creed_valhalla.jpeg");
     min-width: 80vw;
-    height: auto;
-    margin: 2vh ;
+    height: 60vh;
+    margin: 2vh 3vw;
     position: relative;
     padding: 3vh 2vw;
 
