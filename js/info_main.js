@@ -139,6 +139,20 @@ const listGames = [
     description:"Es la nueva entrega de Assassin’s Creed de Ubisoft, la saga de acción y aventuras en mundo abierto más famosa de la desarrolladora de videojuegos. En esta ocasión, y siguiendo con los toques RPG de las últimas entregas, viajaremos al siglo IX después de Cristo, llegando a una Gran Bretaña invadida por vikingos. Está disponible para Xbox One, Xbox Series S/S, PlayStation 4, PlayStation 5 y PC. ",
     price:"59,999",
     infoTitle:"Ficha técnica de la versión PC",date:"6/12/2022",players:"1",format:"Descarga",texts:"Español",voices:"Español",online:"-",requirements:"PC"},
+
+    {name:"Resident Evil 2 Remake ", 
+    code:"game",
+    img:"../assets/images/game_resident_evil_2.jpeg",
+    description:"Es la puesta al día del clásico original del género survival horror para Xbox One, PlayStation 4 y PC, que coincide con el vigésimo aniversario de la saga Resident Evil. Supone un cambio de perspectiva jugable, de estilo de juego y de ambientación, un concepto muy ambicioso desde el plano técnico y artístico pero que mantendrá la esencia del emblemático videojuego que marcó un antes y un después. ",
+    price:"59,999",
+    infoTitle:"Ficha técnica de la versión PC",
+    date:"25/1/2019",
+    players:"1",
+    format:"DVD",
+    texts:"Español",
+    voices:"Español",
+    online:"-",
+    requirements:"PC"}
 ]
 
 // mi contenedor de juego tiene tres partes, imagen y precio, informacion del juego y botones favorito, agregar a carrito y comprar. Crear cada parte por separado y luego insertar todo en un solo contenedor.
