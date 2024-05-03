@@ -36,10 +36,17 @@
     text-decoration: none;
 }
 
+.breadcrumb-item{
+    font-size: 1.2em;
+}
+
 .active{
     cursor: default;
 }
+#cont-list-game-page{
+    margin-bottom: 5vh;
 
+}
 .card{
     width: 15vw;
     cursor: pointer;

@@ -1,5 +1,5 @@
 let isLike = false; 
-const btnHeart = document.querySelector("#heart");
+const btnHeart = document.querySelectorAll(".heart");
 const showInfoMain = document.querySelector("#show-info-main");
 const hiddenInfoMain = document.querySelector("#hidden-info-main");
 const infoTwo = document.querySelector("#info-2");
@@ -181,7 +181,7 @@ const createListGames = () => {
             </div>
         </div>
 
-        <button id="heart" > 
+        <button class="heart" > 
             <i  id="btn-fav" class="fa-regular fa-heart"></i>
             <i id="btn-add-fav" class="fa-solid fa-heart"></i>
         </button>

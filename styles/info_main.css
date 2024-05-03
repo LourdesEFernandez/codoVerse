@@ -81,7 +81,7 @@
     color: var(--color_secondary);
 }
 
-#heart{
+.heart{
     width: auto;
     display: block;
     background-color: transparent;
@@ -249,7 +249,7 @@
         margin: 0 auto;
     }
 
-    #heart{
+    .heart{
         grid-column: 4;
         grid-row: 2;
     }
