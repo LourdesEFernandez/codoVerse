@@ -6,8 +6,11 @@ const infoTwo = document.querySelector("#info-2");
 const previousCardInfo = document.querySelector("#previous-info-main");
 const nextCardInfo = document.querySelector("#next-info-main");
 const contCards = document.querySelector("#cont-list-game-main");
-let valuePx = 1175;
+let valuePx = window.innerWidth;
 
+console.log("screen-width " + screenWidth + " screen-heigth " + screenHeight);
+console.log("window-width " + windowWidth + " window-heigth " + windowHeight);
+console.log("page-width " + pageWidth + " page-heigth " + pageHeight);
 
 // boton like
 const favorite = () =>{
@@ -168,9 +171,10 @@ const createListGames = () => {
 
         game.code += codeGame;
 
-        contListGames.innerHTML += `<li id="${game.code}" class="container-info-main">
+        contListGames.innerHTML += `<li>
+        <div id="${game.code}" class="container-info-main">
         <div id="container-img-game">
-            <img src="${game.img}" alt="${game.name}">
+            <img class="img-card-main" src="${game.img}" alt="${game.name}">
             <div id="tag-price" class="c-button">$ ${game.price}</div>
         </div>
 
@@ -206,7 +210,8 @@ const createListGames = () => {
             <i class="fa-solid fa-plus"></i>
                 Agregar al carrito
             </div>
-        </div>`;
+        </div>
+        </div> `;
         const contGame = document.getElementById(`${game.code}`);
         contGame.style.setProperty("--bg-pseudo", `url(${game.img})`);
         
