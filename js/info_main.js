@@ -1,45 +1,23 @@
 let isLike = false; 
-const btnHeart = document.querySelectorAll(".heart");
-const showInfoMain = document.querySelectorAll("#show-info-main");
-const hiddenInfoMain = document.querySelectorAll("#hidden-info-main");
-const infoTwo = document.querySelectorAll("#info-2");
+
 const previousCardInfo = document.querySelector("#previous-info-main");
 const nextCardInfo = document.querySelector("#next-info-main");
 const contCards = document.querySelector("#cont-list-game-main");
 let valuePx = window.innerWidth;
 
 // boton like
-const favorite = () =>{
-    btnHeart.addEventListener("click", ()=>{
-        if (isLike == false) {
-            document.getElementById("btn-add-fav").style.display = "block";
-            isLike = true;
-        } else {
-            document.getElementById("btn-add-fav").style.display = "none";
-            isLike = false;
-        }
-    });
-}
-// boton ver mas para dispositicos mobile
-const showInfoExtra = () =>{
-    if (window.matchMedia("(max-width: 425px)").matches) {
-        infoTwo.style.display = "none";
-        showInfoMain.style.display = "flex";
-    } else {
-        infoTwo.style.display = "block";
-    }
+// const favorite = () =>{
+//     btnHeart.addEventListener("click", () =>{
+//         if (isLike == false) {
+//             document.querySelector("#btn-add-fav").style.display = "block";
+//             isLike = true;
+//         } else {
+//             document.querySelector("#btn-add-fav").style.display = "none";
+//             isLike = false;
+//         }
+//     });
+// }
 
-    showInfoMain.addEventListener("click", () => {
-        infoTwo.style.display = "block";
-        hiddenInfoMain.style.display = "flex";
-        showInfoMain.style.display = "none";
-    });
-    
-    hiddenInfoMain.addEventListener("click", () => {
-        infoTwo.style.display = "none";
-        showInfoMain.style.display = "flex";
-    })
-}
 // botones para cambiar de card
 const switchCard = () =>{
     previousCardInfo.addEventListener("click", () => {
@@ -178,8 +156,8 @@ const createListGames = () => {
             <header id="title-game-i-m">${game.name}</header>
             <div id="info-1">
                     <p id="info-game-i-m">${game.description}</p>
-                    <button id="show-info-main" class="btn-info">... Ver más</button>
-                    <div id="info-2">
+                    <button id="" class="btn-info show-info-main">... Ver más</button>
+                    <div class="info-2">
                         <p id="subtitle-i-m">${game.infoTitle}</p>
                         <ul id="data-sheet-i-m">
                         <li>Fecha de lanzamiento: ${game.date}</li>
@@ -190,12 +168,12 @@ const createListGames = () => {
                         <li>Online: ${game.online}</li>
                         <li>Requisitos: ${game.requirements}</li>
                         </ul>
-                        <button id="hidden-info-main" class="btn-info" type="button">Ver menos</button>
+                        <button id="" class="btn-info hidden-info-main" type="button">Ver menos</button>
                     </div>
             </div>
         </div>
 
-        <button class="heart" > 
+        <button class="btn-heart" > 
             <i  id="btn-fav" class="fa-regular fa-heart"></i>
             <i id="btn-add-fav" class="fa-solid fa-heart"></i>
         </button>
@@ -219,5 +197,31 @@ const createListGames = () => {
 // llamadas
 switchCard();
 createListGames();
-favorite();
+
+// const btnHeart = document.querySelector(".heart");
+// favorite();
+
+const showInfoMain = document.querySelector(".show-info-main");
+const hiddenInfoMain = document.querySelector(".hidden-info-main");
+const infoTwo = document.querySelector(".info-2");
+// boton ver mas para dispositicos mobile
+const showInfoExtra = () =>{
+    if (window.matchMedia("(max-width: 425px)").matches) {
+        infoTwo.style.setProperty("display", "none");
+        showInfoMain.style.setProperty("display", "flex");
+    } else {
+        infoTwo.style.setProperty("display", "block");
+    }
+
+    showInfoMain.addEventListener("click", () => {
+        infoTwo.style.setProperty("display", "block");
+        hiddenInfoMain.style.setProperty("display", "flex");
+        showInfoMain.style.setProperty("display", "none");
+    });
+    
+    hiddenInfoMain.addEventListener("click", () => {
+        infoTwo.style.setProperty("display", "none");
+        showInfoMain.style.setProperty("display", "flex");
+    })
+}
 showInfoExtra();
