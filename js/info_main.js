@@ -1,16 +1,12 @@
 let isLike = false; 
 const btnHeart = document.querySelectorAll(".heart");
-const showInfoMain = document.querySelector("#show-info-main");
-const hiddenInfoMain = document.querySelector("#hidden-info-main");
-const infoTwo = document.querySelector("#info-2");
+const showInfoMain = document.querySelectorAll("#show-info-main");
+const hiddenInfoMain = document.querySelectorAll("#hidden-info-main");
+const infoTwo = document.querySelectorAll("#info-2");
 const previousCardInfo = document.querySelector("#previous-info-main");
 const nextCardInfo = document.querySelector("#next-info-main");
 const contCards = document.querySelector("#cont-list-game-main");
 let valuePx = window.innerWidth;
-
-console.log("screen-width " + screenWidth + " screen-heigth " + screenHeight);
-console.log("window-width " + windowWidth + " window-heigth " + windowHeight);
-console.log("page-width " + pageWidth + " page-heigth " + pageHeight);
 
 // boton like
 const favorite = () =>{

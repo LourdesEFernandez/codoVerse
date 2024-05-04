@@ -88,9 +88,12 @@
 /* pantalla de tablet */
 @media screen and (max-width:768px){
     
-    .fa-chevron-left, .fa-chevron-right{
-        display: none !important;
+    .section-p-g{
+        .fa-chevron-left, .fa-chevron-right{
+            display: none !important;
+        }
     }
+
     .component-p-g{
         flex-direction: column;
     }

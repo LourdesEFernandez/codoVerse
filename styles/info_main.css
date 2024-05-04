@@ -5,7 +5,7 @@
 
     .fa-chevron-left, .fa-chevron-right{
         scale: 1.3;
-        /* color: transparent; */
+        color: transparent;
         transition: all 300ms;
         position: absolute;
         z-index: 10;
@@ -30,10 +30,10 @@
 }
 
 .container-info-main{
-    --margin-left_rigth: calc(100vw - 90vw);
+    --margin-left-rigth: calc(100vw - 90vw);
     --bg-pseudo : url("../assets/images/game_assassin's_creed_valhalla.jpeg");
     width: 80vw;
-    margin: 2vh var(--margin-left_rigth);
+    margin: 2vh var(--margin-left-rigth);
     position: relative;
     padding: 3vh 2vw;
 
@@ -221,16 +221,20 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
     #info-main{
         background-color: var(--color_primary);
+        
+        .fa-chevron-left, .fa-chevron-right{
+            display: flex;
+            color: var(--color_secondary);
+        }
     }
     #cont-list-game-main{
         height: auto;
     }
 
     .container-info-main{
-        --margin-left-rigth: calc(100vw - 90vw);
         background-color: transparent;
         margin: 5vh var(--margin-left-rigth);
         padding: 0;
@@ -317,11 +321,42 @@
 }
 
 @media screen and (max-width:425px) {
+    .fa-chevron-left, .fa-chevron-right{
+        display: none !important;
+    }
+    .container-info-main{
+        --margin-left-rigth: calc(100vw - 95vw);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 90vw;
+        margin: 2vh var(--margin-left-rigth);
+    }
+    #cont-list-game{
+        height: auto;
+    }
+    #container-img-game{
+        width: 100%;
+        height: 15vh;
+        overflow: hidden;
+    }
+    #tag-price{
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        justify-content: left;
+        font-size: 1.2em;
+        padding: 1.5vw;
+    }
     #info-1{
         flex-direction: column;
     }
     #info-game-i-m{
         width: 100%;
+        grid-row: 2;
+        position: relative !important;
+        z-index: 0;
     }
     #info-2{
         margin: 1vw 0;
@@ -329,11 +364,19 @@
     #container-img-game{
         min-height: 30vh;
     }
+    #buttons-i-m{
+        position: relative !important;
+        z-index: 0;
+        flex-direction: column;
+        grid-row: 3;
+    }
+
     .btn-info{
         margin: 1vw 0 3vw 0;
         padding: 1vw;
     }
     .c-button{
         height: 7vh;
+        width: 100%;
     }
 }
