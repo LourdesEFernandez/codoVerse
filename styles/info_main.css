@@ -345,7 +345,8 @@
     }
     #tag-price{
         position: absolute;
-        background-color: transparent;
+        width: 20vw;
+        background-color:rgba(160, 107, 233, .6);
         top: 0;
         justify-content: left;
         font-size: 1.2em;
