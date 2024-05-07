@@ -352,7 +352,7 @@
         padding: 1.5vw;
     }
     .info-i-m{
-        min-height: 272px;
+        min-height: 250px;
     }
     #info-1{
         flex-direction: column;
@@ -363,6 +363,7 @@
         grid-row: 2;
         position: relative !important;
         z-index: 0;
+        font-size: .95em;
     }
     .info-2{
         margin: 1vw 0;
