@@ -184,7 +184,7 @@ const createListGames = () => {
         </div> `;
 
         const contGame = document.getElementById(`${game.code}`);
-        contGame.style.setProperty("--bg-pseudo", `url(${game.img})`);
+        contGame.style.setProperty("--bg-pseudo", `url(../${game.img})`);
 
         const fav = document.querySelector(`#add-fav-${game.code}`).style.display = "none";
 
