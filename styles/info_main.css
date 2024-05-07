@@ -352,7 +352,7 @@
         padding: 1.5vw;
     }
     .info-i-m{
-        min-height: 250px;
+        min-height: 255px;
     }
     #info-1{
         flex-direction: column;
