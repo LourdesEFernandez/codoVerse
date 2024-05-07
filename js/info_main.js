@@ -144,7 +144,7 @@ const createListGames = () => {
         contListGames.innerHTML += `<li>
         <div id="${game.code}" class="container-info-main">
         <div id="container-img-game">
-            <img class="img-card-main" src="${game.img}" alt="${game.name}">
+            <img class="img-card-main" src=${game.img} alt="${game.name}">
             <div id="tag-price" class="c-button">$ ${game.price}</div>
         </div>
 
