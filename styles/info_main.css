@@ -352,7 +352,7 @@
         padding: 1.5vw;
     }
     .info-i-m{
-        min-height: 260px;
+        min-height: 255px;
     }
     #info-1{
         flex-direction: column;
@@ -372,7 +372,7 @@
     #buttons-i-m{
         position: relative !important;
         z-index: 0;
-        flex-direction: column;
+        flex-direction: row;
         grid-row: 3;
     }
 

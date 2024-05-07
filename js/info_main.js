@@ -101,12 +101,12 @@ const listGames = [
     online:"-",
     requirements:"-"},
 
-    {name:"Elden Ring", 
+    {name:"Elden Ring",
     code:"game",
     img:"assets/images/game_elden_ring.jpg",
     description:"Es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego. ",
     price:"69,999",
-    infoTitle:"Ficha técnica de la versión PS4",date:"25/2/2022",players:"1",format:"Blu-ray",texts:"Español",voices:"Inglés",online:"Si",requirements:"PS4"},
+    infoTitle:"Ficha técnica de la versión PS4",date:"25/2/2022",players:"1",format:"Blu-ray",texts:"Español",voices:"Inglés",online:"Si",requirements:"PS4" },
 
     {name:"Assassin's Creed Valhalla", 
     code: "game",
