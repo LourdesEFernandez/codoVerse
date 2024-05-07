@@ -32,7 +32,7 @@ const switchCard = () =>{
 const listGames = [
     {name:"Resident Evil 3 Remake", 
     code: "game",
-    img:"assets/images/game_resident_evil_3.jpeg",
+    img:"./assets/images/game_resident_evil_3.jpeg",
     description:"Resident Evil 3 Remake es la reinterpretación del clásico de Capcom, Resident Evil 3: Nemesis, la tercera parte de la trilogía original de survival horror. Siguiendo con las pasos de la segunda parte, y con un aspecto jugable y gráfico renovado en base a las actuales plataformas, nos contará la historia de Jill Valentine y su huida de la ciudad de Raccoon City infestada por el virus T. Incluirá el modo multijugador Resident Evil Resistance. ",
     price:"59,999",
     infoTitle:"Ficha técnica de la versión PS4",
