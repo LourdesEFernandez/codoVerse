@@ -1,5 +1,3 @@
-let isLike = false; 
-
 const previousCardInfo = document.querySelector("#previous-info-main");
 const nextCardInfo = document.querySelector("#next-info-main");
 const contCards = document.querySelector("#cont-list-game-main");
@@ -134,8 +132,6 @@ const listGames = [
 
 // mi contenedor de juego tiene tres partes, imagen y precio, informacion del juego y botones favorito, agregar a carrito y comprar. Crear cada parte por separado y luego insertar todo en un solo contenedor.
 
-// contenedor principal
-
 const createListGames = () => {
     const contListGames = document.querySelector("#cont-list-game-main");
     contListGames.innerHTML = "";
@@ -175,7 +171,7 @@ const createListGames = () => {
 
         <button class="btn-heart" > 
             <i  id="btn-fav" class="fa-regular fa-heart"></i>
-            <i id="btn-add-fav" class="fa-solid fa-heart"></i>
+            <i id="add-fav-${game.code}" class="fa-solid fa-heart"></i>
         </button>
 
         <div id="buttons-i-m">
@@ -186,42 +182,75 @@ const createListGames = () => {
             </div>
         </div>
         </div> `;
+
         const contGame = document.getElementById(`${game.code}`);
         contGame.style.setProperty("--bg-pseudo", `url(${game.img})`);
-        
+
+        const fav = document.querySelector(`#add-fav-${game.code}`).style.display = "none";
+
         codeGame++;
     }
 } 
+
+
 
 
 // llamadas
 switchCard();
 createListGames();
 
+let isFavorite = false;
+const btnsHeart = document.querySelectorAll("button.btn-heart");
+
+const favorite = () =>{
+    for (button of btnsHeart){
+        const id = button.querySelector("button.btn-heart > .fa-solid");
+        button.addEventListener("click", ()=>{
+            if(isFavorite == false){
+                id.style.setProperty("display", "block");
+                isFavorite = true;
+            } else{
+                id.style.setProperty("display", "none");
+                isFavorite = false;
+            }
+            });
+        }
+    }
+
+favorite();
+
 // const btnHeart = document.querySelector(".heart");
 // favorite();
 
-const showInfoMain = document.querySelector(".show-info-main");
-const hiddenInfoMain = document.querySelector(".hidden-info-main");
-const infoTwo = document.querySelector(".info-2");
-// boton ver mas para dispositicos mobile
-const showInfoExtra = () =>{
-    if (window.matchMedia("(max-width: 425px)").matches) {
-        infoTwo.style.setProperty("display", "none");
-        showInfoMain.style.setProperty("display", "flex");
-    } else {
-        infoTwo.style.setProperty("display", "block");
-    }
 
-    showInfoMain.addEventListener("click", () => {
-        infoTwo.style.setProperty("display", "block");
-        hiddenInfoMain.style.setProperty("display", "flex");
-        showInfoMain.style.setProperty("display", "none");
-    });
+// boton ver mas para dispositicos mobile
+const gamesInfo = document.getElementsByClassName("info-i-m");
+console.log(gamesInfo);
+
+const showInfoExtra = () =>{
+    for (info of gamesInfo){
+
+        const showInfoMain = info.querySelector(".show-info-main");
+        const hiddenInfoMain = info.querySelector(".hidden-info-main");
+        const infoTwo = info.querySelector(".info-2");
+
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            infoTwo.style.setProperty("display", "none");
+            showInfoMain.style.setProperty("display", "flex");
+        } else {
+            infoTwo.style.setProperty("display", "block");
+        }
     
-    hiddenInfoMain.addEventListener("click", () => {
-        infoTwo.style.setProperty("display", "none");
-        showInfoMain.style.setProperty("display", "flex");
-    })
+        showInfoMain.addEventListener("click", () => {
+            infoTwo.style.setProperty("display", "block");
+            hiddenInfoMain.style.setProperty("display", "flex");
+            showInfoMain.style.setProperty("display", "none");
+        });
+        
+        hiddenInfoMain.addEventListener("click", () => {
+            infoTwo.style.setProperty("display", "none");
+            showInfoMain.style.setProperty("display", "flex");
+        });
+    }
 }
 showInfoExtra();
