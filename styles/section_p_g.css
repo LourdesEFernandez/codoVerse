@@ -119,3 +119,9 @@
     }
 
 } 
+
+@media screen and (max-width: 425px) {
+    .item-p-g{
+        padding: 0;
+    }
+}
