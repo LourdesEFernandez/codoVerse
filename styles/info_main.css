@@ -1,4 +1,4 @@
-#info-main{
+#info-game-main{
     min-width: 100%;
     height: auto;
     display: flex;
@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width: 769px) {
-    #info-main:hover{
+    #info-game-main:hover{
         .fa-chevron-left, .fa-chevron-right{
             color: var(--color_cuaternary);
         }
@@ -217,7 +217,7 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 426px) {
-    #info-main{
+    #info-game-main{
         background-color: var(--color_primary);
         
         .fa-chevron-left, .fa-chevron-right{
