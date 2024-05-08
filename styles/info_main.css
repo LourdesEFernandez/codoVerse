@@ -333,8 +333,8 @@
     }
     #container-img-game{
         width: 100%;
-        height: 15vh;
-        overflow: hidden;
+        height: 150px !important;
+        overflow: hidden !important;
         border-radius: 5px;
     }
 
@@ -345,14 +345,15 @@
     }
     #tag-price{
         position: absolute;
-        background-color: transparent;
+        width: 20vw;
+        background-color:rgba(160, 107, 233, .6);
         top: 0;
         justify-content: left;
         font-size: 1.2em;
         padding: 1.5vw;
     }
     .info-i-m{
-        min-height: 250px;
+        min-height: 255px;
     }
     #info-1{
         flex-direction: column;
@@ -368,13 +369,11 @@
     .info-2{
         margin: 1vw 0;
     }
-    #container-img-game{
-        min-height: 30vh;
-    }
+
     #buttons-i-m{
         position: relative !important;
         z-index: 0;
-        flex-direction: column;
+        flex-direction: row;
         grid-row: 3;
     }
 
@@ -383,7 +382,7 @@
         padding: 1vw;
     }
     .c-button{
-        height: 7vh;
+        height: 6vh;
         width: 100%;
     }
 }
