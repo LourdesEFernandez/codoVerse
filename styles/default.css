@@ -30,5 +30,8 @@
 /* Estilos lista de tarjetas de juegos */
 @import url(main_list.css);
 
-/* Estilos de banner, medios de pago y envíos */ 
+/* Estilos de banner */
 @import url(banner.css);
+
+/*Estilos de medios de pago y envios */
+@import url(medios_envios.css);

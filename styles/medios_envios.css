@@ -1,0 +1,122 @@
+/* Medios de pago */
+.banner-medios {
+    color: var(--text_color_secondary);
+    text-align: center;
+    margin: 15vh 0;
+  }
+  
+  .titulo-medios-p-e {
+    font-family: var(--font_title_two);
+    color: var(--color_secondary);
+    font-size: var(--font_size_title_two);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  .informacion {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  .informacion p {
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .icono-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
+  
+  .icono-tarjetas i {
+    scale: 2.5;
+    color: var(--text_color_secondary);
+  }
+  
+  /* Envios */
+  .banner-envios {
+    background-color: var(--color_tertiary);
+    margin: 15vh auto;
+  }
+  
+  .contenedor-envios {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+  }
+  
+  .icono-envios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text_color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .icono-envios i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: var(--text_color_secondary);
+  }
+  
+  .icono-envios p {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: var(--font_text);
+    font-size: 20px;
+    margin-left: 70px;
+    color: var(--text_color_secondary);
+  }
+  
+  .icono-envios span {
+    font-size: 16px;
+    margin-left: 70px;
+    color: var(--text_color_secondary);
+  }
+
+  @media screen and (max-width:768px){
+    
+  .banner-medios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
+  }
+  .icono-tarjetas{
+    gap: 10vw;
+    margin-bottom: 4vh;
+  }
+
+
+  .banner-envios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
+  }
+  .contenedor-envios{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icono-envios{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    margin: 4vh auto;
+  }
+  .icono-envios i,.icono-envios p,.icono-envios span{
+    margin: 0;
+    padding: 0;
+  }
+  .icono-envios i{
+    scale: .9;
+  }
+  .icono-envios div{
+    margin: auto;
+    align-content: center;
+  }
+}
