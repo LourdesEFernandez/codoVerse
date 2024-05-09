@@ -1,36 +1,64 @@
-#info-main{
+#info-game-main{
     min-width: 100%;
     height: auto;
+    display: flex;
+
+    .fa-chevron-left, .fa-chevron-right{
+        scale: 1.3;
+        color: transparent;
+        transition: all 300ms;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        top: calc(100vh - 62vh);
+    }
+    .fa-chevron-left{
+        left: 0;
+        
+    }
+    .fa-chevron-right{
+        right: 0;
+    }
 }
 
-.conteiner-info-main{
+#cont-list-game-main{
+    display: flex;
+    overflow-x: auto;
+}
+#cont-list-game-main::-webkit-scrollbar{
+    display: none;
+}
+
+.container-info-main{
+    --margin-left-rigth: calc(100vw - 90vw);
+    --bg-pseudo : url("../assets/images/game_assassin's_creed_valhalla.jpeg");
     width: 80vw;
-    height: auto;
-    margin: 5vh auto;
+    margin: 2vh var(--margin-left-rigth);
     position: relative;
-    padding: 3.5vh 2vw;
+    padding: 3vh 2vw;
 
     font-family: var(--font_text);
     color: var(--text_color);
 
     display: grid;
     grid-template-columns: repeat(4 1fr);
+
+    .fa-heart{
+        scale: 1.5;
+        padding: 4px;
+        margin: 0;
+        color: var(--color_secondary);
+        background-color: transparent;
+        transition: all 300ms;
+        position: absolute;
+        right: 0;
+    }
+    .fa-heart:active{
+        scale: 1.8; 
+    }
 }
-
-.conteiner-info-main::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    opacity: 0.3;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: url("../assets/images/assassin\'s_creed_valhalla.jpeg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-
+#cont-list-game-main li{
+    list-style: none;
 }
 
 #buttons-i-m{
@@ -43,13 +71,14 @@
 }
 .c-button{
     border-radius: 5px;
-    min-width: 15vw;
+    min-width: 14vw;
     min-height: 6vh;
     background-color:var(--color_secondary);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5vw;
+    font-size: .95em;
 }
 
 #b-add-cart{
@@ -57,51 +86,30 @@
     color: var(--color_secondary);
 }
 
-.heart{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+.btn-heart{
+    width: auto;
+    display: block;
     background-color: transparent;
     cursor: pointer;
+    border: none;
+    position: relative;
 
     grid-row: 1;
     grid-column: 4;
 }
 
-.fa-heart{
-    scale: 1.3;
-    padding: 0;
-    margin: 0;
-    color: var(--color_secondary);
-    background-color: transparent;
-    transition: all 300ms;
-    
-}
-.fa-heart:active{
-    scale: 1.6; 
-}
-
-#conteiner-img-game{
-    min-width: 22vw;
+#container-img-game{
+    width: 20vw;
     min-height: 100%;
-    background-image: url("../assets/images/assassin\'s_creed_valhalla.jpeg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 3px;
     margin: auto 0;
-    
+
     display: flex;
     flex-direction: column;
-    justify-content: end;
     
     grid-row: 1 / 5;
     grid-column: 1;
 }
-#tag-price{
-    margin: 1vh auto;
-    background-color: var(--color_primary);
-    cursor: default;
-}
+
 
 .info-i-m{
     padding: 0 1vw;
@@ -119,12 +127,13 @@
 
 #info-game-i-m{
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #subtitle-i-m{
     font-weight: 400;
     font-size: 1em;
+    margin-top: 1vh;
 }
 
 #data-sheet-i-m{
@@ -133,73 +142,135 @@
     font-size: .9em;
 }
 
-#b-buy:hover{
-    background-color: var(--color_primary);
-    color: var(--color_secondary);
-    animation-duration: 650ms;
-    animation-name: palp;
+.btn-info{
+    background-color: transparent;
+    border: none;
+    color: var(--text_color);
+    font-family: var(--font_text);
+    text-decoration: underline;
+    display: none;
     cursor: pointer;
 }
-@keyframes palp {
-    from{
-        scale: 1;
-    }
-    50%{
-        scale: 1.1;
-    }
-    to{
-        scale: 1;
-    }
-}
 
-#b-add-cart:hover{
-    background-color: var(--color_cuaternary);
-    color: var(--text_color_secondary);
-    animation-duration: 650ms;
-    animation-name: palp;
-    cursor: pointer;
-}
-@keyframes palp {
-    from{
-        scale: 1;
+@media screen and (min-width: 769px) {
+    #info-game-main:hover{
+        .fa-chevron-left, .fa-chevron-right{
+            color: var(--color_cuaternary);
+        }
     }
-    50%{
-        scale: 1.1;
+    .container-info-main{
+        height: 56vh;
     }
-    to{
-        scale: 1;
+    .container-info-main::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 0.2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: var(--bg-pseudo);
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    
     }
-}
-
-@media screen and (max-width:768px) {
-    #info-main{
-        background-color: var(--color_primary);
-    }
-
-    .conteiner-info-main{
-        padding: 4vh 1vw;
+    #tag-price{
+        width: 100%;
         margin: 0 auto;
-        background-color: transparent;
+        background-color: var(--color_primary);
+        cursor: default;
+        border-radius: 0 0 5px 5px;
+    }
+    .img-card-main{
+        border-radius: 3px 3px 0 0;
+        flex: 1;
+    }
+    
+    #b-buy:hover{
+        background-color: var(--color_primary);
+        color: var(--color_secondary);
+        animation-duration: 650ms;
+        animation-name: palp;
+        cursor: pointer;
+    }
+    
+    #b-add-cart:hover{
+        background-color: var(--color_cuaternary);
+        color: var(--text_color_secondary);
+        animation-duration: 650ms;
+        animation-name: palp;
+        cursor: pointer;
+    }
+    @keyframes palp {
+        from{
+            scale: 1;
+        }
+        50%{
+            scale: 1.1;
+        }
+        to{
+            scale: 1;
+        }
+    }
+}
 
-        display: grid;
-        grid-template-columns: repeat(4 1fr);
-        grid-template-rows: 1fr auto;
-        gap: 10px;
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    #info-game-main{
+        background-color: var(--color_primary);
+        
+        .fa-chevron-left, .fa-chevron-right{
+            display: flex;
+            color: var(--color_secondary);
+        }
+    }
+    #cont-list-game-main{
+        height: auto;
     }
 
-    #conteiner-img-game{
-        min-height: 45vh;
-        width: 100% ; 
+    .container-info-main{
+        background-color: transparent;
+        margin: 5vh var(--margin-left-rigth);
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: auto 4fr auto;
+        overflow: hidden;
+        height: 60vh;
+        border-radius: 5px;
+    }
 
-        grid-column: 1 / 5;
-        grid-row: 1;
+    #container-img-game{
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+        overflow: hidden;
+        flex-direction: column-reverse;
+    }
+    .img-card-main{
+        overflow: hidden;
+        opacity: .3;
+        
+    }
+    #tag-price{
+        background-color: transparent;
+        position: absolute;
+        z-index: 10;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        margin: 8px;
+        font-size: 1.2em;
     }
 
     .info-i-m{
-        grid-column: 1 / 5;
-        grid-row: 2 / 4;
-
+        grid-column: 1 / 4;
+        grid-row: 2;
+        position: absolute;
+        z-index: 10;
         color: var(--text_color);
+        top: 10%;
     }
 
     #info-1{
@@ -207,45 +278,111 @@
     } 
 
     #info-game-i-m{
-        width: 50%;
+        width: 60%;
     }
-    #info-2{
+
+    .info-2{
         margin: 0 auto;
     }
-    .heart{
-        grid-column: 4;
-        grid-row: 2;
+
+    .btn-heart{
+        grid-column: 3;
+        grid-row: 1;
+        margin: 5px;
+        position: absolute;
+        z-index: 10;
+        right: 0;
     }
 
     #buttons-i-m{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 0;
         display: flex;
         flex-direction: row;
         gap: 4vw;
-
-        grid-row: 4;
-        grid-column: 1 / 5;
+        grid-row: 3;
+        grid-column: 1 / 4;
+        align-items: end;
+        padding-bottom: 1vh;
     }
     .c-button{
         width: 100%;
-    }
-
-    #tag-price{
-        width: 50%;
-        background-color: var(--color_cuaternary);
-        color: var(--text_color);
+        height: 8vh;
+        margin: 0 1vw;
     }
 
 }
 
 @media screen and (max-width:425px) {
+    .fa-chevron-left, .fa-chevron-right{
+        display: none !important;
+    }
+    .container-info-main{
+        --margin-left-rigth: calc(100vw - 95vw);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 90vw;
+        margin: 2vh var(--margin-left-rigth);
+    }
+    #cont-list-game{
+        height: auto;
+    }
+    #container-img-game{
+        width: 100%;
+        height: 150px !important;
+        overflow: hidden !important;
+        border-radius: 5px;
+    }
+
+    .btn-heart{
+        position: absolute;
+        right: 0;
+        margin: 1vh;
+    }
+    #tag-price{
+        position: absolute;
+        width: 20vw;
+        background-color:rgba(160, 107, 233, .6);
+        top: 0;
+        justify-content: left;
+        font-size: 1.2em;
+        padding: 1.5vw;
+    }
+    .info-i-m{
+        min-height: 255px;
+    }
     #info-1{
         flex-direction: column;
-        gap: 2vh;
+        font-size: 1em;
     }
     #info-game-i-m{
         width: 100%;
+        grid-row: 2;
+        position: relative !important;
+        z-index: 0;
+        font-size: .95em;
     }
-    #info-2{
-        margin: 0;
+    .info-2{
+        margin: 1vw 0;
+    }
+
+    #buttons-i-m{
+        position: relative !important;
+        z-index: 0;
+        flex-direction: row;
+        grid-row: 3;
+    }
+
+    .btn-info{
+        margin: 1vw 0 3vw 0;
+        padding: 1vw;
+    }
+    .c-button{
+        height: 6vh;
+        width: 100%;
     }
 }

@@ -1,10 +1,4 @@
 /* Reset de estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--font_text);
 }
@@ -19,12 +13,11 @@ body {
 }
 
 .navbar {
-  background-color: var(--color_primary);
   color: var(--color_secondary);
   /* Aumentamos el padding para incrementar la altura */
-  padding: 1.5rem 0;
+  padding: 1.5vh 0;
   /* Agregamos una línea horizontal en la parte inferior */
-  border-bottom: 0.25rem solid var(--color_secondary);
+  border-bottom: 0.3vh solid var(--color_secondary);
   /* Agregamos un margen inferior para alinear hacia abajo 
   margin-bottom: 20px;*/
 }
@@ -92,7 +85,7 @@ body {
 .search button i,
 .icons a i {
   color: var(--text_color_secondary);
-  font-size: 1.5em; /* Ajustamos el tamaño de fuente a 1.5 veces el tamaño original */
+  font-size: 1.2em; /* Ajustamos el tamaño de fuente a 1.5 veces el tamaño original */
 }
 
 .icons a {

@@ -1,116 +1,177 @@
 .banner {
-    background-color: var(--color_primary);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    font-family: var(--font_text);
-    font-weight: normal;
-    font-size: 24px;
-    height: 120px; 
+  background-color: var(--color_primary);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: var(--font_text);
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.icono-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--color_secondary);
+  margin: 5px;
+}
+
+.icono-banner i {
+  font-size: 30px; 
+  margin-bottom: 5px;
+}
+
+.icono-banner p a{
+  text-decoration: none;
+  color: var(--color_secondary);
+}
+
+/* Medios de pago */
+.banner-medios {
+  color: var(--text_color_secondary);
+  text-align: center;
+  margin: 15vh 0;
+}
+
+.titulo-medios-p-e {
+  font-family: var(--font_title_two);
+  color: var(--color_secondary);
+  font-size: var(--font_size_title_two);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.informacion {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.informacion p {
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.icono-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.icono-tarjetas i {
+  scale: 2.5;
+  color: var(--text_color_secondary);
+}
+
+/* Envios */
+.banner-envios {
+  background-color: var(--color_tertiary);
+  margin: 15vh auto;
+}
+
+.contenedor-envios {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+}
+
+.icono-envios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text_color);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.icono-envios i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  color: var(--text_color_secondary);
+}
+
+.icono-envios p {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-family: var(--font_text);
+  font-size: 20px;
+  margin-left: 70px;
+  color: var(--text_color_secondary);
+}
+
+.icono-envios span {
+  font-size: 16px;
+  margin-left: 70px;
+  color: var(--text_color_secondary);
+}
+
+@media screen and (max-width:768px){
+  .icono-banner span{
+    font-size: smaller;
+    width: 50vw;
   }
-  
-  .icono-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--color_secondary);
-    margin: 5px;
+
+
+  .banner-medios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
   }
-  
-  .icono-banner i {
-    font-size: 30px; 
-    margin-bottom: 5px;
+  .icono-tarjetas{
+    gap: 10vw;
+    margin-bottom: 4vh;
   }
-  
-  /* Medios de pago */
-  .banner-medios {
-    background-color: var(--color_tertiary);
-    color: var(--text_color);
-    text-align: center;
+
+
+  .banner-envios{
+    border: 1px solid var(--color_secondary);
+    margin: 10vh 5vw;
+    padding: 2vh 0;
   }
-  
-  h5 {
-    font: var(--font_title_two);
-    color: var(--color_secondary);
-    font-size: 2em;
-    font-style: normal;
-    margin-top: 20px;
-  }
-  
-  .informacion {
-    text-align: center;
-  }
-  
-  .informacion p {
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  
-  .icono-tarjetas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .icono-tarjetas i {
-    font-size: 40px;
-    margin-right: 10px;
-  }
-  
-  /* Envios */
-  .banner-envios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color_tertiary);
-    padding: 20px;
-  }
-  
-  h5 {
-    font-family: var(--font_title_two); 
-    color: var(--color_secondary);
-    font-size: 2em; 
-    font-style: normal;
-  }
-  
-  .contenedor-envios {
+  .contenedor-envios{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 250px; 
   }
-  
-  .icono-envios {
+  .icono-envios{
+    width: 40vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--text_color);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    margin: 4vh auto;
   }
-  
-  .icono-envios i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    margin-left: 70px;
+  .icono-envios i,.icono-envios p,.icono-envios span{
+    margin: 0;
+    padding: 0;
   }
-  
-  .icono-envios p {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-family: var(--font_text);
-    font-size: 20px;
-    margin-left: 70px;
+  .icono-envios i{
+    scale: .9;
   }
-  
-  .icono-envios span {
-    font-size: 16px;
-    margin-left: 70px;
+  .icono-envios div{
+    margin: auto;
+    align-content: center;
   }
+
+}
+
+@media screen and (max-width:425px) {
   
-  
+  .banner{
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .icono-banner i{
+    scale: .7;
+  }
+  .icono-banner p{
+    font-size: small;
+  }
+  .icono-banner{
+    min-width: 50vw;
+  }
+
+}

@@ -21,8 +21,14 @@
 /* info main */
 @import url(info_main.css);
 
-/*main list principal */
+/* pagina de inicio de sesion */
+@import url(login_page.css);
+
+/* pagina que muestra los juegos por categoría */
+@import url(list_game.css);
+
+/* Estilos lista de tarjetas de juegos */
 @import url(main_list.css);
 
-/*Banner, medios de pago, etc */
+/* Estilos de banner, medios de pago y envíos */ 
 @import url(banner.css);

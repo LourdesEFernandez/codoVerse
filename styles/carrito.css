@@ -12,6 +12,17 @@
   justify-content: center;
   align-items: center;
   border-top-left-radius: 65px;
+  font-size: small;
+  overflow-y: auto; /* Agregamos scroll vertical */
+}
+
+.shopping-cart-sidebar::-webkit-scrollbar {
+  width: 0.2rem;
+  background: var(--color_tertiary);
+}
+.shopping-cart-sidebar::-webkit-scrollbar-thumb {
+  background: var(--color_secondary);
+  border-radius: 1rem;
 }
 
 .shopping-cart-sidebar.open {
@@ -24,26 +35,26 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
-  padding-top: 2.25px;
-  padding-left: 11.5px;
+  padding-top: 0px;
+  padding-left: 7px;
 }
 
 .close-btn-shopping-cart::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
-  border: var(--color_secondary) solid 0.3rem;
+  width: 20px;
+  height: 20px;
+  border: var(--color_secondary) solid 0.2rem;
   border-radius: 50%;
   /* background-color: rgba(255, 255, 255, 0.3); */
   position: absolute;
-  left: 1.5px;
-  top: 6px;
+  left: 0px;
+  top: 2px;
   z-index: -1;
 }
 
 .close-btn-container-shopping-cart {
-  font-size: 25px;
+  font-size: 15px;
   position: absolute;
   top: 5%;
   display: flex;
@@ -64,18 +75,19 @@
 .shopping-cart-items {
   display: flex;
   position: absolute;
-  top: 10rem;
+  top: 6rem;
   flex-direction: column;
   border-top: 3px solid var(--color_secondary); /* Línea separadora en la parte superior */
-  padding-top: 15px; /* Espacio entre la línea separadora y el primer producto */
+  padding-top: 8px; /* Espacio entre la línea separadora y el primer producto */
 }
 
 .product {
   display: flex;
   flex-direction: column; /* Organiza los elementos en una columna */
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   border-bottom: 3px solid var(--color_secondary); /* Línea separadora */
-  padding-bottom: 15px; /* Espacio entre productos */
+  padding-bottom: 4px; /* Espacio entre productos */
+  height: 6rem;
 }
 
 .product-container-upper {
@@ -102,8 +114,8 @@
 }
 
 .product-img img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%; /* Para que la imagen sea circular */
   margin-right: 10px;
 }
@@ -121,8 +133,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
-  font-size: x-large;
+  /* margin-bottom: 5px; */
+  font-size: large;
   font-weight: bold;
 }
 
@@ -146,7 +158,7 @@
   border-radius: 50%; /* Para que el botón sea circular */
   padding: 5px;
   cursor: pointer;
-  font-size: x-large;
+  font-size: large;
 }
 
 .shopping-cart-items .product:not(:last-child) {

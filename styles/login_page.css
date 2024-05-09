@@ -1,0 +1,299 @@
+:root{
+    --color_form:#bbb;
+    --color_boton:#010101;
+}
+#body-log{
+    background: 
+    linear-gradient(
+        var(--color_primary),
+        var(--color_secondary)
+    );
+    overflow: hidden;
+}
+
+#header-log{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 4vh 2vw 0 0;
+}
+
+#btn-close-log{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#icon-close{
+    scale: 1.6;
+    color: var(--color_secondary);
+}
+
+#title-log{
+    font-size: 1.8em;
+    font-family: var(--font_title);
+    font-weight: 300;
+    padding-bottom: 2vh;
+    cursor: default;
+}
+#title-log a{
+    text-decoration: none;
+    color: var(--color_secondary);
+}
+#title-log a:active{
+    color: var(--color_secondary);
+}
+
+#main-log{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+
+.text-log{
+    font-family: var(--font_text);
+    text-align: center;
+    cursor: default;
+}
+
+#form-log{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_form);
+    border-radius: 12px;
+    padding: 2vh 2vw;
+    gap: 1vh;
+}
+
+#separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+.line-log{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#sep-log{
+    padding: 0 1.5vw;
+}
+
+#questions-log{
+    display: flex;
+    gap: 3vw;
+    color: var(--text_color);
+}
+
+#icons-log{
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+}
+
+.icon-log-r{
+    padding: 10px;
+    background-color: var(--text_color);
+    border-radius: 10px;
+    scale: 1.3;
+    margin: 2vh auto;
+    cursor: pointer;
+}
+
+.qst{
+    font-size: .9em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#container-box-log{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-log{
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+#btn-send-log{
+    background-color: var(--color_boton);
+    font-size: medium;
+    color: var(--text_color);
+    cursor: pointer;
+}
+
+#header-log, #main-log{
+    position: relative;
+}
+#main-log{
+    top: 10%;
+}
+
+.circles-log{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles-log li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles-log li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles-log li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles-log li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles-log li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles-log li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles-log li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles-log li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles-log li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles-log li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles-log li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #icons-log{
+        width: auto;
+        gap: 2vw;
+    }
+    #form-log{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #form-log{
+        width: 70vw;
+    }
+    #title-log{
+        font-size: 1.5em;
+    }
+    .text-log{
+        font-size: small;
+    }
+    #questions-log{
+        gap: 10vw;
+    }
+    .qst{
+        font-size: small;
+    }
+    #btn-send-log{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    #form-log{
+        width: 80vw;
+        padding: 1vh 4vw;
+    }
+
+    .icon-log-r{
+        scale: 1.3;
+    }
+}
