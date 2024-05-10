@@ -1,10 +1,10 @@
-.tarjetas-juegos {
+.contenedor-lista-juegos {
   display: flex;
   justify-content: space-between;
 }
 
 /* Estilos para las tarjetas */
-.juego-img {
+.contenedor-juego {
   width: 160px;
   height: auto;
   margin: 10px;
@@ -39,7 +39,7 @@
     font-size: 14px;
   }
 
-  .heart {
+  .contenedor-corazon {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -59,7 +59,7 @@
     scale: 1.6;
   }
 
-  .heart, h2{
+  .contenedor-corazon, h2{
     padding: 0 1vw;
   }
 }
@@ -88,11 +88,13 @@
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width:768px) {
   .item-menu{
     margin: 0 1vw;
   }
-  .tarjetas-juegos{
+  .contenedor-lista-juegos{
     display: flex;
     flex-wrap: wrap;
 
@@ -116,14 +118,14 @@
     display: inline-block;
   }
 
-  .juego-img{
+  .contenedor-juego{
 
     h2{
       font-size: .9em;
       padding: 0 1.8vw;
     }
 
-    .heart{
+    .contenedor-corazon{
       padding: 0 2.5vw;
     }
 
