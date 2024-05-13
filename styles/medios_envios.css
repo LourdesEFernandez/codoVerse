@@ -131,12 +131,13 @@
 
 @media screen and (max-width: 425px) {
   .icono-tarjetas {
-    flex-direction: column;
-    align-content: center;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5em;
   }
 
   .icono-tarjetas i {
-    margin: 0.2em;
+    margin: 1em;
   }
 
 }
