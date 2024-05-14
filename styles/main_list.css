@@ -136,7 +136,7 @@
     max-width: 200px; 
     height: 140px;
   }
-  .contenedor-corazon i, p{
+  .contenedor-corazon i, .contenedor-corazon p{
     display: none;
   }
 
