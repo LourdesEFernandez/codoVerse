@@ -118,5 +118,4 @@ d.addEventListener("DOMContentLoaded", function(){
     createListGames();
     favorite();
     showInfoExtra();
-})
-
+}) 
