@@ -29,7 +29,7 @@
 
 
 @media screen and (max-width:768px) {
-  .contenedor-icono-banner span {
+  .contenedor-icono-banner {
     font-size: smaller;
     width: 50vw;
   }
@@ -52,6 +52,7 @@
   .contenedor-icono-banner p {
     font-size: small;
   }
+  
 
   .contenedor-icono-banner {
     min-width: 50vw;

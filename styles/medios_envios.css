@@ -130,6 +130,11 @@
 }
 
 @media screen and (max-width: 425px) {
+  .informacion p{
+  display: flex;
+  justify-content: center;
+  }
+  
   .icono-tarjetas {
     display: flex;
     overflow-x: auto;
