@@ -96,10 +96,24 @@
   }
   .contenedor-lista-juegos{
     display: flex;
-    flex-wrap: wrap;
+    overflow-x:auto;
+  }
+  .contenedor-juego{
+    min-width: 140px;
+    max-width: 200px; 
+    height: 160px; 
+  }
+  .img-juego-tarjeta {
+    width: 100%;
+    object-fit:fill; 
+  }
+  h2{
+    font-size: .9em;
+    padding:  0.5em 1.8vw;
+  }
 
   }
-}
+
 
 @media screen and (max-width:425px) {
   
@@ -117,18 +131,13 @@
     padding: 0 1vw;
     display: inline-block;
   }
-
   .contenedor-juego{
-
-    h2{
-      font-size: .9em;
-      padding: 0 1.8vw;
-    }
-
-    .contenedor-corazon{
-      padding: 0 2.5vw;
-    }
-
+    min-width: 120px; 
+    max-width: 200px; 
+    height: 140px;
+  }
+  .contenedor-corazon i, p{
+    display: none;
   }
 
 }
