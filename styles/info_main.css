@@ -99,7 +99,7 @@
     width: 20vw;
     min-height: 100%;
     margin: auto 0;
-
+    user-select: none;
     display: flex;
     flex-direction: column;
     
@@ -313,6 +313,14 @@
 }
 
 @media screen and (max-width:425px) {
+
+    #cont-list-game-main{
+        overflow-x: auto;
+        scroll-snap-type: x;
+    }
+    #cont-list-game-main::-webkit-scrollbar{
+        display: none;
+    }
     .fa-chevron-left, .fa-chevron-right{
         display: none !important;
     }
@@ -324,6 +332,7 @@
         padding: 0;
         width: 90vw;
         margin: 2vh var(--margin-left-rigth);
+        scroll-snap-align: center;
     }
     #cont-list-game{
         height: auto;

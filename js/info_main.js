@@ -91,30 +91,36 @@ d.addEventListener("DOMContentLoaded", function(){
             const 
                 showInfoMain = info.querySelector(".show-info-main"),
                 hiddenInfoMain = info.querySelector(".hidden-info-main"),
-                infoTwo = info.querySelector(".info-2")
+                infoTwo = info.querySelector(".info-2"),
+                d = "display",
+                n = "none",
+                b = "block",
+                f = "flex"
 
             if (w.matchMedia("(max-width: 425px)").matches) {
-                infoTwo.style.setProperty("display", "none");
-                showInfoMain.style.setProperty("display", "flex");
+                infoTwo.style.setProperty(d, n);
+                showInfoMain.style.setProperty(d, f);
+
+                showInfoMain.addEventListener("click", () => {
+                    infoTwo.style.setProperty(d, b);
+                    hiddenInfoMain.style.setProperty(d, f);
+                    showInfoMain.style.setProperty(d, n);
+                });
+                
+                hiddenInfoMain.addEventListener("click", () => {
+                    infoTwo.style.setProperty(d, n);
+                    showInfoMain.style.setProperty(d, f);
+                });
+
             } else {
-                infoTwo.style.setProperty("display", "block");
+                infoTwo.style.setProperty(d, b);
             }
         
-            showInfoMain.addEventListener("click", () => {
-                infoTwo.style.setProperty("display", "block");
-                hiddenInfoMain.style.setProperty("display", "flex");
-                showInfoMain.style.setProperty("display", "none");
-            });
-            
-            hiddenInfoMain.addEventListener("click", () => {
-                infoTwo.style.setProperty("display", "none");
-                showInfoMain.style.setProperty("display", "flex");
-            });
         }
     }
 
     // llamadas
-    switchCard(contCards,previousCardInfo,nextCardInfo,valuePx);
+    switchCard(contCards,previousCardInfo,nextCardInfo,valuePx,1);
     createListGames();
     favorite();
     showInfoExtra();
