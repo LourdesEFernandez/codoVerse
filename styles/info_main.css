@@ -23,10 +23,7 @@
 
 #cont-list-game-main{
     display: flex;
-    overflow-x: auto;
-}
-#cont-list-game-main::-webkit-scrollbar{
-    display: none;
+    overflow: hidden;
 }
 
 .container-info-main{
