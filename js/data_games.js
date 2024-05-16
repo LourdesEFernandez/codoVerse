@@ -5,7 +5,7 @@ const listGames = [
     {name:"Resident Evil 3 Remake", 
     code: "game",
     img:"assets/images/game_resident_evil_3.jpeg",
-    description:"Resident Evil 3 Remake es la reinterpretación del clásico de Capcom, Resident Evil 3: Nemesis, la tercera parte de la trilogía original de survival horror. Siguiendo con las pasos de la segunda parte, y con un aspecto jugable y gráfico renovado en base a las actuales plataformas, nos contará la historia de Jill Valentine y su huida de la ciudad de Raccoon City infestada por el virus T. Incluirá el modo multijugador Resident Evil Resistance. ",
+    description:"Resident Evil 3 Remake es la reinterpretación del clásico de Capcom, Resident Evil 3: Nemesis, la tercera parte de la trilogía original de survival horror. Siguiendo los pasos de la segunda parte con un aspecto jugable y gráfico renovado en base a las actuales plataformas, nos contará la historia de Jill Valentine y su huida de la ciudad de Raccoon City infestada por el virus T. Incluirá el modo multijugador Resident Evil Resistance. ",
     price:"59,999",
     infoTitle:"Ficha técnica de la versión PS4",
     date:"3/4/2020",
@@ -33,7 +33,7 @@ const listGames = [
     
     {name:"Final Fantasy VII Remake", 
     code: "game",
-    img:"assets/images/game_final_fantasy_VII_remake.jpg",description:"Nueva adaptación de la obra maestra del rol japonés. El remake del séptimo capítulo de la saga nos trasladará al mundo de la entrega original de PlayStation y PC, renovando sus gráficos para la consola PlayStation 4, añadiendo nuevos detalles la historia, así como aportando presumibles cambios jugables al sistema de batallas y de exploración. Este nuevo 'Final Fantasy VII' tiene detrás al mismo equipo creativo del original.",
+    img:"assets/images/game_final_fantasy_VII_remake.jpg",description:"Nueva adaptación de la obra maestra del rol japonés. El remake del séptimo capítulo de la saga nos trasladará al mundo de la entrega original de PlayStation y PC, renovando sus gráficos para la consola PlayStation 4, añadiendo nuevos detalles a la historia, así como aportando presumibles cambios jugables al sistema de batallas y de exploración. Este nuevo 'Final Fantasy VII' tiene detrás al mismo equipo creativo del original.",
     price:"50,000",
     infoTitle:"Ficha técnica de la versión PS4",
     date:"10/4/2020",

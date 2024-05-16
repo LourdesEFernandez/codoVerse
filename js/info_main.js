@@ -66,7 +66,7 @@ d.addEventListener("DOMContentLoaded", function(){
             codeGame++;
         }
     } 
-
+    // boton like
     const favorite = () =>{
         let isFavorite = false;
         const btnsHeart = get("button.btn-heart",1);
@@ -84,7 +84,7 @@ d.addEventListener("DOMContentLoaded", function(){
             }
     }
 
-    // boton ver mas para dispositicos mobile
+    // boton ver mas para dispositivos moviles
     function showInfoExtra() {
         const gamesInfo = get(".info-i-m",1);
         for (info of gamesInfo){
