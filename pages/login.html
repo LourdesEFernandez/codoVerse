@@ -11,58 +11,67 @@
 
     <!-- boton para volver a inicio -->
     <header id="header-log">
-        <button id="btn-close-log">
-            <a href="../index.html"><i id="icon-close" class="fa-regular fa-circle-xmark"></i></a>
-        </button>
+        <!-- nombre pagina -->
+        <a href="../index.html">
+            <h1 id="title-log">CODOVERSE</h1>
+        </a>
+        <a href="../index.html">
+            <i id="icon-close" class="fa-regular fa-circle-xmark"></i>
+        </a>
     </header>
 
     <main id="main-log">
-    <!-- nombre pagina -->
-    <h1 id="title-log">
-        <a href="../index.html">CODOVERSE</a></h1>
-    <!-- formulario para iniciar sesion -->
-    <form id="form-log" action="iniciar_sesion">
-        <p class="text-log">Iniciar sesión con</p>
-        <div id="icons-log">
-            <i class="fa-brands fa-discord icon-log-r"></i> 
-            <i class="fa-brands fa-google icon-log-r"></i> 
-            <i class="fa-brands fa-instagram icon-log-r"></i> 
-            <i class="fa-brands fa-facebook icon-log-r"></i>
+        <!-- botones -->
+        <div class="btns">
+            <button class="btn-header active">Iniciar sesión</button>
+            <button class="btn-header ">Crear cuenta</button>
         </div>
-        <div id="separator">
-            <div class="line-log"></div>
-            <p id="sep-log" class="text-log">o</p> 
-            <div class="line-log"></div>
-        </div>
-        <div id="container-box-log">
-            <input id="email" class="box-log" type="email" placeholder="Email@email.com" required>
-            <input id="password" class="box-log" type="password" placeholder="********" required>
-            <input id="btn-send-log" class="box-log text-log " type="submit" value="Ingresar">
-        </div>
-        <!-- agregar ojito para mostrar contraseña -->
-    </form>
-    <!-- botones texto para crear cuenta -->
-    <div id="questions-log">
-        <p class="text-log qst">¿No tienes cuenta?</p>
-        <p class="text-log qst">¿Olvidaste la contraseña?</p>
-    </div>
+
+        <section id="container-form">
+            <form id="form-log" action="">
+                <p class="text-log">Iniciar sesión con</p>
+                <div id="icons-log">
+                    <i class="fa-brands fa-discord icon-log-r"></i> 
+                    <i class="fa-brands fa-google icon-log-r"></i> 
+                    <i class="fa-brands fa-instagram icon-log-r"></i> 
+                    <i class="fa-brands fa-facebook icon-log-r"></i>
+                </div>
+                <div id="separator">
+                    <span class="line-log"></span>
+                    <p id="sep-log" class="text-log">o</p> 
+                    <span class="line-log"></span>
+                </div>
+                <div id="container-box-log">
+                    <label for="email">Usuario</label>
+                    <input id="email" class="box-log" type="email" placeholder="Email@email.com" required>
+                    <label for="password">Contraseña</label>
+                    <input id="password" class="box-log" type="password" placeholder="Contraseña" required>
+                    <button id="btn-send-log" type="button" class="box-log text-log">Ingresar</button>
+                </div>
+                <!-- agregar ojito para mostrar contraseña -->
+            </form>
+            
+                <p id="btn-remember" class="text-log qst">¿Olvidaste la contraseña?</p>
+            
+        </section>
+    
     </main>
 
-    <div class="area-log" >
-        <ul class="circles-log">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-    </div >
 
-    <!-- imagenes de fondo en movimiento-->
+    <ul class="circles-log">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

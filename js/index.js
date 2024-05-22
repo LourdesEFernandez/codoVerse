@@ -1,6 +1,7 @@
 const 
     d = document,
     w = window,
+    c = console,
     get = (element, array) => array ? d.querySelectorAll(element) : d.querySelector(element),
     set = (element, parent) => parent ? parent.appendChild(element) : d.createElement(element),
     del = (element, text) => text ? element.innerHTML = "" : d.removeChild(element)

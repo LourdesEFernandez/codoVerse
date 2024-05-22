@@ -13,36 +13,49 @@
 
 #header-log{
     width: 100%;
-    display: flex;
-    justify-content: end;
-    padding: 4vh 2vw 0 0;
+    padding: 4vh 0 2vh 0;
+    a{
+        text-decoration: none;
+        color: var(--color_secondary);
+    }
+    a:active{
+        color: var(--color_secondary);
+    }
 }
-
-#btn-close-log{
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-#icon-close{
-    scale: 1.6;
-    color: var(--color_secondary);
-}
-
-#title-log{
+a #title-log{
     font-size: 1.8em;
     font-family: var(--font_title);
     font-weight: 300;
     padding-bottom: 2vh;
     cursor: default;
+    display: flex;
+    justify-content: center;
 }
-#title-log a{
-    text-decoration: none;
+a #icon-close{
+    position: absolute;
+    right: 6vw;
+    top: 5vh;
+    scale: 1.8;
     color: var(--color_secondary);
 }
-#title-log a:active{
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.btn-header{
+    font-size: 1em;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font_text);
+    color: var(--text_color_secondary);
+}
+.active{
     color: var(--color_secondary);
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 #main-log{
@@ -60,7 +73,8 @@
 }
 
 #form-log{
-    height: 60vh;
+    width: 23vw;
+    height: 64vh;
     display: flex;
     flex-direction: column;
     background-color: var(--color_form);
@@ -85,12 +99,6 @@
     padding: 0 1.5vw;
 }
 
-#questions-log{
-    display: flex;
-    gap: 3vw;
-    color: var(--text_color);
-}
-
 #icons-log{
     display: flex;
     gap: 2vw;
@@ -109,7 +117,10 @@
 .qst{
     font-size: .9em;
     font-weight: 400;
+    color: var(--text_color);
+    margin-top: 2vh;
     cursor: pointer;
+    text-align: left;
 }
 
 #container-box-log{
@@ -117,6 +128,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    label{
+        font-family: var(--font_text);
+        font-size: .9em;
+        color: var(--color_boton);
+    }
+    input:focus{
+        outline: none;
+    }
 }
 .box-log{
     height: 7vh;
@@ -167,7 +187,6 @@
     height: 80px;
     animation-delay: 0s;
 }
-
 
 .circles-log li:nth-child(2){
     left: 10%;
@@ -237,14 +256,12 @@
     animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius: 5%;
     }
 
     100%{
@@ -261,13 +278,13 @@
         gap: 2vw;
     }
     #form-log{
-        width: 40vw;
+        width: 50vw;
     }
 }
 
 @media screen and (max-width: 425px) {
     #form-log{
-        width: 70vw;
+        width: 75vw;
     }
     #title-log{
         font-size: 1.5em;
