@@ -82,12 +82,15 @@ a #icon-close{
     padding: 2vh 2vw;
     gap: 1vh;
 }
+#form-log p{
+    margin: 0;
+}
 
 #separator{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2vh 0;
+
 }
 
 .line-log{
@@ -145,7 +148,7 @@ a #icon-close{
     padding: 5px;
 }
 
-#btn-send-log{
+#submit{
     background-color: var(--color_boton);
     font-size: medium;
     color: var(--text_color);
