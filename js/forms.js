@@ -120,15 +120,15 @@ d.addEventListener("DOMContentLoaded", function() {
                 icon1 = get(".fa-eye"),
                 icon2 = get(".fa-eye-slash")
                 
-            if(!visible){
+            if(visible == false){
                     password_input.setAttribute(t,"password")
-                    icon1.style.display = d1
-                    icon2.style.display = d2
+                    icon1.style.display = d2
+                    icon2.style.display = d1
                     visible = true
                 } else{
                     password_input.setAttribute(t,"text")
-                    icon2.style.display = d1
-                    icon1.style.display = d2
+                    icon2.style.display = d2
+                    icon1.style.display = d1
                     visible = false
                 }
                 
