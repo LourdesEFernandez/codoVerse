@@ -72,9 +72,9 @@ a #icon-close{
     cursor: default;
 }
 
-#form-log{
+.form-log{
     width: 23vw;
-    height: 64vh;
+    min-height: 64vh;
     display: flex;
     flex-direction: column;
     background-color: var(--color_form);
@@ -82,8 +82,12 @@ a #icon-close{
     padding: 2vh 2vw;
     gap: 1vh;
 }
-#form-log p{
+.form-log p{
     margin: 0;
+}
+
+#form-new-account{
+    display: none;
 }
 
 #separator{
@@ -115,13 +119,17 @@ a #icon-close{
     scale: 1.3;
     margin: 2vh auto;
     cursor: pointer;
+    transition: all 200ms;
+}
+.icon-log-r:hover{
+    background-color: var(--color_cuaternary);
+    color: var(--text_color);
 }
 
 .qst{
     font-size: .9em;
     font-weight: 400;
     color: var(--text_color);
-    margin-top: 2vh;
     cursor: pointer;
     text-align: left;
 }
@@ -155,11 +163,15 @@ a #icon-close{
     cursor: pointer;
 }
 
-#submit{
+.submit{
     background-color: var(--color_boton);
     font-size: medium;
     color: var(--text_color);
     cursor: pointer;
+    transition: all 200ms;
+}
+.submit:hover{
+    background-color: var(--color_cuaternary);
 }
 
 #header-log, #main-log{
@@ -287,7 +299,7 @@ a #icon-close{
         width: auto;
         gap: 2vw;
     }
-    #form-log{
+    .form-log{
         width: 50vw;
     }
     .eye-icon{
@@ -296,7 +308,7 @@ a #icon-close{
 }
 
 @media screen and (max-width: 425px) {
-    #form-log{
+    .form-log{
         width: 75vw;
     }
     #title-log{
@@ -318,7 +330,7 @@ a #icon-close{
 }
 
 @media screen and (max-width:320px) {
-    #form-log{
+    .form-log{
         width: 80vw;
         padding: 1vh 4vw;
     }
