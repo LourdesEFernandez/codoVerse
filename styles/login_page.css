@@ -161,6 +161,9 @@ a #icon-close{
     align-self: center;
     left: calc((50vw + 9vw) - 20px);
     cursor: pointer;
+    .fa-eye{
+        display: none;
+    }
 }
 
 .submit{

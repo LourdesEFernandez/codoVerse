@@ -65,7 +65,7 @@ d.addEventListener("DOMContentLoaded", function(){
 
             codeGame++;
         }
-    } 
+    }
     // boton like
     const favorite = () =>{
         let isFavorite = false;

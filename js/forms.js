@@ -51,6 +51,7 @@ d.addEventListener("DOMContentLoaded", function() {
             <input id="password" class="box-log w-100" type="password" placeholder="Contraseña" required>
             <div class="eye-icon">
                 <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye"></i>
             </div>
             </div>
             ${btnSubmit("ingresar")}
@@ -105,7 +106,37 @@ d.addEventListener("DOMContentLoaded", function() {
         set(form, sectionForm)
     }
 
-    createFormLogIn()
-    createFormAccount()
+    // funcion para mostrar contraseña
+    function showPassword() {
+        const btn_icon = get(".eye-icon")
+        let visible = false
 
+        btn_icon.addEventListener("click", () => {
+            const
+                password_input = get("#password"),
+                t = "type",
+                d1 = "flex",
+                d2 = "none",
+                icon1 = get(".fa-eye"),
+                icon2 = get(".fa-eye-slash")
+                
+            if(!visible){
+                    password_input.setAttribute(t,"password")
+                    icon1.style.display = d1
+                    icon2.style.display = d2
+                    visible = true
+                } else{
+                    password_input.setAttribute(t,"text")
+                    icon2.style.display = d1
+                    icon1.style.display = d2
+                    visible = false
+                }
+                
+            })
+    }
+
+    createFormLogIn()
+    showPassword()
+    createFormAccount()
+    
 })
