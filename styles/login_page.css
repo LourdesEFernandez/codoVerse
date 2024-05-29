@@ -17,7 +17,7 @@
         var(--color_primary),
         var(--color_secondary)
     );
-    overflow: hidden;
+    overflow: auto;
 }
 
 #header-log{
@@ -325,6 +325,7 @@ a #icon-close{
     }
     .form-log{
         width: 50vw;
+        min-height: 60vh;
     }
     .eye-icon{
         left: calc(71vw - 30px);
@@ -334,9 +335,15 @@ a #icon-close{
 @media screen and (max-width: 425px) {
     .form-log{
         width: 75vw;
+        min-height: 55vh;
     }
-    #title-log{
+    a #title-log{
         font-size: 1.5em;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .btn-header{
+        padding-bottom: 0;
     }
     .text-log{
         font-size: small;
