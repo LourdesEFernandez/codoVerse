@@ -11,6 +11,7 @@ d.addEventListener("DOMContentLoaded", function() {
         const
         div = set("div"),
         form = set("form")
+
         Object.assign(form, {
             id: 'form-log-in',
             classList: 'form-log'
@@ -45,10 +46,10 @@ d.addEventListener("DOMContentLoaded", function() {
         contFields = () => `
             <div class="container-box-log">
             <label for="user">Usuario</label>
-            <input id="user" class="box-log" type="text" placeholder="Mario887" required>
+            <input id="user" class="box-log" type="text" placeholder="Mario887">
             <label for="password">Contraseña</label>
             <div class="d-flex">
-            <input id="password" class="box-log w-100" type="password" placeholder="Contraseña" required>
+            <input id="password" class="box-log w-100" type="password" placeholder="Contraseña">
             <div class="eye-icon">
                 <i class="fa-regular fa-eye-slash"></i>
                 <i class="fa-regular fa-eye"></i>
@@ -93,14 +94,14 @@ d.addEventListener("DOMContentLoaded", function() {
         })
         form.innerHTML += `
         <div class="container-box-log">
-        <label for="user">Usuario</label>
-        <input id="user" class="box-log" type="text" placeholder="Mario887" required>
-        <label for="email">Correo electrónico</label>
-        <input id="email" class="box-log" type="email" placeholder="Email@email.com" required>
-        <label for="password">Contraseña</label>
-        <input id="password" class="box-log" type="password" placeholder="con7ras3ñAsegura." required>
-        <label for="password-two">Repite la contraseña</label>
-        <input id="password-two" class="box-log" type="password" placeholder="con7ras3ñAsegura." required>
+        <label for="new-user">Usuario</label>
+        <input id="new-user" class="box-log" type="text" placeholder="Mario887">
+        <label for="new-email">Correo electrónico</label>
+        <input id="new-email" class="box-log" type="email" placeholder="Email@email.com">
+        <label for="new-password">Contraseña</label>
+        <input id="new-password" class="box-log" type="password" placeholder="con7ras3ñAsegura.">
+        <label for="confirm-password">Repite la contraseña</label>
+        <input id="confirm-password" class="box-log" type="password" placeholder="con7ras3ñAsegura.">
         ${btnSubmit("Crear cuenta")}
         </div>`
         set(form, sectionForm)
