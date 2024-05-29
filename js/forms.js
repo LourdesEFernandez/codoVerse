@@ -4,6 +4,7 @@ d.addEventListener("DOMContentLoaded", function() {
         sectionForm = get("#container-form"),
         clasName = "active",
         btnSubmit = (label) => `<button type="submit" class="box-log text-log submit">${label}</button>`
+    let visible = false
 
     // funcion crear log in
     function createFormLogIn() {
@@ -110,8 +111,6 @@ d.addEventListener("DOMContentLoaded", function() {
     // funcion para mostrar contraseña
     function showPassword() {
         const btn_icon = get(".eye-icon")
-        let visible = false
-
         btn_icon.addEventListener("click", () => {
             const
                 password_input = get("#password"),
@@ -121,16 +120,16 @@ d.addEventListener("DOMContentLoaded", function() {
                 icon1 = get(".fa-eye"),
                 icon2 = get(".fa-eye-slash")
                 
-            if(visible == false){
-                    password_input.setAttribute(t,"password")
+            if(visible == true){
+                icon2.style.display = d2
+                icon1.style.display = d1
+                password_input.setAttribute(t,"text")
+                visible = false
+                } else{
                     icon1.style.display = d2
                     icon2.style.display = d1
+                    password_input.setAttribute(t,"password")
                     visible = true
-                } else{
-                    password_input.setAttribute(t,"text")
-                    icon2.style.display = d2
-                    icon1.style.display = d1
-                    visible = false
                 }
                 
             })
