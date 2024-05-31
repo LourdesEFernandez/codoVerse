@@ -21,21 +21,31 @@
 
 /* iconos */
 
-.fa-chevron-left, .fa-chevron-right{
-    color: var(--color_secondary);
-    scale: 1.2;
-    margin: auto 3vw;
-    cursor: pointer;
-    background-color: transparent;
-}
+
 
 /* lista */
-
+.component-p-g{
+    .fa-chevron-left, .fa-chevron-right{
+        position: absolute;
+        color: var(--color_secondary);
+        scale: 1.2;
+        margin: auto 3vw;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .fa-chevron-left{
+        left: 0;
+    }
+    .fa-chevron-right{
+        right: 0;
+    }
+}
 .list-p-g, .component-p-g{
     display: flex;
     align-items: center;
 }
 .list-p-g{
+    height: 15vh;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -50,13 +60,20 @@
 }
 
 .item-p-g{
-    padding: 1.6rem;
+    min-width: 15vw !important;
     list-style: none;
     cursor: pointer;
-    height: auto;
+    height: 8vh;
+    border: 1px solid var(--color_secondary);
+    border-radius: 5px;
     transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.item-p-g:hover{
+    box-shadow: 0px 1px 12px var(--color_secondary);
+}
 .item-p-g a{
     text-decoration: none;
 }
@@ -81,7 +98,7 @@
 
 @media screen and (min-width: 769px) {
     .item-p-g:hover{
-        scale: 1.2;
+        scale: 1.1;
     }
 }
 
