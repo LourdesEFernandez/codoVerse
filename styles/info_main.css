@@ -38,7 +38,7 @@
     color: var(--text_color);
 
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: 35% 45% 20%;
 
     .fa-heart{
         scale: 1.5;
@@ -63,7 +63,7 @@
     flex-direction: column;
     gap: 1.5vh;
 
-    grid-column: 4;
+    grid-column: 3;
     grid-row: 4;
 }
 .c-button{
@@ -92,17 +92,16 @@
     position: relative;
 
     grid-row: 1;
-    grid-column: 4;
+    grid-column: 3;
 }
 
-#container-img-game{
-    width: 20vw;
+.container-img-game{
     min-height: 100%;
-    margin: auto 0;
+    margin: auto;
     user-select: none;
     display: flex;
     flex-direction: column;
-    
+    overflow: hidden;
     grid-row: 1 / 5;
     grid-column: 1;
 }
@@ -112,7 +111,7 @@
     padding: 0 1vw;
     cursor: default;
 
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 5;
 }
 
@@ -173,6 +172,9 @@
         border-radius: 5px;
     
     }
+    .container-img-game{
+        width: 20vw;
+    }
     #tag-price{
         width: 100%;
         margin: 0 auto;
@@ -182,7 +184,8 @@
     }
     .img-card-main{
         border-radius: 3px 3px 0 0;
-        flex: 1;
+        flex: content;
+        overflow: hidden;
     }
     
     #b-buy:hover{
@@ -240,15 +243,16 @@
 
     #container-img-game{
         width: 100%;
+        min-height: 100%;
         grid-column: 1 / 4;
         grid-row: 1 / 4;
         overflow: hidden;
         flex-direction: column-reverse;
     }
     .img-card-main{
+        width: 80vw;
         overflow: hidden;
         opacity: .3;
-        
     }
     #tag-price{
         background-color: transparent;
@@ -267,25 +271,13 @@
         position: absolute;
         z-index: 10;
         color: var(--text_color);
-        top: 10%;
-    }
-
-    #info-1{
-        display: flex;
-    } 
-
-    #info-game-i-m{
-        width: 60%;
-    }
-
-    .info-2{
-        margin: 0 auto;
+        top: 20%;
     }
 
     .btn-heart{
         grid-column: 3;
         grid-row: 1;
-        margin: 5px;
+        margin: 10px;
         position: absolute;
         z-index: 10;
         right: 0;
@@ -337,7 +329,7 @@
     #cont-list-game{
         height: auto;
     }
-    #container-img-game{
+    .container-img-game{
         width: 100%;
         height: 150px !important;
         overflow: hidden !important;
@@ -359,7 +351,8 @@
         padding: 1.5vw;
     }
     .info-i-m{
-        min-height: 255px;
+        min-height: 20vh;
+        margin-top: 1.5vh;
     }
     #info-1{
         flex-direction: column;
@@ -390,5 +383,11 @@
     .c-button{
         height: 6vh;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #tag-price{
+        font-size: 1em;
     }
 }
