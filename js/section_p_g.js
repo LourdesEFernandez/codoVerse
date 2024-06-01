@@ -43,20 +43,3 @@ try {
 } catch (error) {
 	console.error(error);
 }
-
-// const urlnew = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
-// const optionsnew = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '1328792987msh8ee371798855733p111214jsn3729fe47c260',
-// 		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
-// 	}
-// };
-
-// try {
-// 	const response = await fetch(urlnew, optionsnew);
-// 	const result = await response.json();
-// 	console.log(result);
-// } catch (error) {
-// 	console.error(error);
-// }

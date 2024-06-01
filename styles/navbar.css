@@ -52,6 +52,12 @@ body {
   /*font-weight: bold;  Texto en negrita */
   font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
+.menu ul li button{
+  background-color: var(--color_secondary);
+  padding: 0 .5vh;
+  font-size: 1.1em;
+  color: var(--text_color);
+}
 
 .search-profile-cart {
   flex: 2;

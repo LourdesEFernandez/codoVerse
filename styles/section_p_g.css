@@ -20,34 +20,30 @@
 }
 
 /* iconos */
-
-
+.fa-chevron-left, .fa-chevron-right{
+    position: absolute;
+    color: var(--color_secondary);
+    scale: 1.2;
+    margin: auto 3vw;
+    cursor: pointer;
+    background-color: transparent;
+}
+.fa-chevron-left{
+    left: 0;
+}
+.fa-chevron-right{
+    right: 0;
+}
 
 /* lista */
-.component-p-g{
-    .fa-chevron-left, .fa-chevron-right{
-        position: absolute;
-        color: var(--color_secondary);
-        scale: 1.2;
-        margin: auto 3vw;
-        cursor: pointer;
-        background-color: transparent;
-    }
-    .fa-chevron-left{
-        left: 0;
-    }
-    .fa-chevron-right{
-        right: 0;
-    }
-}
 .list-p-g, .component-p-g{
     display: flex;
     align-items: center;
 }
 .list-p-g{
-    height: 15vh;
+    height: auto;
+    padding: 3vh;
     overflow-x: auto;
-    overflow-y: hidden;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     flex: 1;

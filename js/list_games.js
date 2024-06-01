@@ -1,4 +1,13 @@
-const contList = document.querySelector("#cont-list-game-page");
+const
+    contList = document.querySelector("#cont-list-game-page"),
+    urlnew = 'https://free-to-play-games-database.p.rapidapi.com/api/games?platform=browser&category=mmorpg&sort-by=release-date',
+    optionsnew = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '1328792987msh8ee371798855733p111214jsn3729fe47c260',
+            'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+        }
+    }
 
 const listGames = [
     {name:"Resident Evil 3 Remake", 
@@ -101,37 +110,48 @@ const listGames = [
     requirements:"PC"}
 ]
 
-const createListGames = () =>{
+const createListGames = (list) =>{
     contList.innerHTML = "";
-    let codeGame = 0;
-
-    for (game of listGames){
-        game.code += codeGame;
+    const min = 30;
+    const max = 90;
+    list.forEach ((item) => {
+        let price_random = Math.random()*(max - min)+min
+        let price = price_random.toFixed(3)
         contList.innerHTML += `
         <div class="col d-flex justify-content-center">
-        <div id="${game.code}" class="card h-100">
-            <img class=" card-img-top" src="${game.img}" alt="">
+        <div id="${item.id}" class="card h-100">
+            <img class=" card-img-top" src="${item.thumbnail}" alt="">
             <div class=" card-body">
-                <h5 class="card-title">${game.name}</h5>
+                <h5 class="card-title">${item.title}</h5>
                 <ul>
                     <li class="card-text">
-                        <strong>Lanzamiento:</strong> ${game.date}
+                        <strong>Lanzamiento:</strong> ${item.release_date}
                     </li>
                     <li class="card-text">
-                        <strong>Textos:</strong> ${game.texts}
+                        <strong>Género:</strong> ${item.genre}
                     </li>
                     <li class="card-text">
-                        <strong>Voces:</strong> ${game.voices}
+                        <strong>Requisitos:</strong> ${item.platform}
                     </li>
                     <li class="card-text">
-                        <strong>Precio: $${game.price}</strong>
+                        <strong>Precio: $${price}</strong>
                     </li>
                 </ul>
             </div>
         </div>
     </div>`;
-    codeGame++
+    })
+}
+
+async function apirunList(params) {
+    try {
+        const response = await fetch(urlnew, optionsnew);
+        const result = await response.json();
+        createListGames(result)
+        console.log(result);
+    } catch (error) {
+        console.error(error);
     }
 }
 
-createListGames();
+apirunList()

@@ -1,17 +1,14 @@
-.contenedor-lista-juegos {
-  display: flex;
-  justify-content: space-between;
+#seccion-juegos-principal{
+  margin-top: 0 !important;
 }
-
 /* Estilos para las tarjetas */
 .contenedor-juego {
-  width: 160px;
-  height: auto;
-  margin: 10px;
+  min-width: 13vw;
+  height: 23vh;
   border-radius: 10px;
   background-color: var(--color_primary);
   /* tarjeta inactiva */
-  transition: background-color 0.3s;
+  transition: all 300ms;
   cursor: pointer;
 
   &:hover {
@@ -20,7 +17,7 @@
 
   .img-juego-tarjeta {
     width: 100%;
-    height: 85px;
+    height: 55%;
     border-radius: 10px 10px 0px 0px;
   }
 
@@ -63,7 +60,6 @@
     padding: 0 1vw;
   }
 }
-
 .opciones-menu {
   display: flex;
   justify-content: center;
@@ -94,22 +90,30 @@
   .item-menu{
     margin: 0 1vw;
   }
-  .contenedor-lista-juegos{
+  #seccion-juegos-pricipal.section-p-g{
+    height: auto !important;
+  }
+  #lista-juegos.component-p-g{
     display: flex;
+    flex-direction: row;
+    height: auto;
+    
+  }
+  #lista-juegos .list-p-g{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     overflow-x:auto;
+    height: auto;
+    padding: 2.5vh 0;
   }
   .contenedor-juego{
-    min-width: 140px;
-    max-width: 200px; 
-    height: 160px; 
-  }
-  .img-juego-tarjeta {
-    width: 100%;
-    object-fit:fill; 
-  }
-  h2{
-    font-size: .9em;
-    padding:  0.5em 1.8vw;
+    min-width: 20vw;
+    max-width: 200px;
+    height: 160px;
+    h2{
+      font-size: .9em;
+    }
   }
 
   }
