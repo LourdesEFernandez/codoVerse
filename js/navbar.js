@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close-btn");
   const mainContent = document.querySelector(".main");
   const footer = document.querySelector("#footer");
-  const btnAPI = get("#btn-api")
-  const liBtnApi = get("li#btn-api")
 
   hamburgerMenu.addEventListener("click", function () {
     sidebar.classList.toggle("open");
@@ -19,7 +17,4 @@ document.addEventListener("DOMContentLoaded", function () {
     footer.classList.remove("blur"); // Quitamos la clase 'blur' al cerrar el menú
   });
 
-  btnAPI.addEventListener("click", () => {
-    
-  })
 });
