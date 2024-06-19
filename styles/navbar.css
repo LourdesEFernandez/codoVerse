@@ -16,10 +16,6 @@ body {
   color: var(--color_secondary);
   /* Aumentamos el padding para incrementar la altura */
   padding: 1.5vh 0;
-  /* Agregamos una línea horizontal en la parte inferior */
-  border-bottom: 0.3vh solid var(--color_secondary);
-  /* Agregamos un margen inferior para alinear hacia abajo 
-  margin-bottom: 20px;*/
 }
 
 .navbar a {
