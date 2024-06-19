@@ -1,24 +1,26 @@
 .shopping-cart-sidebar {
+  --border_radius: 100%;
   position: fixed;
   top: 0;
-  right: -280px; /* Inicialmente oculto a la derecha */
-  height: 100%;
-  width: 280px; /* Ancho de la solapa cuando esté abierta */
+  right: -25vw; /* Inicialmente oculto a la derecha */
+  height: 99%;
+  width: 25vw; /* Ancho de la solapa cuando esté abierta */
   background-color: var(--color_cuaternary); /* Color principal */
-  z-index: 1000; /* Asegurar que esté encima de otros elementos */
-  transition: right 0.3s ease; /* Transición suave solo para la posición */
+  z-index: 1; /* Asegurar que esté encima de otros elementos */
+  transition: right 0.5s ease; /* Transición suave solo para la posición */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 65px;
+  border-top-left-radius: var(--border_radius);
+  border-bottom-left-radius: var(--border_radius);
   font-size: small;
   overflow-y: auto; /* Agregamos scroll vertical */
 }
 
 .shopping-cart-sidebar::-webkit-scrollbar {
   width: 0.2rem;
-  background: var(--color_tertiary);
+  background: var(--color_cuaternary);
 }
 .shopping-cart-sidebar::-webkit-scrollbar-thumb {
   background: var(--color_secondary);
@@ -30,27 +32,12 @@
 }
 
 .close-btn-shopping-cart {
-  font-size: 1.5em;
+  scale: 2.5;
   color: var(--color_secondary);
   cursor: pointer;
   position: relative;
   z-index: 1;
   padding-top: 0px;
-  padding-left: 7px;
-}
-
-.close-btn-shopping-cart::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: var(--color_secondary) solid 0.2rem;
-  border-radius: 50%;
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  z-index: -1;
 }
 
 .close-btn-container-shopping-cart {
@@ -60,11 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.main {
-  /* Otros estilos */
-  transition: filter 0.3s ease; /* Agregamos una transición suave */
 }
 
 .blur {
@@ -87,7 +69,7 @@
   margin-bottom: 7px;
   border-bottom: 3px solid var(--color_secondary); /* Línea separadora */
   padding-bottom: 4px; /* Espacio entre productos */
-  height: 6rem;
+  /* height: 6rem; */
 }
 
 .product-container-upper {
@@ -127,6 +109,8 @@
 .product-details h3 {
   margin: 0;
   color: var(--text_color_secondary);
+  font-family: var(--font_text);
+  font-size: large;
 }
 
 .quantity {

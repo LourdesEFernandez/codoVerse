@@ -1,24 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const shoppingCartIcon = document.querySelector(".fa-shopping-cart");
-  const shoppingCartIconMenuHamburguesa = document.querySelector(
-    ".menu-options-shopping-cart"
-  );
-  const sidebar = document.querySelector(".sidebar");
-  const shoppingCartSidebar = document.querySelector(".shopping-cart-sidebar");
-  const closeBtnShopping = document.querySelector(".close-btn-shopping-cart");
-  //   const headerNavBar = document.querySelector("#header");
-  const mainContent = document.querySelector(".main");
-  const footer = document.querySelector("#footer");
-  const increaseButtons = document.querySelectorAll(".increase-btn");
-  const decreaseButtons = document.querySelectorAll(".decrease-btn");
+  const
+    shoppingCartIcon = get(".fa-shopping-cart"),
+    shoppingCartIconMenuHamburguesa = get(
+    ".menu-options-shopping-cart"),
+    sidebar = get(".sidebar"),
+    shoppingCartSidebar = get(".shopping-cart-sidebar"),
+    closeBtnShopping = get(".close-btn-shopping-cart"),
+    logo = get(".logo"),
+    menu = get(".menu"),
+    search = get(".search-profile-cart"),
+    mainContent = get(".main"),
+    footer = get("#footer"),
+    increaseButtons = get(".increase-btn",1),
+    decreaseButtons = get(".decrease-btn",1);
 
+    function addRemoveBlur(element, remove) {
+      remove ? element.classList.remove("blur") :
+      element.classList.add("blur")
+    }
+    function addRemoveBlur(element, remove) {
+      if (remove){
+        element.classList.remove("blur")
+      } else{
+        element.classList.add("blur")
+        element.style.setProperty("transition", "filter 250ms ease")
+      }
+    }
   // Abrir la solapa del carrito al hacer clic en el icono del carrito
   shoppingCartIcon.addEventListener("click", function () {
     shoppingCartSidebar.classList.add("open");
     // Agregamos o quitamos la clase 'blur'
-    // headerNavBar.classList.toggle("blur");
-    mainContent.classList.toggle("blur");
-    footer.classList.toggle("blur");
+    addRemoveBlur(logo)
+    addRemoveBlur(menu)
+    addRemoveBlur(search)
+    addRemoveBlur(mainContent)
+    addRemoveBlur(footer)
   });
 
   shoppingCartIconMenuHamburguesa.addEventListener("click", function () {
@@ -34,9 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtnShopping.addEventListener("click", function () {
     shoppingCartSidebar.classList.remove("open");
     // Agregamos o quitamos la clase 'blur'
-    // headerNavBar.classList.toggle("blur");
-    mainContent.classList.toggle("blur");
-    footer.classList.toggle("blur");
+    addRemoveBlur(logo,1)
+    addRemoveBlur(menu,1)
+    addRemoveBlur(search,1)
+    addRemoveBlur(mainContent,1)
+    addRemoveBlur(footer,1)
   });
 
   //Incrementa el numero de la cantidad

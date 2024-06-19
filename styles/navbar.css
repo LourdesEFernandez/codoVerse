@@ -16,10 +16,6 @@ body {
   color: var(--color_secondary);
   /* Aumentamos el padding para incrementar la altura */
   padding: 1.5vh 0;
-  /* Agregamos una línea horizontal en la parte inferior */
-  border-bottom: 0.3vh solid var(--color_secondary);
-  /* Agregamos un margen inferior para alinear hacia abajo 
-  margin-bottom: 20px;*/
 }
 
 .navbar a {
@@ -41,7 +37,8 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  /*align-items: flex-end;  Alineamos todas las opciones del menú hacia la línea inferior */
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .menu ul li {
@@ -49,7 +46,7 @@ body {
 }
 
 .menu ul li a {
-  /*font-weight: bold;  Texto en negrita */
+  font-family: var(--font_text);
   font-size: 1.2em; /* Tamaño de fuente un poco más grande */
 }
 .menu ul li button{
@@ -68,24 +65,29 @@ body {
 
 .search {
   position: relative;
+  border-radius: 20px;
+  background-color: #808080;
+  display: flex;
 }
 
 .search input {
-  padding: 8px 30px;
+  padding: 5px 30px;
   border: none;
-  border-radius: 20px;
-  background-color: #808080; /* Cambiamos el color de fondo */
+  background-color: transparent;
+  outline: none;
+  cursor: default;
 }
 
 .search button {
   position: absolute;
-  top: 50%;
-  left: 10px;
-  /* Cambiar de 'right: 10px' a 'left: 10px' */
+  top: 2.8vh;
+  right: 0;
+  padding-right: 1vw;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .search button i,
